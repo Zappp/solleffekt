@@ -54,7 +54,7 @@ jobs:
       - name: Build and export Next.js site
         run: |
           ${{ steps.detect-pm.outputs.runner }} next build
-          ${{ steps.detect-pm.outputs.runner }} next export -o out
+          ${{ steps.detect-pm.outputs.runner }} next export
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
