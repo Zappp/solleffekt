@@ -4,15 +4,23 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Image } from './Image'
 
-export type NavbarItem = {
-  label: string
-  href?: string
-  children?: Array<{
-    label: string
-    href: string
-    description?: string
-  }>
-}
+export type NavbarItem =
+  | {
+      type: 'link'
+      label: string
+      href: string
+      children?: Array<{
+        label: string
+        href: string
+        description?: string
+      }>
+    }
+  | {
+      type: 'button'
+      label: string
+      action: 'email'
+      email?: string
+    }
 
 export type NavbarBrand = {
   label: string
@@ -30,10 +38,10 @@ export function Navbar({ brand, items }: { brand: NavbarBrand; items: NavbarItem
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 py-3">
             <Link href={brand.href} className="inline-flex items-center gap-2">
-              {brand.logoSrc ? (
-                <Image src={brand.logoSrc} alt={brand.logoAlt ?? 'Logo'} width={28} height={28} />
+              {brand?.logoSrc ? (
+                <Image src={brand.logoSrc} alt={brand?.logoAlt ?? 'Logo'} className="w-10" />
               ) : null}
-              <span className="text-sm font-semibold">{brand.label}</span>
+              <span className="text-sm font-semibold text-indigo-900">{brand.label}</span>
             </Link>
           </div>
 
@@ -51,15 +59,19 @@ export function Navbar({ brand, items }: { brand: NavbarBrand; items: NavbarItem
 function DesktopNav({ items }: { items: NavbarItem[] }) {
   return (
     <div className="hidden items-center gap-6 text-sm md:flex">
-      {items.map((item) =>
-        item.children && item.children.length > 0 ? (
+      {items.map((item) => {
+        if (item.type === 'button') {
+          return <EmailButton key={item.label} item={item} />
+        }
+
+        return item.children && item.children.length > 0 ? (
           <DesktopDropdown key={item.label} item={item} />
         ) : (
-          <NavLink key={item.label} href={item?.href ?? '#'}>
+          <NavLink key={item.label} href={item.href}>
             {item.label}
           </NavLink>
-        ),
-      )}
+        )
+      })}
     </div>
   )
 }
@@ -68,14 +80,30 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
   return (
     <Link
       href={href}
-      className="text-foreground/80 hover:text-foreground px-1 transition-colors md:py-4"
+      className="px-1 text-indigo-800 transition-colors hover:text-indigo-900 md:my-4 md:py-0"
     >
       {children}
     </Link>
   )
 }
 
-function DesktopDropdown({ item }: { item: NavbarItem }) {
+function EmailButton({ item }: { item: Extract<NavbarItem, { type: 'button' }> }) {
+  const handleEmailClick = () => {
+    const email = item.email || 'contact@solleffekt.com'
+    window.location.href = `mailto:${email}`
+  }
+
+  return (
+    <button
+      onClick={handleEmailClick}
+      className="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
+    >
+      {item.label}
+    </button>
+  )
+}
+
+function DesktopDropdown({ item }: { item: Extract<NavbarItem, { type: 'link' }> }) {
   const [open, setOpen] = useState(false)
   return (
     <div
@@ -84,7 +112,7 @@ function DesktopDropdown({ item }: { item: NavbarItem }) {
       onMouseLeave={() => setOpen(false)}
     >
       <button
-        className="text-foreground/80 hover:text-foreground inline-flex items-center gap-1 px-1 py-4 transition-colors"
+        className="inline-flex items-center gap-1 px-1 py-4 text-indigo-800 transition-colors hover:text-indigo-900"
         aria-haspopup="menu"
         aria-expanded={open}
       >
@@ -99,11 +127,11 @@ function DesktopDropdown({ item }: { item: NavbarItem }) {
           <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" />
         </svg>
       </button>
-      {open && (
+      {open && item.children && (
         <div className="absolute left-0">
-          <div className="bg-background/95 w-56 rounded-md border border-white/10 shadow-lg backdrop-blur">
+          <div className="w-56 rounded-md border border-indigo-200/50 bg-white shadow-lg">
             <div className="py-2">
-              {item.children?.map((child) => (
+              {item.children.map((child) => (
                 <DropdownLink key={child.label} href={child.href} description={child.description}>
                   {child.label}
                 </DropdownLink>
@@ -126,9 +154,9 @@ function DropdownLink({
   description?: string
 }) {
   return (
-    <Link href={href} className="block rounded-md px-3 py-2 hover:bg-white/5">
-      <div className="text-sm font-medium">{children}</div>
-      {description ? <div className="text-foreground/60 text-xs">{description}</div> : null}
+    <Link href={href} className="block rounded-md px-3 py-2 hover:bg-indigo-100/60">
+      <div className="text-sm font-medium text-indigo-900">{children}</div>
+      {description ? <div className="text-xs text-indigo-700/70">{description}</div> : null}
     </Link>
   )
 }
@@ -139,7 +167,7 @@ function MobileMenuButton({ onClick }: { onClick: () => void }) {
       type="button"
       aria-label="Toggle menu"
       onClick={onClick}
-      className="inline-flex list-none items-center justify-center rounded-md p-2 hover:bg-white/5 md:hidden"
+      className="inline-flex list-none items-center justify-center rounded-md p-2 text-indigo-800 hover:bg-indigo-100/60 md:hidden"
     >
       <svg
         width="22"
@@ -159,19 +187,37 @@ function MobileMenuButton({ onClick }: { onClick: () => void }) {
   )
 }
 
+function MobileEmailButton({ item }: { item: Extract<NavbarItem, { type: 'button' }> }) {
+  const handleEmailClick = () => {
+    const email = item.email || 'contact@solleffekt.com'
+    window.location.href = `mailto:${email}`
+  }
+
+  return (
+    <button
+      onClick={handleEmailClick}
+      className="w-full rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
+    >
+      {item.label}
+    </button>
+  )
+}
+
 function MobileMenu({ open, items }: { open: boolean; items: NavbarItem[] }) {
   return (
     <div
-      className={`overflow-hidden border-t border-white/10 transition-all duration-200 ease-out md:hidden ${
+      className={`overflow-hidden border-t border-indigo-200/60 transition-all duration-200 ease-out md:hidden ${
         open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
       }`}
     >
       <div className="space-y-3 px-4 py-3">
         {items.map((item) => (
           <div key={item.label}>
-            {item.children && item.children.length > 0 ? (
+            {item.type === 'button' ? (
+              <MobileEmailButton item={item} />
+            ) : item.children && item.children.length > 0 ? (
               <>
-                <div className="text-foreground/60 px-1">{item.label}</div>
+                <div className="px-1 text-indigo-700/80 dark:text-indigo-200/80">{item.label}</div>
                 <div className="mt-2 ml-3 flex flex-col gap-3">
                   {item.children.map((child) => (
                     <NavLink key={child.label} href={child.href}>
@@ -181,7 +227,7 @@ function MobileMenu({ open, items }: { open: boolean; items: NavbarItem[] }) {
                 </div>
               </>
             ) : (
-              <NavLink href={item?.href ?? '#'}>{item.label}</NavLink>
+              <NavLink href={item.href}>{item.label}</NavLink>
             )}
           </div>
         ))}

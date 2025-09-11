@@ -5,7 +5,13 @@ type Props = ComponentPropsWithoutRef<typeof NextImage>
 
 export const Image = forwardRef<HTMLImageElement, Props>(({ src, ...rest }, forwardedRef) => {
   return (
-    <NextImage src={(process.env.NEXT_PUBLIC_BASE_PATH ?? '') + src} ref={forwardedRef} {...rest} />
+    <NextImage
+      src={(process.env.NEXT_PUBLIC_BASE_PATH ?? '') + src}
+      ref={forwardedRef}
+      width={0}
+      height={0}
+      {...rest}
+    />
   )
 })
 Image.displayName = 'Image'

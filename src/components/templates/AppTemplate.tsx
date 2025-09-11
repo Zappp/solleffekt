@@ -1,13 +1,15 @@
 import { ReactNode } from 'react'
-import { Navbar } from '../ui/Navbar'
+import { Navbar, NavbarItem } from '../ui/Navbar'
 
 export function AppTemplate({ children }: { children: ReactNode }) {
   const navBarProps = {
-    brand: { label: 'Solleffekt', href: '/', logoSrc: '/vercel.svg', logoAlt: 'Solleffekt' },
+    brand: { label: 'Solleffekt', href: '/', logoSrc: '/logo.png', logoAlt: 'Solleffekt' },
     items: [
-      { label: 'Home', href: '/' },
+      { type: 'link' as const, label: 'Home', href: '/' },
       {
+        type: 'link' as const,
         label: 'Products',
+        href: '/products',
         children: [
           {
             label: 'Solar Panels',
@@ -26,13 +28,18 @@ export function AppTemplate({ children }: { children: ReactNode }) {
           },
         ],
       },
-      { label: 'About', href: '/about' },
-      { label: 'Contact', href: '/contact' },
-    ],
+      { type: 'link' as const, label: 'About', href: '/about' },
+      {
+        type: 'button' as const,
+        label: 'Contact',
+        action: 'email' as const,
+        email: 'contact@solleffekt.com',
+      },
+    ] satisfies NavbarItem[],
   }
   return (
     <>
-      <header className="bg-background/80 sticky top-0 z-50 border-b border-white/10 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-indigo-200/60 bg-white/80 backdrop-blur">
         <Navbar brand={navBarProps.brand} items={navBarProps.items} />
       </header>
 
