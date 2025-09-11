@@ -6,7 +6,7 @@
   - Items: **Home**, **Solutions and Products**, **About Us**, **Contact**
   - Dropdowns:
     - **Products** (2 items from top of https://www.vigorsolar.de/produkte/photovoltaik)  
-      _(exclude "Stromproduktion durch Solar")_
+      _(exclude "Don't miss the connection")_
     - **Solutions** (3 items from top of https://www.vigorsolar.de/loesungen)
       - https://www.vigorsolar.de/loesungen/energieberatung-projektierung
       - https://www.vigorsolar.de/loesungen/montage-komplettservice
