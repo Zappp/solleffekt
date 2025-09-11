@@ -1,13 +1,19 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
-const isProd = process.env.NODE_ENV === "production";
+const isProd = process.env.NODE_ENV === 'production'
+const basePath = isProd ? '/solleffekt' : ''
 
 const nextConfig: NextConfig = {
-  output: "export",
+  output: 'export',
+  skipTrailingSlashRedirect: true,
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? "/solleffekt" : "",
-};
+  basePath: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
+}
 
-export default nextConfig;
+export default nextConfig
