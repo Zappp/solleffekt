@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nata+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import 'tailwindcss';
 
-/*
-  Utility classes for consistent styling:
-  - .uptitle-yellow: yellow text for all uptitles
-  - .btn-yellow: yellow button style
-  - .btn-white: white button style
-  - .rounded-image: consistent image rounding
-  Use these classes in all relevant components.
-*/
-
 :root {
   --background: #ffffff; /* white dominant light background */
   --foreground: #0f172a; /* slate-900 for strong contrast */

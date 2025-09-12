@@ -11,21 +11,31 @@ export function AppTemplate({ children }: { children: ReactNode }) {
         type: 'link' as const,
         label: 'Products',
         href: '/products',
-        children: [
+        segments: [
           {
-            label: 'Solar Panels',
-            href: '/products/solar-panels',
-            description: 'High-efficiency modules',
+            title: 'Products',
+            children: [
+              {
+                label: 'Solar Panels',
+                href: '/products/solar-panels',
+                description: 'High-efficiency modules',
+              },
+              {
+                label: 'Inverters',
+                href: '/products/inverters',
+                description: 'Reliable energy conversion',
+              },
+            ],
           },
           {
-            label: 'Inverters',
-            href: '/products/inverters',
-            description: 'Reliable energy conversion',
-          },
-          {
-            label: 'Batteries',
-            href: '/products/batteries',
-            description: 'Store surplus energy',
+            title: 'Solutions',
+            children: [
+              {
+                label: 'Batteries',
+                href: '/products/batteries',
+                description: 'Store surplus energy',
+              },
+            ],
           },
         ],
       },

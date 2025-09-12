@@ -23,10 +23,7 @@ export interface FooterProps {
 export function Footer({ logo, links, leftInfo, rightInfo }: FooterProps) {
   return (
     <>
-      <div
-        className="pointer-events-none absolute top-0 left-0 w-screen border-t border-indigo-200/60"
-        style={{ zIndex: 1, height: 0 }}
-      />
+      <div className="pointer-events-none absolute top-0 left-0 w-full border-t border-indigo-200/60" />
       <div className="mx-auto flex max-w-6xl flex-col flex-wrap items-center justify-center gap-4 border-b border-indigo-200/60 px-4 py-10 md:flex-row md:gap-8">
         <div className="flex min-w-[160px] flex-1 items-center justify-center">
           <Image
