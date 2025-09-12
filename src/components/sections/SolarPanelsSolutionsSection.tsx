@@ -26,7 +26,7 @@ export function SolarPanelsSolutionsSection({
   return (
     <section className="grid grid-cols-1 gap-10 md:grid-cols-2">
       <div className="flex flex-col gap-6">
-        {uptitle ? <div className="typography-overline uptitle-yellow">{uptitle}</div> : null}
+        {uptitle ? <div className="typography-overline">{uptitle}</div> : null}
         <h2 className="typography-h2">{heading}</h2>
         {descriptions && descriptions.length > 0 ? (
           <div className="typography-body typography-emphasis flex flex-col gap-4">

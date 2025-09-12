@@ -17,7 +17,7 @@ export function SolutionsHeader({
 }: SolutionsHeaderProps) {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-16 text-center">
-      <div className="typography-overline uptitle-yellow">{uptitle}</div>
+      <div className="typography-overline">{uptitle}</div>
       <h1 className="typography-h1 max-w-2xl">{title}</h1>
       <p className="typography-body-large max-w-2xl">{description}</p>
       <Link href={buttonHref} className="typography-button btn-yellow mt-4 inline-block rounded-md">

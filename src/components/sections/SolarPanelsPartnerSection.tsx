@@ -28,7 +28,7 @@ export function SolarPanelsPartnerSection({ items }: { items: PartnerBlock[] }) 
         return (
           <div key={block.id} className={`grid grid-cols-1 gap-8 ${gridCols} ${swapOrder}`}>
             <div className="flex flex-col gap-6">
-              <div className="typography-overline uptitle-yellow">{block.uptitle}</div>
+              <div className="typography-overline">{block.uptitle}</div>
               <div className="flex flex-col gap-8">
                 {block.points.map((pt) => (
                   <div key={pt.id} className="flex items-start gap-4">
