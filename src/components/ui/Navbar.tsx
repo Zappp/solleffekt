@@ -41,7 +41,7 @@ export function Navbar({ brand, items }: { brand: NavbarBrand; items: NavbarItem
               {brand?.logoSrc ? (
                 <Image src={brand.logoSrc} alt={brand?.logoAlt ?? 'Logo'} className="w-10" />
               ) : null}
-              <span className="text-sm font-semibold text-indigo-900">{brand.label}</span>
+              <span className="typography-button typography-emphasis">{brand.label}</span>
             </Link>
           </div>
 
@@ -94,10 +94,7 @@ function EmailButton({ item }: { item: Extract<NavbarItem, { type: 'button' }> }
   }
 
   return (
-    <button
-      onClick={handleEmailClick}
-      className="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
-    >
+    <button onClick={handleEmailClick} className="typography-button btn-yellow rounded-md">
       {item.label}
     </button>
   )
@@ -155,8 +152,10 @@ function DropdownLink({
 }) {
   return (
     <Link href={href} className="block rounded-md px-3 py-2 hover:bg-indigo-100/60">
-      <div className="text-sm font-medium text-indigo-900">{children}</div>
-      {description ? <div className="text-xs text-indigo-700/70">{description}</div> : null}
+      <div className="typography-body-small typography-emphasis text-indigo-900">{children}</div>
+      {description ? (
+        <div className="typography-caption text-indigo-700/70">{description}</div>
+      ) : null}
     </Link>
   )
 }
@@ -194,10 +193,7 @@ function MobileEmailButton({ item }: { item: Extract<NavbarItem, { type: 'button
   }
 
   return (
-    <button
-      onClick={handleEmailClick}
-      className="w-full rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
-    >
+    <button onClick={handleEmailClick} className="typography-button btn-yellow w-full rounded-md">
       {item.label}
     </button>
   )
@@ -217,7 +213,9 @@ function MobileMenu({ open, items }: { open: boolean; items: NavbarItem[] }) {
               <MobileEmailButton item={item} />
             ) : item.children && item.children.length > 0 ? (
               <>
-                <div className="px-1 text-indigo-700/80 dark:text-indigo-200/80">{item.label}</div>
+                <div className="typography-body-small px-1 text-indigo-700/80 dark:text-indigo-200/80">
+                  {item.label}
+                </div>
                 <div className="mt-2 ml-3 flex flex-col gap-3">
                   {item.children.map((child) => (
                     <NavLink key={child.label} href={child.href}>

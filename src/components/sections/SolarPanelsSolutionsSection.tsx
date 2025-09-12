@@ -26,12 +26,10 @@ export function SolarPanelsSolutionsSection({
   return (
     <section className="grid grid-cols-1 gap-10 md:grid-cols-2">
       <div className="flex flex-col gap-6">
-        {uptitle ? (
-          <div className="text-xs font-bold text-indigo-600 uppercase">{uptitle}</div>
-        ) : null}
-        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{heading}</h2>
+        {uptitle ? <div className="typography-overline uptitle-yellow">{uptitle}</div> : null}
+        <h2 className="typography-h2">{heading}</h2>
         {descriptions && descriptions.length > 0 ? (
-          <div className="flex flex-col gap-4 text-neutral-700">
+          <div className="typography-body typography-emphasis flex flex-col gap-4">
             {descriptions.map((para, idx) => (
               <p key={idx}>{para}</p>
             ))}
@@ -40,7 +38,7 @@ export function SolarPanelsSolutionsSection({
         {ctaLabel && (
           <a
             href={ctaHref || '#appointment'}
-            className="inline-flex w-max items-center justify-center rounded-md bg-yellow-400 px-4 py-2 text-sm font-medium text-black transition-colors hover:bg-yellow-500 focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:outline-none"
+            className="typography-button btn-yellow inline-flex w-max items-center justify-center"
           >
             {ctaLabel}
           </a>
@@ -57,8 +55,8 @@ export function SolarPanelsSolutionsSection({
                 </div>
               </div>
               <div className="flex flex-col gap-1">
-                <div className="text-lg font-semibold text-indigo-900">{item.title}</div>
-                <div className="text-sm text-neutral-700">{item.description}</div>
+                <div className="typography-h5">{item.title}</div>
+                <div className="typography-body-small typography-emphasis">{item.description}</div>
               </div>
             </div>
           ))}

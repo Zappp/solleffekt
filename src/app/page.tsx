@@ -96,7 +96,6 @@ export default function Home() {
         subtitle="ENABLING CLEAN ENERGY FOR EVERYONE"
         imageSrc="/test-image.jpg"
         imageAlt="Mission"
-        accentColorClassName="text-indigo-600"
       />
 
       <OptimizeSection

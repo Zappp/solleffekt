@@ -28,7 +28,7 @@ export function SolarPanelsPartnerSection({ items }: { items: PartnerBlock[] }) 
         return (
           <div key={block.id} className={`grid grid-cols-1 gap-8 ${gridCols} ${swapOrder}`}>
             <div className="flex flex-col gap-6">
-              <div className="text-xs font-bold text-yellow-500 uppercase">{block.uptitle}</div>
+              <div className="typography-overline uptitle-yellow">{block.uptitle}</div>
               <div className="flex flex-col gap-8">
                 {block.points.map((pt) => (
                   <div key={pt.id} className="flex items-start gap-4">
@@ -42,8 +42,10 @@ export function SolarPanelsPartnerSection({ items }: { items: PartnerBlock[] }) 
                       </div>
                     </div>
                     <div className="flex flex-col gap-1">
-                      <div className="text-lg font-semibold text-indigo-900">{pt.title}</div>
-                      <div className="text-sm text-neutral-700">{pt.description}</div>
+                      <div className="typography-h5">{pt.title}</div>
+                      <div className="typography-body-small typography-emphasis">
+                        {pt.description}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -55,7 +57,7 @@ export function SolarPanelsPartnerSection({ items }: { items: PartnerBlock[] }) 
                 <Image
                   src={block.imageSrc}
                   alt={block.imageAlt}
-                  className="h-auto w-full object-contain"
+                  className="rounded-image h-auto w-full object-contain"
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
