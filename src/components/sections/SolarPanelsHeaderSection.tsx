@@ -24,7 +24,7 @@ export function SolarPanelsHeaderSection({
 }: SolarPanelsHeaderSectionProps) {
   return (
     <section className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4" data-aos="fade-up">
         <h1 className="typography-h1">{title}</h1>
         <p className="typography-body typography-emphasis">{description}</p>
         <div className="flex flex-wrap items-center gap-3">
@@ -47,15 +47,8 @@ export function SolarPanelsHeaderSection({
         </div>
       </div>
 
-      <div>
-        <div className="rounded-image overflow-hidden border border-neutral-200">
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            className="h-auto w-full object-cover"
-            sizes="(min-width: 768px) 50vw, 100vw"
-          />
-        </div>
+      <div className="rounded-image overflow-hidden border border-neutral-200" data-aos="fade">
+        <Image src={imageSrc} alt={imageAlt} className="h-auto w-full object-cover" />
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 import { AppTemplate } from 'app/components/templates/AppTemplate'
+import { AOS } from 'app/components/ui/AOS'
 import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
 import './globals.css'
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nataSans.variable} antialiased`}>
+        <AOS />
         <AppTemplate>{children}</AppTemplate>
       </body>
     </html>

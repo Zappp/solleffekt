@@ -99,7 +99,7 @@ export default function Home() {
       />
 
       <OptimizeSection
-        uptitle="Optimization"
+        overline="Optimization"
         title="Optimize your system"
         subtitle="Maximize performance with smart monitoring and proactive maintenance."
         imageSrc="/test-image.jpg"

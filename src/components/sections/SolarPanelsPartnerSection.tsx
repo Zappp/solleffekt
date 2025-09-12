@@ -10,7 +10,7 @@ export type PartnerPoint = {
 
 export type PartnerBlock = {
   id: string
-  uptitle: string
+  overline: string
   points: PartnerPoint[]
   imageSrc: string
   imageAlt: string
@@ -28,10 +28,16 @@ export function SolarPanelsPartnerSection({ items }: { items: PartnerBlock[] }) 
         return (
           <div key={block.id} className={`grid grid-cols-1 gap-8 ${gridCols} ${swapOrder}`}>
             <div className="flex flex-col gap-6">
-              <div className="typography-overline">{block.uptitle}</div>
+              <div className="typography-overline" data-aos={reversed ? 'fade-left' : 'fade-right'}>
+                {block.overline}
+              </div>
               <div className="flex flex-col gap-8">
                 {block.points.map((pt) => (
-                  <div key={pt.id} className="flex items-start gap-4">
+                  <div
+                    key={pt.id}
+                    className="flex items-start gap-4"
+                    data-aos={reversed ? 'fade-left' : 'fade-right'}
+                  >
                     <div className="relative flex w-12 flex-0 items-center justify-center rounded-full bg-indigo-50 ring-1 ring-indigo-100">
                       <div className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100">
                         <Image
@@ -53,12 +59,14 @@ export function SolarPanelsPartnerSection({ items }: { items: PartnerBlock[] }) 
             </div>
 
             <div className="relative">
-              <div className="mx-auto w-full max-w-md md:max-w-none">
+              <div
+                className="mx-auto w-full max-w-md md:max-w-none"
+                data-aos={reversed ? 'fade-right' : 'fade-left'}
+              >
                 <Image
                   src={block.imageSrc}
                   alt={block.imageAlt}
                   className="rounded-image h-auto w-full object-contain"
-                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
             </div>

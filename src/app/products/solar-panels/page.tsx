@@ -21,7 +21,7 @@ export default function SolarPanelsPage() {
       <SectionSeparator backgroundImageSrc="/test-image.jpg" />
 
       <SolarPanelsSolutionsSection
-        uptitle="Unsere Solar Lösungen"
+        overline="Unsere Solar Lösungen"
         heading="Alles aus einer Hand - alle Komponenten aufeinander abgestimmt."
         descriptions={[
           'Als Herstellvertreib setzt VIGOR mit nachhaltigen Solarmodulen neue technologische Maßstäbe. Unsere Solarmodule zählen zu den Besten der Welt und wir stellen Ihnen eine breite Palette dieser zur Auswahl. Die Besonderheit dabei liegt darauf, wir liefern alle aufeinander abgestimmten Komponenten aus einer Hand.',
@@ -61,7 +61,7 @@ export default function SolarPanelsPage() {
         items={[
           {
             id: 'b1',
-            uptitle: 'Exklusive Partnerschaft mit dem Weltmarktführer APsystems',
+            overline: 'Exklusive Partnerschaft mit dem Weltmarktführer APsystems',
             points: [
               {
                 id: 'p1',
@@ -93,7 +93,7 @@ export default function SolarPanelsPage() {
           },
           {
             id: 'b2',
-            uptitle: 'Weitere Vorteile und Anwendungen',
+            overline: 'Weitere Vorteile und Anwendungen',
             points: [
               {
                 id: 'p4',
@@ -118,7 +118,7 @@ export default function SolarPanelsPage() {
       />
 
       <OptimizeSection
-        uptitle="Optimization"
+        overline="Optimization"
         title="Optimize your system"
         subtitle="Maximize performance with smart monitoring and proactive maintenance."
         imageSrc="/test-image.jpg"

@@ -1,4 +1,3 @@
-'use client'
 import { Image } from 'app/components/ui/Image'
 import Link from 'next/link'
 
@@ -18,19 +17,21 @@ export type ProductsSectionProps = {
 export function ProductsSection({ heading, products }: ProductsSectionProps) {
   return (
     <section className="flex flex-col gap-6">
-      <h2 className="typography-h2">{heading}</h2>
+      <h2 className="typography-h2" data-aos="fade-up">
+        {heading}
+      </h2>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((p) => (
           <article
             key={p.id}
             className="flex flex-col overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm"
+            data-aos="fade-up"
           >
             {p.imageSrc && p.imageAlt ? (
               <Image
                 src={p.imageSrc}
                 alt={p.imageAlt}
                 className="rounded-image h-48 w-full object-cover"
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
               />
             ) : null}
             <div className="flex flex-1 flex-col gap-3 p-4">

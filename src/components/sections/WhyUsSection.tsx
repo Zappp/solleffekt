@@ -1,4 +1,3 @@
-'use client'
 import { Image } from 'app/components/ui/Image'
 
 export type WhyUsItem = {
@@ -17,7 +16,9 @@ export type WhyUsSectionProps = {
 export function WhyUsSection({ heading, items }: WhyUsSectionProps) {
   return (
     <section className="flex flex-col gap-6">
-      <h2 className="typography-h2">{heading}</h2>
+      <h2 data-aos="fade-up" className="typography-h2">
+        {heading}
+      </h2>
       <div className="flex flex-col gap-10">
         {items.map((item, index) => {
           const isReversed = index % 2 === 1
@@ -28,12 +29,14 @@ export function WhyUsSection({ heading, items }: WhyUsSectionProps) {
             >
               <div>
                 {item.imageSrc && item.imageAlt ? (
-                  <figure className="rounded-image overflow-hidden border border-neutral-200">
+                  <figure
+                    className="rounded-image overflow-hidden border border-neutral-200"
+                    data-aos="fade-up"
+                  >
                     <Image
                       src={item.imageSrc}
                       alt={item.imageAlt}
                       className="h-auto w-full object-cover"
-                      sizes="(min-width: 1024px) 50vw, 100vw"
                     />
                     {item.imageCaption ? (
                       <figcaption className="typography-caption typography-muted border-t border-neutral-200 bg-white px-4 py-3 text-center">
@@ -45,7 +48,11 @@ export function WhyUsSection({ heading, items }: WhyUsSectionProps) {
               </div>
               <div className="flex flex-col gap-4">
                 {item.points.map((pt) => (
-                  <div key={pt.id} className="flex items-start gap-3 rounded-lg bg-neutral-50 p-4">
+                  <div
+                    key={pt.id}
+                    className="flex items-start gap-3 rounded-lg bg-neutral-50 p-4"
+                    data-aos={isReversed ? 'fade-right' : 'fade-left'}
+                  >
                     {pt.iconSrc && pt.iconAlt ? (
                       <div className="flex h-10 w-10 items-center justify-center rounded-md bg-white">
                         <Image
