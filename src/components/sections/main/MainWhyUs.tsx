@@ -1,11 +1,18 @@
 import { Image } from 'app/components/ui/Image'
+import { PathOnScroll } from 'app/components/ui/PathOnScroll'
 
 export type WhyUsItem = {
   id: string
   imageSrc: string
   imageAlt: string
   imageCaption?: string
-  points: Array<{ id: string; description: string; iconSrc: string; iconAlt: string }>
+  points: Array<{
+    id: string
+    description: string
+    iconSrc: string
+    iconAlt: string
+    title: string
+  }>
 }
 
 export type MainWhyUsProps = {
@@ -27,7 +34,7 @@ export function MainWhyUs({ heading, items }: MainWhyUsProps) {
               key={item.id}
               className={`grid grid-cols-1 items-start gap-6 sm:gap-8 lg:grid-cols-2 ${isReversed ? 'lg:[&>div:first-child]:order-2' : ''}`}
             >
-              <div>
+              <div className="lg:sticky lg:top-24">
                 {item.imageSrc && item.imageAlt ? (
                   <figure
                     className="rounded-image overflow-hidden border border-neutral-200"
@@ -47,22 +54,25 @@ export function MainWhyUs({ heading, items }: MainWhyUsProps) {
                 ) : null}
               </div>
               <div className="flex flex-col gap-4">
-                {item.points.map((pt) => (
-                  <div
-                    key={pt.id}
-                    className="flex items-start gap-3 rounded-lg bg-neutral-50 p-4"
-                    data-aos={isReversed ? 'fade-right' : 'fade-left'}
-                  >
+                {item.points.map((pt, index, arr) => (
+                  <div key={pt.id} className="relative flex items-start gap-3 rounded-lg px-4">
                     {pt.iconSrc && pt.iconAlt ? (
-                      <div className="flex h-10 w-10 items-center justify-center rounded-md bg-white">
+                      <div className="flex items-center rounded-full bg-neutral-50">
                         <Image
                           src={pt.iconSrc}
                           alt={pt.iconAlt}
-                          className="h-5 w-5 object-contain"
+                          className="m-2 flex h-10 w-10 object-contain"
                         />
                       </div>
                     ) : null}
-                    <p className="typography-body-small typography-emphasis">{pt.description}</p>
+                    {index < arr.length - 1 && (
+                      <PathOnScroll type="downShort" offset={50} className="top-15 left-10" />
+                    )}
+
+                    <div className="flex w-fit flex-col gap-3">
+                      <h4 className="typography-h4">{pt.title}</h4>
+                      <p className="typography-body-small typography-emphasis">{pt.description}</p>
+                    </div>
                   </div>
                 ))}
               </div>

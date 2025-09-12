@@ -56,13 +56,45 @@ export default function Home() {
             points: [
               {
                 id: 'w1p1',
-                description: 'High quality components with rigorous testing.',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
                 iconSrc: '/logo.png',
                 iconAlt: 'Icon',
               },
               {
                 id: 'w1p2',
-                description: 'Expert installation and support.',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
+                iconSrc: '/logo.png',
+                iconAlt: 'Icon',
+              },
+              {
+                id: 'w1p3',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
+                iconSrc: '/logo.png',
+                iconAlt: 'Icon',
+              },
+              {
+                id: 'w1p4',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
+                iconSrc: '/logo.png',
+                iconAlt: 'Icon',
+              },
+              {
+                id: 'w1p5',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
                 iconSrc: '/logo.png',
                 iconAlt: 'Icon',
               },
@@ -76,13 +108,45 @@ export default function Home() {
             points: [
               {
                 id: 'w2p1',
-                description: 'Transparent pricing and clear timelines.',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
                 iconSrc: '/logo.png',
                 iconAlt: 'Icon',
               },
               {
                 id: 'w2p2',
-                description: 'Sustainable practices and long-term reliability.',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
+                iconSrc: '/logo.png',
+                iconAlt: 'Icon',
+              },
+              {
+                id: 'w1p3',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
+                iconSrc: '/logo.png',
+                iconAlt: 'Icon',
+              },
+              {
+                id: 'w1p4',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
+                iconSrc: '/logo.png',
+                iconAlt: 'Icon',
+              },
+              {
+                id: 'w1p5',
+                title: 'Dach- und Fassaden-PV-Lösungen',
+                description:
+                  'High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ',
                 iconSrc: '/logo.png',
                 iconAlt: 'Icon',
               },

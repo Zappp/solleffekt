@@ -45,7 +45,7 @@ export function SharedOptimize({
           ))}
         </div>
       </div>
-      <div className="overflow-hidden rounded-lg border border-neutral-200" data-aos="fade-left">
+      <div className="overflow-hidden rounded-lg border border-neutral-200" data-aos="fade-up">
         <Image src={imageSrc} alt={imageAlt} className="rounded-image h-auto w-full object-cover" />
       </div>
     </section>

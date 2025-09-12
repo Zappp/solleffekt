@@ -55,7 +55,7 @@ export function ProductsSolutions({
       <div className="relative md:py-10">
         <div className="flex flex-col gap-8 md:py-10">
           {items.map((item) => (
-            <div key={item.id} className="flex items-start gap-4" data-aos="fade-left">
+            <div key={item.id} className="flex items-start gap-4" data-aos="fade-up">
               <div className="relative flex w-14 flex-0 items-center justify-center rounded-full bg-indigo-50 ring-1 ring-indigo-100">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-100">
                   <Image src={item.iconSrc} alt={item.iconAlt} className="h-5 w-5 object-contain" />

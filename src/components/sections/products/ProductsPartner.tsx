@@ -28,16 +28,12 @@ export function ProductsPartner({ items }: { items: PartnerItem[] }) {
         return (
           <div key={block.id} className={`grid grid-cols-1 gap-8 ${gridCols} ${swapOrder}`}>
             <div className="flex flex-col gap-6">
-              <div className="typography-overline" data-aos={reversed ? 'fade-left' : 'fade-right'}>
+              <div className="typography-overline" data-aos="fade-up">
                 {block.overline}
               </div>
               <div className="flex flex-col gap-8">
                 {block.points.map((pt) => (
-                  <div
-                    key={pt.id}
-                    className="flex items-start gap-4"
-                    data-aos={reversed ? 'fade-left' : 'fade-right'}
-                  >
+                  <div key={pt.id} className="flex items-start gap-4" data-aos="fade-up">
                     <div className="relative flex w-12 flex-0 items-center justify-center rounded-full bg-indigo-50 ring-1 ring-indigo-100">
                       <div className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100">
                         <Image
@@ -59,10 +55,7 @@ export function ProductsPartner({ items }: { items: PartnerItem[] }) {
             </div>
 
             <div className="relative">
-              <div
-                className="mx-auto w-full max-w-md md:max-w-none"
-                data-aos={reversed ? 'fade-right' : 'fade-left'}
-              >
+              <div className="mx-auto w-full max-w-md md:max-w-none" data-aos="fade-up">
                 <Image
                   src={block.imageSrc}
                   alt={block.imageAlt}
