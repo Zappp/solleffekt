@@ -1,7 +1,7 @@
 import { Image } from 'app/components/ui/Image'
 import Link from 'next/link'
 
-export type SolarPanelsHeaderSectionProps = {
+export type ProductsHeaderProps = {
   title: string
   description: string
   imageSrc: string
@@ -12,7 +12,7 @@ export type SolarPanelsHeaderSectionProps = {
   secondaryCtaHref?: string
 }
 
-export function SolarPanelsHeaderSection({
+export function ProductsHeader({
   title,
   description,
   imageSrc,
@@ -21,7 +21,7 @@ export function SolarPanelsHeaderSection({
   primaryCtaHref,
   secondaryCtaLabel,
   secondaryCtaHref,
-}: SolarPanelsHeaderSectionProps) {
+}: ProductsHeaderProps) {
   return (
     <section className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
       <div className="flex flex-col gap-4" data-aos="fade-up">

@@ -8,12 +8,12 @@ export type WhyUsItem = {
   points: Array<{ id: string; description: string; iconSrc: string; iconAlt: string }>
 }
 
-export type WhyUsSectionProps = {
+export type MainWhyUsProps = {
   heading: string
   items: WhyUsItem[]
 }
 
-export function WhyUsSection({ heading, items }: WhyUsSectionProps) {
+export function MainWhyUs({ heading, items }: MainWhyUsProps) {
   return (
     <section className="flex flex-col gap-6">
       <h2 data-aos="fade-up" className="typography-h2">

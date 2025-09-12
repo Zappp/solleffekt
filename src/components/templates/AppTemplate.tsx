@@ -20,11 +20,6 @@ export function AppTemplate({ children }: { children: ReactNode }) {
                 href: '/products/solar-panels',
                 description: 'High-efficiency modules',
               },
-              {
-                label: 'Inverters',
-                href: '/products/inverters',
-                description: 'Reliable energy conversion',
-              },
             ],
           },
           {
@@ -32,8 +27,13 @@ export function AppTemplate({ children }: { children: ReactNode }) {
             children: [
               {
                 label: 'Batteries',
-                href: '/products/batteries',
+                href: '/solutions/inverters',
                 description: 'Store surplus energy',
+              },
+              {
+                label: 'Inverters',
+                href: '/solutions/inverters',
+                description: 'Reliable energy conversion',
               },
             ],
           },

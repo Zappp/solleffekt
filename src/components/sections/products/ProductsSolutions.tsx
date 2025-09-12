@@ -8,7 +8,7 @@ export type SolutionItem = {
   iconAlt: string
 }
 
-export function SolarPanelsSolutionsSection({
+export function ProductsSolutions({
   overline,
   heading,
   descriptions,

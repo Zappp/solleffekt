@@ -1,5 +1,5 @@
-import { SolutionsFeatures } from 'app/components/sections/SolutionsFeatures'
-import { SolutionsHeader } from 'app/components/sections/SolutionsHeader'
+import { SolutionsFeatures } from 'app/components/sections/solutions/SolutionsFeatures'
+import { SolutionsHeader } from 'app/components/sections/solutions/SolutionsHeader'
 
 export default function InvertersPage() {
   return (

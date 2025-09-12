@@ -1,13 +1,13 @@
-import { MissionSection } from 'app/components/sections/MissionSection'
-import { OptimizeSection } from 'app/components/sections/OptimizeSection'
-import { ProductsSection } from 'app/components/sections/ProductsSection'
-import { TitleSection } from 'app/components/sections/TitleSection'
-import { WhyUsSection } from 'app/components/sections/WhyUsSection'
+import { MainHeader } from 'app/components/sections/main/MainHeader'
+import { MainMission } from 'app/components/sections/main/MainMission'
+import { MainProducts } from 'app/components/sections/main/MainProducts'
+import { MainWhyUs } from 'app/components/sections/main/MainWhyUs'
+import { SharedOptimize } from 'app/components/sections/shared/SharedOptimize'
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-12">
-      <TitleSection
+      <MainHeader
         title="Lorem ipsum dolor sit amet"
         subtitle="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         imageSrc="/test-image.jpg"
@@ -15,7 +15,7 @@ export default function Home() {
         caption="Small image caption"
       />
 
-      <ProductsSection
+      <MainProducts
         heading="Products"
         products={[
           {
@@ -45,7 +45,7 @@ export default function Home() {
         ]}
       />
 
-      <WhyUsSection
+      <MainWhyUs
         heading="Why us"
         items={[
           {
@@ -91,14 +91,14 @@ export default function Home() {
         ]}
       />
 
-      <MissionSection
+      <MainMission
         title="Our mission"
         subtitle="ENABLING CLEAN ENERGY FOR EVERYONE"
         imageSrc="/test-image.jpg"
         imageAlt="Mission"
       />
 
-      <OptimizeSection
+      <SharedOptimize
         overline="Optimization"
         title="Optimize your system"
         subtitle="Maximize performance with smart monitoring and proactive maintenance."

@@ -1,13 +1,13 @@
-import { OptimizeSection } from 'app/components/sections/OptimizeSection'
-import { SectionSeparator } from 'app/components/sections/SectionSeparator'
-import { SolarPanelsHeaderSection } from 'app/components/sections/SolarPanelsHeaderSection'
-import { SolarPanelsPartnerSection } from 'app/components/sections/SolarPanelsPartnerSection'
-import { SolarPanelsSolutionsSection } from 'app/components/sections/SolarPanelsSolutionsSection'
+import { ProductsHeader } from 'app/components/sections/products/ProductsHeader'
+import { ProductsPartner } from 'app/components/sections/products/ProductsPartner'
+import { ProductsSolutions } from 'app/components/sections/products/ProductsSolutions'
+import { SectionSeparator } from 'app/components/sections/shared/SectionSeparator'
+import { SharedOptimize } from 'app/components/sections/shared/SharedOptimize'
 
 export default function SolarPanelsPage() {
   return (
     <div className="flex flex-col gap-12">
-      <SolarPanelsHeaderSection
+      <ProductsHeader
         title="Solar Panels"
         description="High-efficiency photovoltaic modules tailored for residential and commercial installations."
         imageSrc="/test-image.jpg"
@@ -20,7 +20,7 @@ export default function SolarPanelsPage() {
 
       <SectionSeparator backgroundImageSrc="/test-image.jpg" />
 
-      <SolarPanelsSolutionsSection
+      <ProductsSolutions
         overline="Unsere Solar Lösungen"
         heading="Alles aus einer Hand - alle Komponenten aufeinander abgestimmt."
         descriptions={[
@@ -57,7 +57,7 @@ export default function SolarPanelsPage() {
         ]}
       />
 
-      <SolarPanelsPartnerSection
+      <ProductsPartner
         items={[
           {
             id: 'b1',
@@ -117,7 +117,7 @@ export default function SolarPanelsPage() {
         ]}
       />
 
-      <OptimizeSection
+      <SharedOptimize
         overline="Optimization"
         title="Optimize your system"
         subtitle="Maximize performance with smart monitoring and proactive maintenance."

@@ -1,6 +1,6 @@
 import { Image } from 'app/components/ui/Image'
 
-export type MissionSectionProps = {
+export type MainMissionProps = {
   date?: string
   title: string
   subtitle: string
@@ -8,7 +8,7 @@ export type MissionSectionProps = {
   imageAlt: string
 }
 
-export function MissionSection({ title, subtitle, imageSrc, imageAlt }: MissionSectionProps) {
+export function MainMission({ title, subtitle, imageSrc, imageAlt }: MainMissionProps) {
   return (
     <section className="flex flex-col gap-4">
       <h2 className="typography-h2" data-aos="fade-right">

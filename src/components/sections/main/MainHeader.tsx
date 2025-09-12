@@ -1,6 +1,6 @@
 import { Image } from 'app/components/ui/Image'
 
-export type TitleSectionProps = {
+export type MainHeaderProps = {
   title: string
   subtitle: string
   imageAlt: string
@@ -8,7 +8,7 @@ export type TitleSectionProps = {
   caption?: string
 }
 
-export function TitleSection({ title, subtitle, imageAlt, imageSrc, caption }: TitleSectionProps) {
+export function MainHeader({ title, subtitle, imageAlt, imageSrc, caption }: MainHeaderProps) {
   return (
     <section className="flex flex-col gap-6" data-aos="fade">
       <div className="flex flex-col gap-2">

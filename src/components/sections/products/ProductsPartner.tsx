@@ -8,7 +8,7 @@ export type PartnerPoint = {
   iconAlt: string
 }
 
-export type PartnerBlock = {
+export type PartnerItem = {
   id: string
   overline: string
   points: PartnerPoint[]
@@ -16,7 +16,7 @@ export type PartnerBlock = {
   imageAlt: string
 }
 
-export function SolarPanelsPartnerSection({ items }: { items: PartnerBlock[] }) {
+export function ProductsPartner({ items }: { items: PartnerItem[] }) {
   return (
     <section className="flex flex-col gap-12">
       {items.map((block, index) => {

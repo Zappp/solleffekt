@@ -1,4 +1,4 @@
-import { Image } from '../ui/Image'
+import { Image } from 'app/components/ui/Image'
 
 interface Feature {
   iconSrc: string

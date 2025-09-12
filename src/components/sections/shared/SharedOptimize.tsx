@@ -7,7 +7,7 @@ export type OptimizeItem = {
   description: string
 }
 
-export type OptimizeSectionProps = {
+export type SharedOptimizeProps = {
   overline: string
   title: string
   subtitle: string
@@ -16,14 +16,14 @@ export type OptimizeSectionProps = {
   items: OptimizeItem[]
 }
 
-export function OptimizeSection({
+export function SharedOptimize({
   overline,
   title,
   subtitle,
   imageSrc,
   imageAlt,
   items,
-}: OptimizeSectionProps) {
+}: SharedOptimizeProps) {
   return (
     <section className="grid grid-cols-1 gap-8 lg:grid-cols-2">
       <div className="flex flex-col gap-4">

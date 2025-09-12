@@ -9,12 +9,12 @@ export type ProductCard = {
   imageAlt: string
 }
 
-export type ProductsSectionProps = {
+export type MainProductsProps = {
   heading: string
   products: ProductCard[]
 }
 
-export function ProductsSection({ heading, products }: ProductsSectionProps) {
+export function MainProducts({ heading, products }: MainProductsProps) {
   return (
     <section className="flex flex-col gap-6">
       <h2 className="typography-h2" data-aos="fade-up">
