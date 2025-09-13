@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
+  experimental: {
+    globalNotFound: true,
+  },
 }
 
 export default withNextIntl(nextConfig)
