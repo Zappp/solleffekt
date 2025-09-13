@@ -8,21 +8,17 @@ export type SolutionItem = {
   iconAlt: string
 }
 
-export function ProductsSolutions({
-  overline,
-  heading,
-  descriptions,
-  ctaLabel,
-  ctaHref,
-  items,
-}: {
+export type ProductsSolutionsProps = {
   overline: string
   heading: string
   descriptions?: string[]
   ctaLabel: string
   ctaHref: string
   items: SolutionItem[]
-}) {
+}
+
+export function ProductsSolutions({ data }: { data: ProductsSolutionsProps }) {
+  const { overline, heading, descriptions, ctaLabel, ctaHref, items } = data
   return (
     <section className="section-layout grid grid-cols-1 gap-10 md:grid-cols-2">
       <div className="flex flex-col gap-6">

@@ -16,14 +16,8 @@ export type SharedOptimizeProps = {
   items: OptimizeItem[]
 }
 
-export function SharedOptimize({
-  overline,
-  title,
-  subtitle,
-  imageSrc,
-  imageAlt,
-  items,
-}: SharedOptimizeProps) {
+export function SharedOptimize({ data }: { data: SharedOptimizeProps }) {
+  const { overline, title, subtitle, imageSrc, imageAlt, items } = data
   return (
     <section className="section-layout grid grid-cols-1 gap-8 lg:grid-cols-2">
       <div className="flex flex-col gap-4">

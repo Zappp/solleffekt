@@ -1,17 +1,18 @@
 import { Image } from 'app/components/ui/Image'
 
-interface Feature {
+export interface Feature {
   iconSrc: string
   iconAlt: string
   title: string
   description: string
 }
 
-interface SolutionsFeaturesProps {
+export interface SolutionsFeaturesProps {
   features: Feature[]
 }
 
-export function SolutionsFeatures({ features }: SolutionsFeaturesProps) {
+export function SolutionsFeatures({ data }: { data: SolutionsFeaturesProps }) {
+  const { features } = data
   return (
     <section className="section-layout flex flex-wrap justify-center gap-8 py-8">
       {features.map((feature, idx) => (

@@ -33,7 +33,13 @@ export type NavbarBrand = {
   logoAlt?: string
 }
 
-export function Navbar({ brand, items }: { brand: NavbarBrand; items: NavbarItem[] }) {
+export type NavbarProps = {
+  brand: NavbarBrand
+  items: NavbarItem[]
+}
+
+export function Navbar({ data }: { data: NavbarProps }) {
+  const { brand, items } = data
   const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
 

@@ -16,7 +16,10 @@ export type PartnerItem = {
   imageAlt: string
 }
 
-export function ProductsPartner({ items }: { items: PartnerItem[] }) {
+export type ProductsPartnerProps = PartnerItem[]
+
+export function ProductsPartner({ data }: { data: ProductsPartnerProps }) {
+  const items = data
   return (
     <section className="section-layout flex flex-col gap-12">
       {items.map((block, index) => {

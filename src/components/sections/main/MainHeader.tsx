@@ -8,7 +8,8 @@ export type MainHeaderProps = {
   caption?: string
 }
 
-export function MainHeader({ title, subtitle, imageAlt, imageSrc, caption }: MainHeaderProps) {
+export function MainHeader({ data }: { data: MainHeaderProps }) {
+  const { title, subtitle, imageAlt, imageSrc, caption } = data
   return (
     <section className="section-layout flex flex-col gap-6" data-aos="fade">
       <div className="flex flex-col gap-2">

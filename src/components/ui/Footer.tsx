@@ -20,7 +20,8 @@ export interface FooterProps {
   rightInfo: string
 }
 
-export function Footer({ logo, links, leftInfo, rightInfo }: FooterProps) {
+export function Footer({ data }: { data: FooterProps }) {
+  const { logo, links, leftInfo, rightInfo } = data
   return (
     <>
       <div className="pointer-events-none absolute top-0 left-0 w-full border-t border-indigo-200/60" />

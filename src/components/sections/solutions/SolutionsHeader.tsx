@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-interface SolutionsHeaderProps {
+export interface SolutionsHeaderProps {
   overline: string
   title: string
   description: string
@@ -8,13 +8,8 @@ interface SolutionsHeaderProps {
   buttonHref: string
 }
 
-export function SolutionsHeader({
-  overline,
-  title,
-  description,
-  buttonLabel,
-  buttonHref,
-}: SolutionsHeaderProps) {
+export function SolutionsHeader({ data }: { data: SolutionsHeaderProps }) {
+  const { overline, title, description, buttonLabel, buttonHref } = data
   return (
     <section
       className="section-layout flex flex-col items-center justify-center gap-4 py-16 text-center"

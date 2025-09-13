@@ -1,10 +1,10 @@
-export function SectionSeparator({
-  backgroundImageSrc,
-  height = 150,
-}: {
+export type SectionSeparatorProps = {
   backgroundImageSrc: string
   height?: number
-}) {
+}
+
+export function SectionSeparator({ data }: { data: SectionSeparatorProps }) {
+  const { backgroundImageSrc, height = 150 } = data
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
   const url = `${basePath}${backgroundImageSrc}`
   return (

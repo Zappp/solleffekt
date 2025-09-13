@@ -20,7 +20,8 @@ export type MainWhyUsProps = {
   items: WhyUsItem[]
 }
 
-export function MainWhyUs({ heading, items }: MainWhyUsProps) {
+export function MainWhyUs({ data }: { data: MainWhyUsProps }) {
+  const { heading, items } = data
   return (
     <section className="section-layout flex flex-col gap-6">
       <h2 data-aos="fade-up" className="typography-h2">

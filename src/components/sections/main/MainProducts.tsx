@@ -11,17 +11,18 @@ export type ProductCard = {
 
 export type MainProductsProps = {
   heading: string
-  products: ProductCard[]
+  items: ProductCard[]
 }
 
-export function MainProducts({ heading, products }: MainProductsProps) {
+export function MainProducts({ data }: { data: MainProductsProps }) {
+  const { heading, items } = data
   return (
     <section className="section-layout flex flex-col gap-6">
       <h2 className="typography-h2" data-aos="fade-up">
         {heading}
       </h2>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {products.map((p) => (
+        {items.map((p) => (
           <article
             key={p.id}
             className="flex flex-col overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm"

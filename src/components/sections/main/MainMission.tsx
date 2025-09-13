@@ -8,7 +8,8 @@ export type MainMissionProps = {
   imageAlt: string
 }
 
-export function MainMission({ title, subtitle, imageSrc, imageAlt }: MainMissionProps) {
+export function MainMission({ data }: { data: MainMissionProps }) {
+  const { title, subtitle, imageSrc, imageAlt } = data
   return (
     <section className="section-layout flex flex-col gap-4">
       <h2 className="typography-h2" data-aos="fade-right">

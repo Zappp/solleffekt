@@ -12,16 +12,17 @@ export type ProductsHeaderProps = {
   secondaryCtaHref?: string
 }
 
-export function ProductsHeader({
-  title,
-  description,
-  imageSrc,
-  imageAlt,
-  primaryCtaLabel,
-  primaryCtaHref,
-  secondaryCtaLabel,
-  secondaryCtaHref,
-}: ProductsHeaderProps) {
+export function ProductsHeader({ data }: { data: ProductsHeaderProps }) {
+  const {
+    title,
+    description,
+    imageSrc,
+    imageAlt,
+    primaryCtaLabel,
+    primaryCtaHref,
+    secondaryCtaLabel,
+    secondaryCtaHref,
+  } = data
   return (
     <section className="section-layout grid grid-cols-1 items-center gap-8 md:grid-cols-2">
       <div className="flex flex-col gap-4" data-aos="fade-up">
