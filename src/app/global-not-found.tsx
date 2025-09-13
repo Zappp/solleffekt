@@ -19,7 +19,7 @@ export default function GlobalNotFound() {
     <html lang="en">
       <body className={`${nataSans.variable} antialiased`}>
         <AppTemplate>
-          <section className="flex min-h-[60vh] flex-col items-center justify-center gap-6 text-center">
+          <section className="section-layout flex min-h-[60vh] flex-col items-center justify-center gap-6 text-center">
             <span className="typography-h1 text-7xl font-bold text-yellow-400 md:text-9xl">
               404
             </span>

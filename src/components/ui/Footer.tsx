@@ -26,13 +26,7 @@ export function Footer({ logo, links, leftInfo, rightInfo }: FooterProps) {
       <div className="pointer-events-none absolute top-0 left-0 w-full border-t border-indigo-200/60" />
       <div className="mx-auto flex max-w-6xl flex-col flex-wrap items-center justify-center gap-4 border-b border-indigo-200/60 px-4 py-10 md:flex-row md:gap-8">
         <div className="flex min-w-[160px] flex-1 items-center justify-center">
-          <Image
-            src={logo.src}
-            alt={logo.alt}
-            width={logo.width}
-            height={logo.height}
-            className="h-16 w-auto"
-          />
+          <Image src={logo.src} alt={logo.alt} className="h-30 w-50 object-contain" />
         </div>
         <nav className="flex flex-2 flex-col flex-wrap items-center gap-1 sm:flex-row sm:justify-center md:gap-14">
           {links.map((link) => (

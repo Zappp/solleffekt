@@ -16,7 +16,7 @@ export type MainProductsProps = {
 
 export function MainProducts({ heading, products }: MainProductsProps) {
   return (
-    <section className="flex flex-col gap-6">
+    <section className="section-layout flex flex-col gap-6">
       <h2 className="typography-h2" data-aos="fade-up">
         {heading}
       </h2>

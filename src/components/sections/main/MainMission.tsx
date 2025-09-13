@@ -10,7 +10,7 @@ export type MainMissionProps = {
 
 export function MainMission({ title, subtitle, imageSrc, imageAlt }: MainMissionProps) {
   return (
-    <section className="flex flex-col gap-4">
+    <section className="section-layout flex flex-col gap-4">
       <h2 className="typography-h2" data-aos="fade-right">
         {title}
       </h2>

@@ -20,12 +20,9 @@ export type MainWhyUsProps = {
   items: WhyUsItem[]
 }
 
-//TODO add 404
-//TODO add fill image prop
-
 export function MainWhyUs({ heading, items }: MainWhyUsProps) {
   return (
-    <section className="flex flex-col gap-6">
+    <section className="section-layout flex flex-col gap-6">
       <h2 data-aos="fade-up" className="typography-h2">
         {heading}
       </h2>

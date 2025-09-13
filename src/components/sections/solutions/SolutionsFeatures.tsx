@@ -13,7 +13,7 @@ interface SolutionsFeaturesProps {
 
 export function SolutionsFeatures({ features }: SolutionsFeaturesProps) {
   return (
-    <section className="flex flex-wrap justify-center gap-8 py-8">
+    <section className="section-layout flex flex-wrap justify-center gap-8 py-8">
       {features.map((feature, idx) => (
         <div
           key={idx}

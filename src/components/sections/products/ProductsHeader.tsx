@@ -23,7 +23,7 @@ export function ProductsHeader({
   secondaryCtaHref,
 }: ProductsHeaderProps) {
   return (
-    <section className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+    <section className="section-layout grid grid-cols-1 items-center gap-8 md:grid-cols-2">
       <div className="flex flex-col gap-4" data-aos="fade-up">
         <h1 className="typography-h1">{title}</h1>
         <p className="typography-body typography-emphasis">{description}</p>
@@ -48,7 +48,7 @@ export function ProductsHeader({
       </div>
 
       <div className="rounded-image overflow-hidden border border-neutral-200" data-aos="fade">
-        <Image src={imageSrc} alt={imageAlt} className="h-auto w-full object-cover" />
+        <Image src={imageSrc} alt={imageAlt} className="h-auto w-full object-cover" priority />
       </div>
     </section>
   )

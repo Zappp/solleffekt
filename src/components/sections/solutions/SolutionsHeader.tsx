@@ -17,7 +17,7 @@ export function SolutionsHeader({
 }: SolutionsHeaderProps) {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-4 py-16 text-center"
+      className="section-layout flex flex-col items-center justify-center gap-4 py-16 text-center"
       data-aos="fade"
     >
       <div className="typography-overline">{overline}</div>

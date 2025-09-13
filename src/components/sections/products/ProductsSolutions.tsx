@@ -24,7 +24,7 @@ export function ProductsSolutions({
   items: SolutionItem[]
 }) {
   return (
-    <section className="grid grid-cols-1 gap-10 md:grid-cols-2">
+    <section className="section-layout grid grid-cols-1 gap-10 md:grid-cols-2">
       <div className="flex flex-col gap-6">
         <div className="typography-overline" data-aos="fade-up">
           {overline}

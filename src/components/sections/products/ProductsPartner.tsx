@@ -18,7 +18,7 @@ export type PartnerItem = {
 
 export function ProductsPartner({ items }: { items: PartnerItem[] }) {
   return (
-    <section className="flex flex-col gap-12">
+    <section className="section-layout flex flex-col gap-12">
       {items.map((block, index) => {
         const reversed = index % 2 === 1
         const gridCols = reversed ? 'md:grid-cols-[1fr_1fr]' : 'items-center md:grid-cols-[2fr_1fr]'

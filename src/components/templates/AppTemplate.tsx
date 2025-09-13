@@ -72,7 +72,7 @@ export function AppTemplate({ children }: { children: ReactNode }) {
         <Navbar {...navBarProps} />
       </header>
 
-      <main className="mx-auto max-w-6xl px-4 py-6 sm:px-6">{children}</main>
+      <main>{children}</main>
 
       <footer className="relative mt-12 w-full bg-white/80">
         <Footer {...footerProps} />

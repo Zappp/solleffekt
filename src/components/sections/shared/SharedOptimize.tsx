@@ -25,7 +25,7 @@ export function SharedOptimize({
   items,
 }: SharedOptimizeProps) {
   return (
-    <section className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+    <section className="section-layout grid grid-cols-1 gap-8 lg:grid-cols-2">
       <div className="flex flex-col gap-4">
         <div data-aos="fade-up" className="typography-overline">
           {overline}
