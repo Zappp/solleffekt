@@ -2,8 +2,6 @@ import { ReactNode } from 'react'
 import { Footer } from '../ui/Footer'
 import { Navbar, NavbarItem } from '../ui/Navbar'
 
-//TODO fix section separator image on mobile
-
 export function AppTemplate({ children }: { children: ReactNode }) {
   const navBarProps = {
     brand: { label: 'Solleffekt', href: '/', logoSrc: '/logo.png', logoAlt: 'Solleffekt' },
