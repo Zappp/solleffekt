@@ -20,6 +20,9 @@ export type MainWhyUsProps = {
   items: WhyUsItem[]
 }
 
+//TODO add 404
+//TODO add fill image prop
+
 export function MainWhyUs({ heading, items }: MainWhyUsProps) {
   return (
     <section className="flex flex-col gap-6">
@@ -53,20 +56,21 @@ export function MainWhyUs({ heading, items }: MainWhyUsProps) {
                   </figure>
                 ) : null}
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-18">
                 {item.points.map((pt, index, arr) => (
-                  <div key={pt.id} className="relative flex items-start gap-3 rounded-lg px-4">
+                  <div key={pt.id} className="relative flex items-start gap-4 rounded-lg px-4">
                     {pt.iconSrc && pt.iconAlt ? (
-                      <div className="flex items-center rounded-full bg-neutral-50">
+                      <div className="relative flex h-15 w-15 flex-shrink-0 items-center rounded-full bg-neutral-50">
                         <Image
                           src={pt.iconSrc}
                           alt={pt.iconAlt}
-                          className="m-2 flex h-10 w-10 object-contain"
+                          className="flex object-cover p-3"
+                          fill
                         />
                       </div>
                     ) : null}
                     {index < arr.length - 1 && (
-                      <PathOnScroll type="downShort" offset={50} className="top-15 left-10" />
+                      <PathOnScroll type="down" className="top-16 left-11" />
                     )}
 
                     <div className="flex w-fit flex-col gap-3">
