@@ -7,7 +7,7 @@ const basePath = isProd ? '/solleffekt' : ''
 const withNextIntl = createNextIntlPlugin()
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: isProd ? 'export' : undefined,
   skipTrailingSlashRedirect: true,
   trailingSlash: true,
   images: {
@@ -16,9 +16,6 @@ const nextConfig: NextConfig = {
   basePath: basePath,
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
-  },
-  experimental: {
-    globalNotFound: true,
   },
 }
 

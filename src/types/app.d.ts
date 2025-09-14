@@ -40,7 +40,6 @@ export type AppData = {
   pages: Array<{
     id: string
     slug: string
-    type: 'main' | 'product' | 'solution'
     data: PageData
   }>
 }

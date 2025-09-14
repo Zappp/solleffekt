@@ -7,15 +7,10 @@ export interface Feature {
   description: string
 }
 
-export interface SolutionsFeaturesProps {
-  features: Feature[]
-}
-
-export function SolutionsFeatures({ data }: { data: SolutionsFeaturesProps }) {
-  const { features } = data
+export function SolutionsFeatures({ data }: { data: Feature[] }) {
   return (
     <section className="section-layout flex flex-wrap justify-center gap-8 py-8">
-      {features.map((feature, idx) => (
+      {data.map((feature, idx) => (
         <div
           key={idx}
           className="flex w-full max-w-xs flex-col items-center gap-4 text-center"

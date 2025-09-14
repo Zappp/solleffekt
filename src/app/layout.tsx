@@ -3,14 +3,8 @@ import { AOS } from 'app/components/ui/AOS'
 import { AppData } from 'app/types/app'
 import fs from 'fs/promises'
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
 import path from 'path'
 import './globals.css'
-
-const nataSans = Geist({
-  variable: '--font-sans',
-  subsets: ['latin'],
-})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -27,7 +21,7 @@ export default async function RootLayout({
   const appData: AppData = JSON.parse(jsonData)
   return (
     <html lang="en">
-      <body className={`${nataSans.variable} antialiased`}>
+      <body className="antialiased">
         <AOS />
         <AppTemplate data={appData}>{children}</AppTemplate>
       </body>

@@ -59,7 +59,6 @@
     {
       "id": "home",
       "slug": "",
-      "type": "main",
       "data": {
         "header": {
           "title": "Lorem ipsum dolor sit amet",
@@ -223,7 +222,6 @@
     {
       "id": "solar-panels",
       "slug": "products/solar-panels",
-      "type": "product",
       "data": {
         "header": {
           "title": "Solar Panels",
@@ -354,7 +352,6 @@
     {
       "id": "inverters",
       "slug": "solutions/inverters",
-      "type": "solution",
       "data": {
         "header": {
           "overline": "Inverters",
