@@ -1,6 +1,6 @@
 import { ProductsPage } from 'app/components/pages/ProductsPage'
 import { SolutionsPage } from 'app/components/pages/SolutionsPage'
-import { AppData, ProductPageData, SolutionPageData } from 'app/types/app'
+import { AppData, ProductsPageData, SolutionsPageData } from 'app/types/app'
 import fs from 'fs/promises'
 import { notFound } from 'next/navigation'
 import path from 'path'
@@ -29,12 +29,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
   if (!page) notFound()
 
   if (/^products\/+/.test(page.slug)) {
-    const pageData = page.data as ProductPageData
+    const pageData = page.data as ProductsPageData
     return <ProductsPage data={pageData} />
   }
 
   if (/^solutions\/+/.test(page.slug)) {
-    const pageData = page.data as SolutionPageData
+    const pageData = page.data as SolutionsPageData
     return <SolutionsPage data={pageData} />
   }
 

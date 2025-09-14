@@ -7,7 +7,9 @@ export interface Feature {
   description: string
 }
 
-export function SolutionsFeatures({ data }: { data: Feature[] }) {
+export type SolutionsFeaturesProps = Feature[]
+
+export function SolutionsFeatures({ data }: { data: SolutionsFeaturesProps }) {
   return (
     <section className="section-layout flex flex-wrap justify-center gap-8 py-8">
       {data.map((feature, idx) => (
