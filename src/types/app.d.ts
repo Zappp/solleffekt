@@ -34,7 +34,7 @@ export interface SolutionsPageData {
 
 export type PageData = MainPageData | ProductsPageData | SolutionsPageData
 
-export type AppData = {
+export type Page = {
   navbar: NavbarProps
   footer: FooterProps
   pages: Array<{
@@ -43,3 +43,5 @@ export type AppData = {
     data: PageData
   }>
 }
+
+export type AppData = Record<string, Page>

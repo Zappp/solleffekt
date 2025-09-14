@@ -1,9 +1,4 @@
-import { AppTemplate } from 'app/components/templates/AppTemplate'
-import { AOS } from 'app/components/ui/AOS'
-import { AppData } from 'app/types/app'
-import fs from 'fs/promises'
 import type { Metadata } from 'next'
-import path from 'path'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -16,15 +11,9 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const filePath = path.join(process.cwd(), 'src/data/appData.json')
-  const jsonData = await fs.readFile(filePath, 'utf-8')
-  const appData: AppData = JSON.parse(jsonData)
   return (
-    <html lang="en">
-      <body className="antialiased">
-        <AOS />
-        <AppTemplate data={appData}>{children}</AppTemplate>
-      </body>
+    <html>
+      <body className="antialiased">{children}</body>
     </html>
   )
 }

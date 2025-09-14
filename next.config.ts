@@ -1,10 +1,7 @@
 import type { NextConfig } from 'next'
-import createNextIntlPlugin from 'next-intl/plugin'
 
 const isProd = process.env.NODE_ENV === 'production'
 const basePath = isProd ? '/solleffekt' : ''
-
-const withNextIntl = createNextIntlPlugin()
 
 const nextConfig: NextConfig = {
   output: isProd ? 'export' : undefined,
@@ -19,4 +16,4 @@ const nextConfig: NextConfig = {
   },
 }
 
-export default withNextIntl(nextConfig)
+export default nextConfig
