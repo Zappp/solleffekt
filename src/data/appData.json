@@ -3,23 +3,23 @@
     "navbar": {
       "brand": {
         "label": "Solleffekt",
-        "href": "/",
+        "href": "/en",
         "logoSrc": "/logo.png",
         "logoAlt": "Solleffekt"
       },
       "items": [
-        { "type": "link", "label": "Home", "href": "/" },
+        { "type": "link", "label": "Home", "href": "/en" },
         {
           "type": "link",
           "label": "Products",
-          "href": "/products",
+          "href": "/en/products",
           "segments": [
             {
               "title": "Products",
               "children": [
                 {
                   "label": "Solar Panels",
-                  "href": "/products/solar-panels",
+                  "href": "/en/products/solar-panels",
                   "description": "High-efficiency modules"
                 }
               ]
@@ -29,19 +29,19 @@
               "children": [
                 {
                   "label": "Batteries",
-                  "href": "/solutions/inverters",
+                  "href": "/en/solutions/inverters",
                   "description": "Store surplus energy"
                 },
                 {
                   "label": "Inverters",
-                  "href": "/solutions/inverters",
+                  "href": "/en/solutions/inverters",
                   "description": "Reliable energy conversion"
                 }
               ]
             }
           ]
         },
-        { "type": "link", "label": "About", "href": "/about" },
+        { "type": "link", "label": "About", "href": "/en/about" },
         {
           "type": "button",
           "label": "Contact",
@@ -53,10 +53,10 @@
     "footer": {
       "logo": { "src": "/logo.png", "alt": "Solleffekt Logo", "width": 160, "height": 64 },
       "links": [
-        { "href": "/about", "label": "About Us" },
-        { "href": "/blog", "label": "Blog" },
-        { "href": "/imprint", "label": "Imprint" },
-        { "href": "/privacy-policy", "label": "Privacy Policy" }
+        { "href": "/en/about", "label": "About Us" },
+        { "href": "/en/blog", "label": "Blog" },
+        { "href": "/en/imprint", "label": "Imprint" },
+        { "href": "/en/privacy-policy", "label": "Privacy Policy" }
       ],
       "leftInfo": "© 2025 Solleffekt. All Rights Reserved.",
       "rightInfo": "Made by Solleffekt & Powered by Something"
@@ -189,12 +189,6 @@
                 ]
               }
             ]
-          },
-          "mission": {
-            "title": "Our mission",
-            "subtitle": "ENABLING CLEAN ENERGY FOR EVERYONE",
-            "imageSrc": "/test-image.jpg",
-            "imageAlt": "Mission"
           },
           "optimize": {
             "overline": "Optimization",
@@ -580,12 +574,6 @@
                 ]
               }
             ]
-          },
-          "mission": {
-            "title": "Our mission",
-            "subtitle": "ENABLING CLEAN ENERGY FOR EVERYONE",
-            "imageSrc": "/test-image.jpg",
-            "imageAlt": "Mission"
           },
           "optimize": {
             "overline": "Optimization",
