@@ -9,18 +9,13 @@ import {
   SolutionsPageData,
   Page as TPage,
 } from 'app/types/app'
-import fs from 'fs/promises'
-import path from 'path'
+import appData from '../../data/appData.json'
 import { defaultLocale } from '../page'
 
 export const dynamicParams = false
 
 export async function generateStaticParams() {
-  const filePath = path.join(process.cwd(), 'src/data/appData.json')
-  const jsonData = await fs.readFile(filePath, 'utf-8')
-  const appData: AppData = JSON.parse(jsonData)
-
-  const allSlugs = Object.values(appData).flatMap((pages: TPage) =>
+  const allSlugs = Object.values(appData as AppData).flatMap((pages: TPage) =>
     pages.pages.map(({ slug }) => ({ slug: slug.split('/') })),
   )
 
@@ -31,20 +26,15 @@ export async function generateStaticParams() {
 export default async function Page({ params }: { params: Promise<{ slug: string[] }> }) {
   const resolvedParams = await params
 
-  const filePath = path.join(process.cwd(), 'src/data/appData.json')
-  const jsonData = await fs.readFile(filePath, 'utf-8')
-  const appData: AppData = JSON.parse(jsonData)
-
   const locales = Object.keys(appData)
-
   const fullSlug = resolvedParams.slug.join('/')
   const locale = locales.find((l) => fullSlug.includes(l)) ?? defaultLocale
 
-  const page = appData[locale].pages.find((p) => p.slug === fullSlug)
+  const page = (appData as AppData)[locale].pages.find((p) => p.slug === fullSlug)
 
   if (!page) return
 
-  let content
+  let content = <></>
 
   // root page for other than default translations
   if (locales.some((locale) => locale === page.slug)) {
@@ -65,7 +55,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
   }
 
   return (
-    <AppTemplate data={appData[locale]} locale={locale}>
+    <AppTemplate data={(appData as AppData)[locale]} locale={locale} locales={locales}>
       {content}
     </AppTemplate>
   )

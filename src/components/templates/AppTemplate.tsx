@@ -1,13 +1,14 @@
 import { ReactNode } from 'react'
 import { Footer, FooterProps } from '../ui/Footer'
+import { LocaleSwitcher } from '../ui/LocaleSwitcher'
 import { Navbar, NavbarProps } from '../ui/Navbar'
 import { AOS } from '../utils/AOS'
-import { SetHTMLLangAttribute } from '../utils/SetHTMLLangAttribute'
 
 export function AppTemplate({
   children,
   data: { footer, navbar },
   locale,
+  locales,
 }: {
   children: ReactNode
   data: {
@@ -15,16 +16,20 @@ export function AppTemplate({
     navbar: NavbarProps
   }
   locale: string
+  locales: string[]
 }) {
   return (
     <>
       <AOS />
-      <SetHTMLLangAttribute locale={locale} />
-      <header className="sticky top-0 z-50 border-b border-indigo-200/60 bg-white/80 backdrop-blur">
+      <LocaleSwitcher locales={locales} />
+      <header
+        lang={locale}
+        className="sticky top-0 z-50 border-b border-indigo-200/60 bg-white/80 backdrop-blur"
+      >
         <Navbar data={navbar} />
       </header>
-      <main>{children}</main>
-      <footer className="relative mt-12 w-full bg-white/80">
+      <main lang={locale}>{children}</main>
+      <footer lang={locale} className="relative mt-12 w-full bg-white/80">
         <Footer data={footer} />
       </footer>
     </>

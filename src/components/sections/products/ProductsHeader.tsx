@@ -25,7 +25,7 @@ export function ProductsHeader({ data }: { data: ProductsHeaderProps }) {
   } = data
   return (
     <section className="section-layout grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-      <div className="flex flex-col gap-4" data-aos="fade-up">
+      <div className="flex flex-col gap-4" data-aos="fade-right">
         <h1 className="typography-h1">{title}</h1>
         <p className="typography-body typography-emphasis">{description}</p>
         <div className="flex flex-wrap items-center gap-3">

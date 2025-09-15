@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { defaultLocale } from './page'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,7 +13,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html>
+    <html lang={defaultLocale}>
       <body className="antialiased">{children}</body>
     </html>
   )
