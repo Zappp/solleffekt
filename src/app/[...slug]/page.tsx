@@ -15,12 +15,11 @@ import { defaultLocale } from '../page'
 export const dynamicParams = false
 
 export async function generateStaticParams() {
-  const allSlugs = Object.values(appData as AppData).flatMap((pages: TPage) =>
-    pages.pages.map(({ slug }) => ({ slug: slug.split('/') })),
-  )
-
-  // filter root page for default translation
-  return allSlugs.filter(({ slug }) => !(slug.length === 1 && slug[0] === ''))
+  return Object.values(appData as AppData)
+    .flatMap((pages: TPage) =>
+      pages.pages.map(({ slug }) => ({ slug: slug.split('/').filter(Boolean) })),
+    )
+    .filter(({ slug }) => slug.length)
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string[] }> }) {
@@ -36,7 +35,6 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
 
   let content = <></>
 
-  // root page for other than default translations
   if (locales.some((locale) => locale === page.slug)) {
     const pageData = page.data as MainPageData
     content = <MainPage data={pageData} />

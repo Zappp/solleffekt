@@ -7,15 +7,17 @@ export type ProductCard = {
   description: string
   imageSrc: string
   imageAlt: string
+  buttonHref: string
 }
 
 export type MainProductsProps = {
   heading: string
+  buttonLabel: string
   items: ProductCard[]
 }
 
 export function MainProducts({ data }: { data: MainProductsProps }) {
-  const { heading, items } = data
+  const { heading, items, buttonLabel } = data
   return (
     <section className="section-layout flex flex-col gap-6">
       <h2 className="typography-h2" data-aos="fade-up">
@@ -40,10 +42,10 @@ export function MainProducts({ data }: { data: MainProductsProps }) {
               <p className="typography-body-small typography-subtle flex-1">{p.description}</p>
               <div className="mt-1 flex justify-center">
                 <Link
-                  href="#"
+                  href={p.buttonHref}
                   className="typography-button btn-yellow inline-flex items-center gap-2 rounded-md"
                 >
-                  Learn more
+                  {buttonLabel}
                 </Link>
               </div>
             </div>

@@ -21,3 +21,39 @@
   - Optimize your energy with VIGOR
 
 - [ ] Add internalization toggle → red tooltip button (bottom-right)
+
+remove all captions pod zdjeciami
+
+main-
+header = https://www.vigorsolar.de/ - wywalic
+products = products = solutions (osobna sekcja podspodem)
+why us = https://www.vigorsolar.de/ remove
+Optimize = https://www.vigorsolar.de/ + inne assety
+
+footer + nav -
+about us = contact
+blog remove
+imprint = dane z mail
+privcy policy - pdf z vigorsolar - zmienic dane firmy - mozliwe ze bd link (zostawic na razie)
+
+<!-- nav (products: (fotowoltaika, magazyny energii, pompy ciepla, stacje ladowania pojadow), solutions: (3 gorne z vigorsolar 1:1))
+contact button - mail dodac prawidlowy -->
+
+produsts
+only header, reszta out
+
+- butons scroll do sekcji
+- picc podmienic
+- title - montujemy panale wszysktich swiatowych czolowych producentow ktore spelniaja wymagania niemieckich norm
+
+contact only header seciton, button link to contact (nav button)
+1st item - zdj z pdf
+rest only header without picture
+
+<!-- footer
+caption right
+'Made by Solleffekt' -->
+<!--
+meta
+title sollefect
+desc montujemy panale wszysktich swiatowych czolowych producentow ktore pselniaja wymagania niemieckich norm -->

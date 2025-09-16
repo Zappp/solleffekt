@@ -9,7 +9,7 @@ export type NavbarItem =
   | {
       type: 'link'
       label: string
-      href: string
+      href?: string
       segments?: Array<{
         title: string
         children: Array<{
@@ -23,14 +23,14 @@ export type NavbarItem =
       type: 'button'
       label: string
       action: 'email'
-      email?: string
+      email: string
     }
 
 export type NavbarBrand = {
   label: string
   href: string
-  logoSrc?: string
-  logoAlt?: string
+  logoSrc: string
+  logoAlt: string
 }
 
 export type NavbarProps = {
@@ -53,9 +53,7 @@ export function Navbar({ data }: { data: NavbarProps }) {
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3 px-3">
             <Link href={brand.href} className="inline-flex items-center gap-1">
-              {brand?.logoSrc ? (
-                <Image src={brand.logoSrc} alt={brand?.logoAlt ?? 'Logo'} className="w-10" />
-              ) : null}
+              <Image src={brand.logoSrc} alt={brand.logoAlt} className="w-10" />
               <span className="typography-emphasis">{brand.label}</span>
             </Link>
           </div>
@@ -81,7 +79,7 @@ function DesktopNav({ items }: { items: NavbarItem[] }) {
           return link.segments && link.segments.length > 0 ? (
             <DesktopDropdown key={link.label} item={link} />
           ) : (
-            <NavLink key={link.label} href={link.href}>
+            <NavLink key={link.label} href={link.href ?? '#'}>
               {link.label}
             </NavLink>
           )
@@ -111,7 +109,7 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
 
 function EmailButton({ item }: { item: Extract<NavbarItem, { type: 'button' }> }) {
   const handleEmailClick = () => {
-    const email = item.email || 'contact@solleffekt.com'
+    const email = item.email
     window.location.href = `mailto:${email}`
   }
 
@@ -147,7 +145,7 @@ function DesktopDropdown({ item }: { item: Extract<NavbarItem, { type: 'link' }>
         </svg>
       </button>
       {open && item.segments && (
-        <div className="absolute left-0">
+        <div className="absolute left-[-200px]">
           <div className="rounded-md border border-indigo-200/50 bg-white shadow-lg">
             <div className="flex gap-3 py-2">
               {item.segments.map((segment) => (
@@ -184,7 +182,7 @@ function DropdownLink({
   return (
     <Link
       href={href}
-      className="block min-w-44 rounded-md px-3 py-1 hover:bg-yellow-100/60 focus:hover:bg-yellow-100/60"
+      className="block min-w-[300px] rounded-md px-3 py-1 hover:bg-yellow-100/60 focus:hover:bg-yellow-100/60"
     >
       <div className="font-semibold">{children}</div>
       {description ? <div className="typography-caption">{description}</div> : null}
@@ -220,7 +218,7 @@ function MobileMenuButton({ onClick }: { onClick: () => void }) {
 
 function MobileEmailButton({ item }: { item: Extract<NavbarItem, { type: 'button' }> }) {
   const handleEmailClick = () => {
-    const email = item.email || 'contact@solleffekt.com'
+    const email = item.email
     window.location.href = `mailto:${email}`
   }
 
@@ -237,7 +235,7 @@ function MobileEmailButton({ item }: { item: Extract<NavbarItem, { type: 'button
 function MobileMenu({ open, items }: { open: boolean; items: NavbarItem[] }) {
   return (
     <div
-      className={`overflow-hidden border-t border-indigo-200/60 transition-all duration-200 ease-out md:hidden ${
+      className={`overflow-y-scroll border-t border-indigo-200/60 transition-all duration-200 ease-out md:hidden ${
         open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
       }`}
     >
@@ -271,7 +269,7 @@ function MobileMenu({ open, items }: { open: boolean; items: NavbarItem[] }) {
                 </div>
               </>
             ) : (
-              <NavLink href={item.href}>{item.label}</NavLink>
+              <NavLink href={item.href ?? '#'}>{item.label}</NavLink>
             )}
           </div>
         ))}

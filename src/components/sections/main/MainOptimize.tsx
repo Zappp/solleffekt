@@ -7,7 +7,7 @@ export type OptimizeItem = {
   description: string
 }
 
-export type SharedOptimizeProps = {
+export type MainOptimizePropsProps = {
   overline: string
   title: string
   subtitle: string
@@ -16,7 +16,7 @@ export type SharedOptimizeProps = {
   items: OptimizeItem[]
 }
 
-export function SharedOptimize({ data }: { data: SharedOptimizeProps }) {
+export function MainOptimize({ data }: { data: MainOptimizePropsProps }) {
   const { overline, title, subtitle, imageSrc, imageAlt, items } = data
   return (
     <section className="section-layout grid grid-cols-1 gap-8 lg:grid-cols-2">

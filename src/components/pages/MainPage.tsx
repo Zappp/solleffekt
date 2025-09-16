@@ -1,16 +1,17 @@
 import { MainPageData } from 'app/types/app'
-import { MainHeader } from '../sections/main/MainHeader'
+import { MainOptimize } from '../sections/main/MainOptimize'
+import { MainPartner } from '../sections/main/MainPartner'
 import { MainProducts } from '../sections/main/MainProducts'
-import { MainWhyUs } from '../sections/main/MainWhyUs'
-import { SharedOptimize } from '../sections/shared/SharedOptimize'
+import { SectionSeparator } from '../sections/shared/SectionSeparator'
 
 export function MainPage({ data }: { data: MainPageData }) {
   return (
     <>
-      <MainHeader data={data.header} />
       <MainProducts data={data.products} />
-      <MainWhyUs data={data.whyUs} />
-      <SharedOptimize data={data.optimize} />
+      <MainProducts data={data.solutions} />
+      <MainPartner data={data.partner} />
+      <SectionSeparator data={data.sectionSeparator} />
+      <MainOptimize data={data.optimize} />
     </>
   )
 }

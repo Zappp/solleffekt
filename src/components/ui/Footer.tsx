@@ -9,8 +9,6 @@ export interface FooterLink {
 export interface FooterLogo {
   src: string
   alt: string
-  width: number
-  height: number
 }
 
 export interface FooterProps {

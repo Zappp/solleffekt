@@ -11,16 +11,35 @@
         { "type": "link", "label": "Home", "href": "/en" },
         {
           "type": "link",
-          "label": "Products",
-          "href": "/en/products",
+          "label": "Solutions and Products",
           "segments": [
             {
               "title": "Products",
               "children": [
                 {
-                  "label": "Solar Panels",
+                  "label": "Solar panels",
                   "href": "/en/products/solar-panels",
-                  "description": "High-efficiency modules"
+                  "description": "Panels from leading global manufacturers that meet strict German standards"
+                },
+                {
+                  "label": "Battery storage",
+                  "href": "/en/products/battery-storage",
+                  "description": "Reliable energy storage systems ensuring efficiency and safety"
+                },
+                {
+                  "label": "Heat pumps",
+                  "href": "/en/products/heat-pumps",
+                  "description": "Modern heating solutions designed to meet European energy standards"
+                },
+                {
+                  "label": "Vehicle charging stations",
+                  "href": "/en/products/vehicle-charging-stations",
+                  "description": "Smart and efficient EV charging stations for home and business"
+                },
+                {
+                  "label": "Inverters",
+                  "href": "/en/products/inverters",
+                  "description": "High-performance inverters ensuring optimal solar system operation"
                 }
               ]
             },
@@ -28,167 +47,174 @@
               "title": "Solutions",
               "children": [
                 {
-                  "label": "Batteries",
-                  "href": "/en/solutions/inverters",
-                  "description": "Store surplus energy"
+                  "label": "Energy consulting & project planning",
+                  "href": "/en/solutions/energy-consulting-project-planning",
+                  "description": "Comprehensive advice and targeted planning for your energy efficiency."
                 },
                 {
-                  "label": "Inverters",
-                  "href": "/en/solutions/inverters",
-                  "description": "Reliable energy conversion"
+                  "label": "Assembly & complete service",
+                  "href": "/en/solutions/assembly-complete-service",
+                  "description": "Expert assembly and commissioning."
+                },
+                {
+                  "label": "Delivery management",
+                  "href": "/en/solutions/delivery-management",
+                  "description": "Fast and precise logistics for your energy solutions."
                 }
               ]
             }
           ]
         },
-        { "type": "link", "label": "About", "href": "/en/about" },
+        { "type": "link", "label": "Contact", "href": "/en/contact" },
         {
           "type": "button",
-          "label": "Contact",
+          "label": "Get in touch",
           "action": "email",
-          "email": "contact@solleffekt.com"
+          "email": "maciej.komar@gmail.com"
         }
       ]
     },
     "footer": {
-      "logo": { "src": "/logo.png", "alt": "Solleffekt Logo", "width": 160, "height": 64 },
+      "logo": { "src": "/logo.png", "alt": "Solleffekt Logo" },
       "links": [
-        { "href": "/en/about", "label": "About Us" },
-        { "href": "/en/blog", "label": "Blog" },
+        { "href": "/en/contact", "label": "Contact" },
         { "href": "/en/imprint", "label": "Imprint" },
         { "href": "/en/privacy-policy", "label": "Privacy Policy" }
       ],
-      "leftInfo": "© 2025 Solleffekt. All Rights Reserved.",
-      "rightInfo": "Made by Solleffekt & Powered by Something"
+      "leftInfo": "Copyright © Made by Solleffekt",
+      "rightInfo": "Solleffekt All Rights Reserved, 2025"
     },
     "pages": [
       {
         "id": "home",
         "slug": "en",
         "data": {
-          "header": {
-            "title": "Lorem ipsum dolor sit amet",
-            "subtitle": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "imageSrc": "/test-image.jpg",
-            "imageAlt": "Hero",
-            "caption": "Small image caption"
-          },
           "products": {
             "heading": "Products",
+            "buttonLabel": "Learn more",
             "items": [
               {
                 "id": "p1",
-                "title": "Product One",
+                "title": "Solar panels",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus."
+                "imageAlt": "Solar panels",
+                "description": "High-quality solar panels from leading global manufacturers, designed to meet strict German standards and ensure long-term energy efficiency.",
+                "buttonHref": "/en/products/solar-panels"
               },
               {
                 "id": "p2",
-                "title": "Product Two",
+                "title": "Battery storage",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
-                "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "imageAlt": "Battery storage",
+                "description": "Reliable and durable battery storage systems that provide maximum efficiency, safety, and independence for your energy supply.",
+                "buttonHref": "/en/products/battery-storage"
               },
               {
                 "id": "p3",
-                "title": "Product Three",
+                "title": "Heat pumps",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
-                "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                "imageAlt": "Heat pumps",
+                "description": "Modern and eco-friendly heat pumps that meet European energy standards, offering efficient heating and cooling for your home or business.",
+                "buttonHref": "/en/products/heat-pumps"
+              },
+              {
+                "id": "p4",
+                "title": "Vehicle charging stations",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Vehicle charging stations",
+                "description": "Smart, efficient, and future-proof EV charging stations for both private and commercial use, ensuring fast and safe vehicle charging.",
+                "buttonHref": "/en/products/vehicle-charging-stations"
+              },
+              {
+                "id": "p5",
+                "title": "Inverters",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Inverters",
+                "description": "High-performance inverters that guarantee optimal operation of your solar system, with advanced technology for maximum energy yield.",
+                "buttonHref": "/en/products/inverters"
               }
             ]
           },
-          "whyUs": {
-            "heading": "Why us",
+          "solutions": {
+            "heading": "Solutions",
+            "buttonLabel": "Learn more",
             "items": [
               {
-                "id": "w1",
-                "imageCaption": "Caption one",
+                "id": "p1",
+                "title": "Energy consulting & project planning",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
+                "imageAlt": "Energy consulting & project planning",
+                "description": "Comprehensive advice and targeted planning for improving your energy efficiency, ensuring that every project is tailored to your specific needs and long-term goals.",
+                "buttonHref": "/en/solutions/energy-consulting-project-planning"
+              },
+              {
+                "id": "p2",
+                "title": "Assembly & complete service",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Assembly & complete service",
+                "description": "Expert assembly, commissioning, and complete service solutions, providing reliable support from installation through ongoing maintenance for maximum system performance.",
+                "buttonHref": "/en/solutions/assembly-complete-service"
+              },
+              {
+                "id": "p3",
+                "title": "Delivery management",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Delivery management",
+                "description": "Fast, precise, and coordinated logistics for your energy solutions, ensuring timely deliveries and efficient handling of every component from start to finish.",
+                "buttonHref": "/en/solutions/delivery-management"
+              }
+            ]
+          },
+          "partner": {
+            "title": "Everything from a single source",
+            "overline": "Why with us",
+            "items": [
+              {
+                "id": "b1",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "APsystems device",
                 "points": [
                   {
-                    "id": "w1p1",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
+                    "id": "p1",
+                    "title": "Marktführer von Multi-Modul Mikro-Wechselrichtern",
+                    "description": "Weltweit größtes Angebot an Leistungselektronik auf Modulebene. Bis Ende 2022 wurden weit mehr als 3GW an MLPE-Produkten verbaut.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   },
                   {
-                    "id": "w1p2",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p3",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p4",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p5",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
+                    "id": "p3",
+                    "title": "Intelligente Steuerung",
+                    "description": "Mit AP EasyPower haben Sie schnelle, einfache Überwachung und Analyse Ihrer Solaranlage – bequem vom Handy.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   }
                 ]
               },
               {
-                "id": "w2",
-                "imageCaption": "Caption two",
+                "id": "b2",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
+                "imageAlt": "Illustration",
                 "points": [
                   {
-                    "id": "w2p1",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
+                    "id": "p4",
+                    "title": "Skalierbar und zukunftssicher",
+                    "description": "Module und Speicher flexibel erweiterbar – wächst mit Ihren Bedürfnissen.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   },
                   {
-                    "id": "w2p2",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p3",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p4",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p5",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
+                    "id": "p5",
+                    "title": "Robustes Monitoring",
+                    "description": "Transparente Daten und Alarme für maximale Verfügbarkeit.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   }
                 ]
               }
             ]
+          },
+          "sectionSeparator": {
+            "backgroundImageSrc": "/test-image.jpg"
           },
           "optimize": {
             "overline": "Optimization",
@@ -232,154 +258,39 @@
             "primaryCtaHref": "#appointment",
             "secondaryCtaLabel": "Warum wir",
             "secondaryCtaHref": "#why-us"
-          },
-          "sectionSeparator": { "backgroundImageSrc": "/test-image.jpg" },
-          "solutions": {
-            "overline": "Unsere Solar Lösungen",
-            "heading": "Alles aus einer Hand - alle Komponenten aufeinander abgestimmt.",
-            "descriptions": [
-              "Als Herstellvertreib setzt VIGOR mit nachhaltigen Solarmodulen neue technologische Maßstäbe. Unsere Solarmodule zählen zu den Besten der Welt und wir stellen Ihnen eine breite Palette dieser zur Auswahl. Die Besonderheit dabei liegt darauf, wir liefern alle aufeinander abgestimmten Komponenten aus einer Hand.",
-              "Die Unterbaukonstruktionen, Mikroinverter, Wechselrichter und Speicher sind aufeinander abgestimmt, um eine reibungslose Integration zu gewährleisten. Unser Ziel ist es, Verzögerungen bei der Montage durch fehlende oder inkongruente Teile zu vermeiden."
-            ],
-            "ctaLabel": "Termin vereinbaren",
-            "ctaHref": "#appointment",
-            "items": [
-              {
-                "id": "s1",
-                "title": "Dach- und Fassaden-PV-Lösungen",
-                "description": "Maßgeschneiderte Dach- und Fassadenlösungen, die Gebäudeoberflächen in eine Energiequelle verwandeln – effizient und ästhetisch.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Home icon"
-              },
-              {
-                "id": "s2",
-                "title": "Frei- und Wasserflächen-PV-Lösungen",
-                "description": "Innovative Photovoltaik-Lösungen für ungenutzte Flächen an Land und auf Wasser – effizient und umweltfreundlich.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Building icon"
-              },
-              {
-                "id": "s3",
-                "title": "Speicher- und Monitoringlösungen",
-                "description": "Skalierbare Speicher, Microinverter und Monitoring für maximale Performance und Ausfallsicherheit.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Ground icon"
-              }
-            ]
-          },
-          "partners": [
-            {
-              "id": "b1",
-              "overline": "Exklusive Partnerschaft mit dem Weltmarktführer APsystems",
-              "points": [
-                {
-                  "id": "p1",
-                  "title": "Marktführer von Multi-Modul Mikro-Wechselrichtern",
-                  "description": "Weltweit größtes Angebot an Leistungselektronik auf Modulebene. Bis Ende 2022 wurden weit mehr als 3GW an MLPE-Produkten verbaut.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                },
-                {
-                  "id": "p2",
-                  "title": "Erhöhte Systemeffizienz um bis zu 20% ",
-                  "description": "APsystems-Einheiten verarbeiten zwei PV-Modul, wodurch die Installations- und Systemkosten gesenkt werden.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                },
-                {
-                  "id": "p3",
-                  "title": "Intelligente Steuerung",
-                  "description": "Mit AP EasyPower haben Sie schnelle, einfache Überwachung und Analyse Ihrer Solaranlage – bequem vom Handy.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                }
-              ],
-              "imageSrc": "/test-image.jpg",
-              "imageAlt": "APsystems device"
-            },
-            {
-              "id": "b2",
-              "overline": "Weitere Vorteile und Anwendungen",
-              "points": [
-                {
-                  "id": "p4",
-                  "title": "Skalierbar und zukunftssicher",
-                  "description": "Module und Speicher flexibel erweiterbar – wächst mit Ihren Bedürfnissen.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                },
-                {
-                  "id": "p5",
-                  "title": "Robustes Monitoring",
-                  "description": "Transparente Daten und Alarme für maximale Verfügbarkeit.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                }
-              ],
-              "imageSrc": "/test-image.jpg",
-              "imageAlt": "Illustration"
-            }
-          ],
-          "optimize": {
-            "overline": "Optimization",
-            "title": "Optimize your system",
-            "subtitle": "Maximize performance with smart monitoring and proactive maintenance.",
-            "imageSrc": "/test-image.jpg",
-            "imageAlt": "Optimize",
-            "items": [
-              {
-                "id": "o1",
-                "description": "Real-time performance insights at a glance.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Icon"
-              },
-              {
-                "id": "o2",
-                "description": "Automated alerts to prevent downtime.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Icon"
-              },
-              {
-                "id": "o3",
-                "description": "Actionable recommendations to improve yield.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Icon"
-              }
-            ]
           }
         }
       },
       {
-        "id": "inverters",
-        "slug": "en/solutions/inverters",
+        "id": "solar-panels",
+        "slug": "en/products/solar-panels",
         "data": {
           "header": {
-            "overline": "Inverters",
-            "title": "Reliable Inverters for Every Solar Solution",
-            "description": "Our inverters ensure maximum efficiency and reliability for your solar installation. Discover our range of products tailored for residential and commercial needs.",
-            "buttonLabel": "See All Inverters",
-            "buttonHref": "/products/inverters/list"
-          },
-          "features": [
-            {
-              "iconSrc": "/logo.png",
-              "iconAlt": "Efficiency",
-              "title": "High Efficiency",
-              "description": "Benefit from our independent partner network for detailed energy audits and targeted consultations without being tied to specific products."
-            },
-            {
-              "iconSrc": "/logo.png",
-              "iconAlt": "Safe & Reliable",
-              "title": "Safe & Reliable",
-              "description": "Benefit from our independent partner network for detailed energy audits and targeted consultations without being tied to specific products."
-            },
-            {
-              "iconSrc": "/logo.png",
-              "iconAlt": "Easy Installation",
-              "title": "Easy Installation",
-              "description": "Benefit from our independent partner network for detailed energy audits and targeted consultations without being tied to specific products."
-            }
-          ]
+            "title": "Solar Panels",
+            "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Solar panels",
+            "primaryCtaLabel": "Termin vereinbaren",
+            "primaryCtaHref": "#appointment",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "#why-us"
+          }
+        }
+      },
+      {
+        "id": "energy-consulting-project-planning",
+        "slug": "en/solutions/energy-consulting-project-planning",
+        "data": {
+          "header": {
+            "title": "Solar Panels",
+            "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Solar panels",
+            "primaryCtaLabel": "Termin vereinbaren",
+            "primaryCtaHref": "#appointment",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "#why-us"
+          }
         }
       }
     ]
@@ -451,129 +362,148 @@
         "id": "home",
         "slug": "",
         "data": {
-          "header": {
-            "title": "Lorem ipsum dolor sit amet",
-            "subtitle": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "imageSrc": "/test-image.jpg",
-            "imageAlt": "Hero",
-            "caption": "Small image caption"
-          },
           "products": {
             "heading": "Products",
+            "buttonLabel": "Learn more",
             "items": [
               {
                 "id": "p1",
-                "title": "Product One",
+                "title": "Solar panels",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus."
+                "imageAlt": "Solar panels",
+                "description": "High-quality solar panels from leading global manufacturers, designed to meet strict German standards and ensure long-term energy efficiency.",
+                "buttonHref": "/products/solar-panels"
               },
               {
                 "id": "p2",
-                "title": "Product Two",
+                "title": "Battery storage",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
-                "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "imageAlt": "Battery storage",
+                "description": "Reliable and durable battery storage systems that provide maximum efficiency, safety, and independence for your energy supply.",
+                "buttonHref": "/products/battery-storage"
               },
               {
                 "id": "p3",
-                "title": "Product Three",
+                "title": "Heat pumps",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
-                "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                "imageAlt": "Heat pumps",
+                "description": "Modern and eco-friendly heat pumps that meet European energy standards, offering efficient heating and cooling for your home or business.",
+                "buttonHref": "/products/heat-pumps"
+              },
+              {
+                "id": "p4",
+                "title": "Vehicle charging stations",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Vehicle charging stations",
+                "description": "Smart, efficient, and future-proof EV charging stations for both private and commercial use, ensuring fast and safe vehicle charging.",
+                "buttonHref": "/products/vehicle-charging-stations"
+              },
+              {
+                "id": "p5",
+                "title": "Inverters",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Inverters",
+                "description": "High-performance inverters that guarantee optimal operation of your solar system, with advanced technology for maximum energy yield.",
+                "buttonHref": "/products/inverters"
               }
             ]
           },
-          "whyUs": {
-            "heading": "Why us",
+          "solutions": {
+            "heading": "Products",
+            "buttonLabel": "Learn more",
             "items": [
               {
-                "id": "w1",
-                "imageCaption": "Caption one",
+                "id": "p1",
+                "title": "Solar panels",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
+                "imageAlt": "Solar panels",
+                "description": "High-quality solar panels from leading global manufacturers, designed to meet strict German standards and ensure long-term energy efficiency.",
+                "buttonHref": "/en/products/solar-panels"
+              },
+              {
+                "id": "p2",
+                "title": "Battery storage",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Battery storage",
+                "description": "Reliable and durable battery storage systems that provide maximum efficiency, safety, and independence for your energy supply.",
+                "buttonHref": "/en/products/battery-storage"
+              },
+              {
+                "id": "p3",
+                "title": "Heat pumps",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Heat pumps",
+                "description": "Modern and eco-friendly heat pumps that meet European energy standards, offering efficient heating and cooling for your home or business.",
+                "buttonHref": "/en/products/heat-pumps"
+              },
+              {
+                "id": "p4",
+                "title": "Vehicle charging stations",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Vehicle charging stations",
+                "description": "Smart, efficient, and future-proof EV charging stations for both private and commercial use, ensuring fast and safe vehicle charging.",
+                "buttonHref": "/en/products/vehicle-charging-stations"
+              },
+              {
+                "id": "p5",
+                "title": "Inverters",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "Inverters",
+                "description": "High-performance inverters that guarantee optimal operation of your solar system, with advanced technology for maximum energy yield.",
+                "buttonHref": "/en/products/inverters"
+              }
+            ]
+          },
+          "partner": {
+            "title": "Everything from a single source",
+            "overline": "Why with us",
+            "items": [
+              {
+                "id": "b1",
+                "imageSrc": "/test-image.jpg",
+                "imageAlt": "APsystems device",
                 "points": [
                   {
-                    "id": "w1p1",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
+                    "id": "p1",
+                    "title": "Marktführer von Multi-Modul Mikro-Wechselrichtern",
+                    "description": "Weltweit größtes Angebot an Leistungselektronik auf Modulebene. Bis Ende 2022 wurden weit mehr als 3GW an MLPE-Produkten verbaut.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   },
                   {
-                    "id": "w1p2",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p3",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p4",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p5",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
+                    "id": "p3",
+                    "title": "Intelligente Steuerung",
+                    "description": "Mit AP EasyPower haben Sie schnelle, einfache Überwachung und Analyse Ihrer Solaranlage – bequem vom Handy.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   }
                 ]
               },
               {
-                "id": "w2",
-                "imageCaption": "Caption two",
+                "id": "b2",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Hero",
+                "imageAlt": "Illustration",
                 "points": [
                   {
-                    "id": "w2p1",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
+                    "id": "p4",
+                    "title": "Skalierbar und zukunftssicher",
+                    "description": "Module und Speicher flexibel erweiterbar – wächst mit Ihren Bedürfnissen.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   },
                   {
-                    "id": "w2p2",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p3",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p4",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
-                    "iconSrc": "/logo.png",
-                    "iconAlt": "Icon"
-                  },
-                  {
-                    "id": "w1p5",
-                    "title": "Dach- und Fassaden-PV-Lösungen",
-                    "description": "High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. High quality components with rigorous testing. ",
+                    "id": "p5",
+                    "title": "Robustes Monitoring",
+                    "description": "Transparente Daten und Alarme für maximale Verfügbarkeit.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   }
                 ]
               }
             ]
+          },
+          "sectionSeparator": {
+            "backgroundImageSrc": "/test-image.jpg"
           },
           "optimize": {
             "overline": "Optimization",
@@ -617,154 +547,39 @@
             "primaryCtaHref": "#appointment",
             "secondaryCtaLabel": "Warum wir",
             "secondaryCtaHref": "#why-us"
-          },
-          "sectionSeparator": { "backgroundImageSrc": "/test-image.jpg" },
-          "solutions": {
-            "overline": "Unsere Solar Lösungen",
-            "heading": "Alles aus einer Hand - alle Komponenten aufeinander abgestimmt.",
-            "descriptions": [
-              "Als Herstellvertreib setzt VIGOR mit nachhaltigen Solarmodulen neue technologische Maßstäbe. Unsere Solarmodule zählen zu den Besten der Welt und wir stellen Ihnen eine breite Palette dieser zur Auswahl. Die Besonderheit dabei liegt darauf, wir liefern alle aufeinander abgestimmten Komponenten aus einer Hand.",
-              "Die Unterbaukonstruktionen, Mikroinverter, Wechselrichter und Speicher sind aufeinander abgestimmt, um eine reibungslose Integration zu gewährleisten. Unser Ziel ist es, Verzögerungen bei der Montage durch fehlende oder inkongruente Teile zu vermeiden."
-            ],
-            "ctaLabel": "Termin vereinbaren",
-            "ctaHref": "#appointment",
-            "items": [
-              {
-                "id": "s1",
-                "title": "Dach- und Fassaden-PV-Lösungen",
-                "description": "Maßgeschneiderte Dach- und Fassadenlösungen, die Gebäudeoberflächen in eine Energiequelle verwandeln – effizient und ästhetisch.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Home icon"
-              },
-              {
-                "id": "s2",
-                "title": "Frei- und Wasserflächen-PV-Lösungen",
-                "description": "Innovative Photovoltaik-Lösungen für ungenutzte Flächen an Land und auf Wasser – effizient und umweltfreundlich.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Building icon"
-              },
-              {
-                "id": "s3",
-                "title": "Speicher- und Monitoringlösungen",
-                "description": "Skalierbare Speicher, Microinverter und Monitoring für maximale Performance und Ausfallsicherheit.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Ground icon"
-              }
-            ]
-          },
-          "partners": [
-            {
-              "id": "b1",
-              "overline": "Exklusive Partnerschaft mit dem Weltmarktführer APsystems",
-              "points": [
-                {
-                  "id": "p1",
-                  "title": "Marktführer von Multi-Modul Mikro-Wechselrichtern",
-                  "description": "Weltweit größtes Angebot an Leistungselektronik auf Modulebene. Bis Ende 2022 wurden weit mehr als 3GW an MLPE-Produkten verbaut.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                },
-                {
-                  "id": "p2",
-                  "title": "Erhöhte Systemeffizienz um bis zu 20% ",
-                  "description": "APsystems-Einheiten verarbeiten zwei PV-Modul, wodurch die Installations- und Systemkosten gesenkt werden.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                },
-                {
-                  "id": "p3",
-                  "title": "Intelligente Steuerung",
-                  "description": "Mit AP EasyPower haben Sie schnelle, einfache Überwachung und Analyse Ihrer Solaranlage – bequem vom Handy.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                }
-              ],
-              "imageSrc": "/test-image.jpg",
-              "imageAlt": "APsystems device"
-            },
-            {
-              "id": "b2",
-              "overline": "Weitere Vorteile und Anwendungen",
-              "points": [
-                {
-                  "id": "p4",
-                  "title": "Skalierbar und zukunftssicher",
-                  "description": "Module und Speicher flexibel erweiterbar – wächst mit Ihren Bedürfnissen.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                },
-                {
-                  "id": "p5",
-                  "title": "Robustes Monitoring",
-                  "description": "Transparente Daten und Alarme für maximale Verfügbarkeit.",
-                  "iconSrc": "/logo.png",
-                  "iconAlt": "Icon"
-                }
-              ],
-              "imageSrc": "/test-image.jpg",
-              "imageAlt": "Illustration"
-            }
-          ],
-          "optimize": {
-            "overline": "Optimization",
-            "title": "Optimize your system",
-            "subtitle": "Maximize performance with smart monitoring and proactive maintenance.",
-            "imageSrc": "/test-image.jpg",
-            "imageAlt": "Optimize",
-            "items": [
-              {
-                "id": "o1",
-                "description": "Real-time performance insights at a glance.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Icon"
-              },
-              {
-                "id": "o2",
-                "description": "Automated alerts to prevent downtime.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Icon"
-              },
-              {
-                "id": "o3",
-                "description": "Actionable recommendations to improve yield.",
-                "iconSrc": "/logo.png",
-                "iconAlt": "Icon"
-              }
-            ]
           }
         }
       },
       {
-        "id": "inverters",
-        "slug": "solutions/inverters",
+        "id": "solar-panels",
+        "slug": "products/solar-panels",
         "data": {
           "header": {
-            "overline": "Inverters",
-            "title": "Reliable Inverters for Every Solar Solution",
-            "description": "Our inverters ensure maximum efficiency and reliability for your solar installation. Discover our range of products tailored for residential and commercial needs.",
-            "buttonLabel": "See All Inverters",
-            "buttonHref": "/products/inverters/list"
-          },
-          "features": [
-            {
-              "iconSrc": "/logo.png",
-              "iconAlt": "Efficiency",
-              "title": "High Efficiency",
-              "description": "Benefit from our independent partner network for detailed energy audits and targeted consultations without being tied to specific products."
-            },
-            {
-              "iconSrc": "/logo.png",
-              "iconAlt": "Safe & Reliable",
-              "title": "Safe & Reliable",
-              "description": "Benefit from our independent partner network for detailed energy audits and targeted consultations without being tied to specific products."
-            },
-            {
-              "iconSrc": "/logo.png",
-              "iconAlt": "Easy Installation",
-              "title": "Easy Installation",
-              "description": "Benefit from our independent partner network for detailed energy audits and targeted consultations without being tied to specific products."
-            }
-          ]
+            "title": "Solar Panels",
+            "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Solar panels",
+            "primaryCtaLabel": "Termin vereinbaren",
+            "primaryCtaHref": "#appointment",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "#why-us"
+          }
+        }
+      },
+      {
+        "id": "energy-consulting-project-planning",
+        "slug": "solutions/energy-consulting-project-planning",
+        "data": {
+          "header": {
+            "title": "Solar Panels",
+            "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Solar panels",
+            "primaryCtaLabel": "Termin vereinbaren",
+            "primaryCtaHref": "#appointment",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "#why-us"
+          }
         }
       }
     ]

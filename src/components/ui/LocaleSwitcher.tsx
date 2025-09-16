@@ -60,7 +60,7 @@ export function LocaleSwitcher({ locales }: { locales: string[] }) {
       )}
 
       {isOpen && (
-        <div className="absolute right-0 bottom-16 z-50 w-48 rounded-lg bg-white p-4 shadow-md focus:outline-none">
+        <div className="absolute right-0 bottom-16 z-50 w-48 rounded-lg bg-white p-4 shadow-[0_0_10px_rgba(0,0,0,0.1)] focus:outline-none">
           <p className="text-md mb-2 font-bold text-gray-900">Select your locale</p>
           <div
             className="flex flex-wrap justify-center gap-4"

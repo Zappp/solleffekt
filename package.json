@@ -10,7 +10,6 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
   },
   "dependencies": {
-    "@react-spring/web": "^10.0.2",
     "aos": "^2.3.4",
     "next": "15.5.2",
     "react": "19.1.0",
