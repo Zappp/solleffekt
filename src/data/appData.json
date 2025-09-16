@@ -88,6 +88,7 @@
       {
         "id": "home",
         "slug": "en",
+        "type": "main",
         "data": {
           "products": {
             "heading": "Products",
@@ -166,25 +167,26 @@
             ]
           },
           "partner": {
+            "id": "why-us",
             "title": "Everything from a single source",
             "overline": "Why with us",
             "items": [
               {
                 "id": "b1",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "APsystems device",
+                "imageAlt": "Energy solutions illustration",
                 "points": [
                   {
                     "id": "p1",
-                    "title": "Marktführer von Multi-Modul Mikro-Wechselrichtern",
-                    "description": "Weltweit größtes Angebot an Leistungselektronik auf Modulebene. Bis Ende 2022 wurden weit mehr als 3GW an MLPE-Produkten verbaut.",
+                    "title": "Customized special solutions",
+                    "description": "We deliver tailored energy concepts for unique requirements and challenging environments such as lakes, farmland, and bespoke installations. Our portfolio includes advanced PV technologies as well as large-scale energy storage systems.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   },
                   {
-                    "id": "p3",
-                    "title": "Intelligente Steuerung",
-                    "description": "Mit AP EasyPower haben Sie schnelle, einfache Überwachung und Analyse Ihrer Solaranlage – bequem vom Handy.",
+                    "id": "p2",
+                    "title": "Ongoing product portfolio growth",
+                    "description": "Our extensive product offering is continuously expanded with innovative solutions to meet evolving customer needs and support the progress of the energy transition.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   }
@@ -193,19 +195,19 @@
               {
                 "id": "b2",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Illustration",
+                "imageAlt": "Professional services illustration",
                 "points": [
                   {
-                    "id": "p4",
-                    "title": "Skalierbar und zukunftssicher",
-                    "description": "Module und Speicher flexibel erweiterbar – wächst mit Ihren Bedürfnissen.",
+                    "id": "p3",
+                    "title": "Expert planning & consulting",
+                    "description": "From the initial concept through to implementation, our skilled team provides personal guidance and hands-on support. We collaborate closely with clients to design solutions that fit their goals and deliver long-term value.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   },
                   {
-                    "id": "p5",
-                    "title": "Robustes Monitoring",
-                    "description": "Transparente Daten und Alarme für maximale Verfügbarkeit.",
+                    "id": "p4",
+                    "title": "Professional installation",
+                    "description": "Our large and highly qualified installer teams ensure fast and precise execution of both roof-mounted (A/C) and direct current (D/C) systems, carried out with reliability and efficiency.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   }
@@ -217,27 +219,45 @@
             "backgroundImageSrc": "/test-image.jpg"
           },
           "optimize": {
-            "overline": "Optimization",
-            "title": "Optimize your system",
-            "subtitle": "Maximize performance with smart monitoring and proactive maintenance.",
+            "overline": "Driving innovation in energy – benefits at a glance.",
+            "title": "Innovation that powers the future",
+            "subtitle": "As pioneers in advanced and tailored energy solutions, we go beyond conventional limits to deliver what’s next. Through strong collaborations with leading global innovators, we provide direct access to cutting-edge technologies – without middlemen and under the best conditions.",
             "imageSrc": "/test-image.jpg",
-            "imageAlt": "Optimize",
+            "imageAlt": "Future of energy",
             "items": [
               {
                 "id": "o1",
-                "description": "Real-time performance insights at a glance.",
+                "description": "Customized energy solutions",
                 "iconSrc": "/logo.png",
                 "iconAlt": "Icon"
               },
               {
                 "id": "o2",
-                "description": "Automated alerts to prevent downtime.",
+                "description": "Maximized energy savings",
                 "iconSrc": "/logo.png",
                 "iconAlt": "Icon"
               },
               {
                 "id": "o3",
-                "description": "Actionable recommendations to improve yield.",
+                "description": "Cutting-edge technology",
+                "iconSrc": "/logo.png",
+                "iconAlt": "Icon"
+              },
+              {
+                "id": "o4",
+                "description": "End-to-end support",
+                "iconSrc": "/logo.png",
+                "iconAlt": "Icon"
+              },
+              {
+                "id": "o5",
+                "description": "All-in-one offerings",
+                "iconSrc": "/logo.png",
+                "iconAlt": "Icon"
+              },
+              {
+                "id": "o6",
+                "description": "Transparent and trustworthy",
                 "iconSrc": "/logo.png",
                 "iconAlt": "Icon"
               }
@@ -248,48 +268,136 @@
       {
         "id": "solar-panels",
         "slug": "en/products/solar-panels",
+        "type": "products",
         "data": {
           "header": {
             "title": "Solar Panels",
             "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
             "imageSrc": "/test-image.jpg",
             "imageAlt": "Solar panels",
-            "primaryCtaLabel": "Termin vereinbaren",
-            "primaryCtaHref": "#appointment",
-            "secondaryCtaLabel": "Warum wir",
-            "secondaryCtaHref": "#why-us"
+            "primaryCtaLabel": "Contact",
+            "primaryCtaHref": "/en/contact",
+            "secondaryCtaLabel": "Why us",
+            "secondaryCtaHref": "/en/#why-us"
           }
         }
       },
       {
-        "id": "solar-panels",
-        "slug": "en/products/solar-panels",
-        "data": {
-          "header": {
-            "title": "Solar Panels",
-            "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
-            "imageSrc": "/test-image.jpg",
-            "imageAlt": "Solar panels",
-            "primaryCtaLabel": "Termin vereinbaren",
-            "primaryCtaHref": "#appointment",
-            "secondaryCtaLabel": "Warum wir",
-            "secondaryCtaHref": "#why-us"
-          }
-        }
-      },
-      {
-        "id": "energy-consulting-project-planning",
+        "id": "Energy consulting & project planning",
         "slug": "en/solutions/energy-consulting-project-planning",
+        "type": "solutions",
         "data": {
           "header": {
-            "title": "Solar Panels",
+            "title": "Energy consulting & project planning",
             "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
             "imageSrc": "/test-image.jpg",
             "imageAlt": "Solar panels",
-            "primaryCtaLabel": "Termin vereinbaren",
-            "primaryCtaHref": "#appointment",
-            "secondaryCtaLabel": "Warum wir",
-            "secondaryCtaHref": "#why-us"
+            "primaryCtaLabel": "Contact",
+            "primaryCtaHref": "/en/contact",
+            "secondaryCtaLabel": "Why us",
+            "secondaryCtaHref": "/en/#why-us"
+          }
+        }
+      },
+      {
+        "id": "battery-storage",
+        "slug": "en/products/battery-storage",
+        "type": "products",
+        "data": {
+          "header": {
+            "title": "Battery Storage",
+            "description": "Reliable and efficient energy storage systems, designed to maximize self-consumption and ensure energy independence.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Battery storage",
+            "primaryCtaLabel": "Contact",
+            "primaryCtaHref": "/en/contact",
+            "secondaryCtaLabel": "Why us",
+            "secondaryCtaHref": "/en/#why-us"
+          }
+        }
+      },
+      {
+        "id": "heat-pumps",
+        "slug": "en/products/heat-pumps",
+        "type": "products",
+        "data": {
+          "header": {
+            "title": "Heat Pumps",
+            "description": "Sustainable and cost-effective heating and cooling solutions, optimized for energy efficiency and environmental protection.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Heat pumps",
+            "primaryCtaLabel": "Contact",
+            "primaryCtaHref": "/en/contact",
+            "secondaryCtaLabel": "Why us",
+            "secondaryCtaHref": "/en/#why-us"
+          }
+        }
+      },
+      {
+        "id": "vehicle-charging-stations",
+        "slug": "en/products/vehicle-charging-stations",
+        "type": "products",
+        "data": {
+          "header": {
+            "title": "Vehicle Charging Stations",
+            "description": "Smart and fast charging solutions for electric vehicles, offering convenience and reliability for home and business.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Vehicle charging stations",
+            "primaryCtaLabel": "Contact",
+            "primaryCtaHref": "/en/contact",
+            "secondaryCtaLabel": "Why us",
+            "secondaryCtaHref": "/en/#why-us"
+          }
+        }
+      },
+      {
+        "id": "inverters",
+        "slug": "en/products/inverters",
+        "type": "products",
+        "data": {
+          "header": {
+            "title": "Inverters",
+            "description": "High-performance inverters ensuring optimal conversion of solar energy, enhancing system efficiency and stability.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Inverters",
+            "primaryCtaLabel": "Contact",
+            "primaryCtaHref": "/en/contact",
+            "secondaryCtaLabel": "Why us",
+            "secondaryCtaHref": "/en/#why-us"
+          }
+        }
+      },
+      {
+        "id": "assembly-complete-service",
+        "slug": "en/solutions/assembly-complete-service",
+        "type": "solutions",
+        "data": {
+          "header": {
+            "title": "Assembly & Complete Service",
+            "description": "Professional installation and comprehensive service for all your energy systems, ensuring seamless operation and lasting performance.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Assembly & complete service",
+            "primaryCtaLabel": "Contact",
+            "primaryCtaHref": "/en/contact",
+            "secondaryCtaLabel": "Why us",
+            "secondaryCtaHref": "/en/#why-us"
+          }
+        }
+      },
+      {
+        "id": "delivery-management",
+        "slug": "en/solutions/delivery-management",
+        "type": "solutions",
+        "data": {
+          "header": {
+            "title": "Delivery Management",
+            "description": "Streamlined and reliable logistics for timely delivery of your energy components, ensuring project efficiency from start to finish.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Delivery management",
+            "primaryCtaLabel": "Contact",
+            "primaryCtaHref": "/en/contact",
+            "secondaryCtaLabel": "Why us",
+            "secondaryCtaHref": "/en/#why-us"
           }
         }
       }
@@ -307,173 +415,182 @@
         { "type": "link", "label": "Home", "href": "/" },
         {
           "type": "link",
-          "label": "Products",
-          "href": "/products",
+          "label": "Lösungen und Produkte",
           "segments": [
             {
-              "title": "Products",
+              "title": "Produkte",
               "children": [
                 {
-                  "label": "Solar Panels",
+                  "label": "Solarpaneele",
                   "href": "/products/solar-panels",
-                  "description": "High-efficiency modules"
+                  "description": "Paneele von führenden globalen Herstellern, die strenge deutsche Standards erfüllen"
+                },
+                {
+                  "label": "Batteriespeicher",
+                  "href": "/products/battery-storage",
+                  "description": "Zuverlässige Energiespeichersysteme für Effizienz und Sicherheit"
+                },
+                {
+                  "label": "Wärmepumpen",
+                  "href": "/products/heat-pumps",
+                  "description": "Moderne Heizlösungen, die europäische Energiestandards erfüllen"
+                },
+                {
+                  "label": "Ladestationen für Fahrzeuge",
+                  "href": "/products/vehicle-charging-stations",
+                  "description": "Intelligente und effiziente Ladestationen für Elektrofahrzeuge für Zuhause und Unternehmen"
+                },
+                {
+                  "label": "Wechselrichter",
+                  "href": "/products/inverters",
+                  "description": "Hochleistungs-Wechselrichter für optimalen Betrieb der Solaranlage"
                 }
               ]
             },
             {
-              "title": "Solutions",
+              "title": "Lösungen",
               "children": [
                 {
-                  "label": "Batteries",
-                  "href": "/solutions/inverters",
-                  "description": "Store surplus energy"
+                  "label": "Energieberatung & Projektplanung",
+                  "href": "/solutions/energy-consulting-project-planning",
+                  "description": "Umfassende Beratung und zielgerichtete Planung für Ihre Energieeffizienz."
                 },
                 {
-                  "label": "Inverters",
-                  "href": "/solutions/inverters",
-                  "description": "Reliable energy conversion"
+                  "label": "Montage & Komplettservice",
+                  "href": "/solutions/assembly-complete-service",
+                  "description": "Fachgerechte Montage und Inbetriebnahme."
+                },
+                {
+                  "label": "Liefermanagement",
+                  "href": "/solutions/delivery-management",
+                  "description": "Schnelle und präzise Logistik für Ihre Energielösungen."
                 }
               ]
             }
           ]
         },
-        { "type": "link", "label": "About", "href": "/about" },
+        { "type": "link", "label": "Kontakt", "href": "/contact" },
         {
           "type": "button",
-          "label": "Contact",
+          "label": "Kontakt aufnehmen",
           "action": "email",
-          "email": "contact@solleffekt.com"
+          "email": "maciej.komar@gmail.com"
         }
       ]
     },
     "footer": {
-      "logo": { "src": "/logo.png", "alt": "Solleffekt Logo", "width": 160, "height": 64 },
+      "logo": { "src": "/logo.png", "alt": "Solleffekt Logo" },
       "links": [
-        { "href": "/about", "label": "About Us" },
-        { "href": "/blog", "label": "Blog" },
-        { "href": "/imprint", "label": "Imprint" },
-        { "href": "/privacy-policy", "label": "Privacy Policy" }
+        { "href": "/contact", "label": "Kontakt" },
+        { "href": "/imprint", "label": "Impressum" },
+        { "href": "/privacy-policy", "label": "Datenschutz" }
       ],
-      "leftInfo": "© 2025 Solleffekt. All Rights Reserved.",
-      "rightInfo": "Made by Solleffekt & Powered by Something"
+      "leftInfo": "Copyright © Made by Solleffekt",
+      "rightInfo": "Solleffekt Alle Rechte vorbehalten, 2025"
     },
     "pages": [
       {
         "id": "home",
         "slug": "",
+        "type": "main",
         "data": {
           "products": {
-            "heading": "Products",
-            "buttonLabel": "Learn more",
+            "heading": "Produkte",
+            "buttonLabel": "Mehr erfahren",
             "items": [
               {
                 "id": "p1",
-                "title": "Solar panels",
+                "title": "Solarpaneele",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Solar panels",
-                "description": "High-quality solar panels from leading global manufacturers, designed to meet strict German standards and ensure long-term energy efficiency.",
+                "imageAlt": "Solarpaneele",
+                "description": "Hochwertige Solarpaneele von führenden globalen Herstellern, entwickelt, um strenge deutsche Standards zu erfüllen und langfristige Energieeffizienz zu gewährleisten.",
                 "buttonHref": "/products/solar-panels"
               },
               {
                 "id": "p2",
-                "title": "Battery storage",
+                "title": "Batteriespeicher",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Battery storage",
-                "description": "Reliable and durable battery storage systems that provide maximum efficiency, safety, and independence for your energy supply.",
+                "imageAlt": "Batteriespeicher",
+                "description": "Zuverlässige und langlebige Batteriespeichersysteme, die maximale Effizienz, Sicherheit und Unabhängigkeit für Ihre Energieversorgung bieten.",
                 "buttonHref": "/products/battery-storage"
               },
               {
                 "id": "p3",
-                "title": "Heat pumps",
+                "title": "Wärmepumpen",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Heat pumps",
-                "description": "Modern and eco-friendly heat pumps that meet European energy standards, offering efficient heating and cooling for your home or business.",
+                "imageAlt": "Wärmepumpen",
+                "description": "Moderne und umweltfreundliche Wärmepumpen, die europäische Energiestandards erfüllen und effizientes Heizen und Kühlen für Ihr Zuhause oder Geschäft bieten.",
                 "buttonHref": "/products/heat-pumps"
               },
               {
                 "id": "p4",
-                "title": "Vehicle charging stations",
+                "title": "Ladestationen für Fahrzeuge",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Vehicle charging stations",
-                "description": "Smart, efficient, and future-proof EV charging stations for both private and commercial use, ensuring fast and safe vehicle charging.",
+                "imageAlt": "Ladestationen für Fahrzeuge",
+                "description": "Intelligente, effiziente und zukunftssichere Ladestationen für Elektrofahrzeuge für private und gewerbliche Nutzung, die schnelles und sicheres Laden gewährleisten.",
                 "buttonHref": "/products/vehicle-charging-stations"
               },
               {
                 "id": "p5",
-                "title": "Inverters",
+                "title": "Wechselrichter",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Inverters",
-                "description": "High-performance inverters that guarantee optimal operation of your solar system, with advanced technology for maximum energy yield.",
+                "imageAlt": "Wechselrichter",
+                "description": "Hochleistungs-Wechselrichter, die den optimalen Betrieb Ihrer Solaranlage garantieren, mit fortschrittlicher Technologie für maximalen Energieertrag.",
                 "buttonHref": "/products/inverters"
               }
             ]
           },
           "solutions": {
-            "heading": "Products",
-            "buttonLabel": "Learn more",
+            "heading": "Lösungen",
+            "buttonLabel": "Mehr erfahren",
             "items": [
               {
                 "id": "p1",
-                "title": "Solar panels",
+                "title": "Energieberatung & Projektplanung",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Solar panels",
-                "description": "High-quality solar panels from leading global manufacturers, designed to meet strict German standards and ensure long-term energy efficiency.",
-                "buttonHref": "/en/products/solar-panels"
+                "imageAlt": "Energieberatung & Projektplanung",
+                "description": "Umfassende Beratung und zielgerichtete Planung zur Verbesserung Ihrer Energieeffizienz, um sicherzustellen, dass jedes Projekt auf Ihre spezifischen Bedürfnisse und langfristigen Ziele zugeschnitten ist.",
+                "buttonHref": "/solutions/energy-consulting-project-planning"
               },
               {
                 "id": "p2",
-                "title": "Battery storage",
+                "title": "Montage & Komplettservice",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Battery storage",
-                "description": "Reliable and durable battery storage systems that provide maximum efficiency, safety, and independence for your energy supply.",
-                "buttonHref": "/en/products/battery-storage"
+                "imageAlt": "Montage & Komplettservice",
+                "description": "Fachgerechte Montage, Inbetriebnahme und komplette Servicelösungen, die zuverlässige Unterstützung von der Installation bis zur laufenden Wartung für maximale Systemleistung bieten.",
+                "buttonHref": "/solutions/assembly-complete-service"
               },
               {
                 "id": "p3",
-                "title": "Heat pumps",
+                "title": "Liefermanagement",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Heat pumps",
-                "description": "Modern and eco-friendly heat pumps that meet European energy standards, offering efficient heating and cooling for your home or business.",
-                "buttonHref": "/en/products/heat-pumps"
-              },
-              {
-                "id": "p4",
-                "title": "Vehicle charging stations",
-                "imageSrc": "/test-image.jpg",
-                "imageAlt": "Vehicle charging stations",
-                "description": "Smart, efficient, and future-proof EV charging stations for both private and commercial use, ensuring fast and safe vehicle charging.",
-                "buttonHref": "/en/products/vehicle-charging-stations"
-              },
-              {
-                "id": "p5",
-                "title": "Inverters",
-                "imageSrc": "/test-image.jpg",
-                "imageAlt": "Inverters",
-                "description": "High-performance inverters that guarantee optimal operation of your solar system, with advanced technology for maximum energy yield.",
-                "buttonHref": "/en/products/inverters"
+                "imageAlt": "Liefermanagement",
+                "description": "Schnelle, präzise und koordinierte Logistik für Ihre Energielösungen, die eine pünktliche Lieferung und effiziente Handhabung jeder Komponente von Anfang bis Ende gewährleistet.",
+                "buttonHref": "/solutions/delivery-management"
               }
             ]
           },
           "partner": {
-            "title": "Everything from a single source",
-            "overline": "Why with us",
+            "id": "why-us",
+            "title": "Alles aus einer Hand",
+            "overline": "Warum mit uns",
             "items": [
               {
                 "id": "b1",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "APsystems device",
+                "imageAlt": "Illustration von Energielösungen",
                 "points": [
                   {
                     "id": "p1",
-                    "title": "Marktführer von Multi-Modul Mikro-Wechselrichtern",
-                    "description": "Weltweit größtes Angebot an Leistungselektronik auf Modulebene. Bis Ende 2022 wurden weit mehr als 3GW an MLPE-Produkten verbaut.",
+                    "title": "Maßgeschneiderte Speziallösungen",
+                    "description": "Wir liefern maßgeschneiderte Energiekonzepte für einzigartige Anforderungen und herausfordernde Umgebungen wie Seen, Ackerland und maßgeschneiderte Installationen. Unser Portfolio umfasst fortschrittliche PV-Technologien sowie große Energiespeichersysteme.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   },
                   {
-                    "id": "p3",
-                    "title": "Intelligente Steuerung",
-                    "description": "Mit AP EasyPower haben Sie schnelle, einfache Überwachung und Analyse Ihrer Solaranlage – bequem vom Handy.",
+                    "id": "p2",
+                    "title": "Kontinuierliches Wachstum des Produktportfolios",
+                    "description": "Unser umfangreiches Produktangebot wird kontinuierlich um innovative Lösungen erweitert, um den sich entwickelnden Kundenbedürfnissen gerecht zu werden und den Fortschritt der Energiewende zu unterstützen.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   }
@@ -482,19 +599,19 @@
               {
                 "id": "b2",
                 "imageSrc": "/test-image.jpg",
-                "imageAlt": "Illustration",
+                "imageAlt": "Illustration professioneller Dienstleistungen",
                 "points": [
                   {
-                    "id": "p4",
-                    "title": "Skalierbar und zukunftssicher",
-                    "description": "Module und Speicher flexibel erweiterbar – wächst mit Ihren Bedürfnissen.",
+                    "id": "p3",
+                    "title": "Expertise in Planung & Beratung",
+                    "description": "Vom ersten Konzept bis zur Implementierung bietet unser erfahrenes Team persönliche Beratung und praktische Unterstützung. Wir arbeiten eng mit Kunden zusammen, um Lösungen zu entwickeln, die ihren Zielen entsprechen und langfristigen Wert liefern.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   },
                   {
-                    "id": "p5",
-                    "title": "Robustes Monitoring",
-                    "description": "Transparente Daten und Alarme für maximale Verfügbarkeit.",
+                    "id": "p4",
+                    "title": "Professionelle Installation",
+                    "description": "Unsere großen und hochqualifizierten Installationsteams gewährleisten eine schnelle und präzise Ausführung von dachmontierten (A/C) und Gleichstrom-Systemen (D/C), zuverlässig und effizient.",
                     "iconSrc": "/logo.png",
                     "iconAlt": "Icon"
                   }
@@ -506,27 +623,45 @@
             "backgroundImageSrc": "/test-image.jpg"
           },
           "optimize": {
-            "overline": "Optimization",
-            "title": "Optimize your system",
-            "subtitle": "Maximize performance with smart monitoring and proactive maintenance.",
+            "overline": "Innovationen im Energiebereich vorantreiben – Vorteile auf einen Blick.",
+            "title": "Innovation, die die Zukunft antreibt",
+            "subtitle": "Als Pioniere für fortschrittliche und maßgeschneiderte Energielösungen gehen wir über konventionelle Grenzen hinaus, um das Nächste zu liefern. Durch starke Zusammenarbeit mit führenden globalen Innovatoren bieten wir direkten Zugang zu Spitzentechnologien – ohne Zwischenhändler und zu besten Konditionen.",
             "imageSrc": "/test-image.jpg",
-            "imageAlt": "Optimize",
+            "imageAlt": "Zukunft der Energie",
             "items": [
               {
                 "id": "o1",
-                "description": "Real-time performance insights at a glance.",
+                "description": "Maßgeschneiderte Energielösungen",
                 "iconSrc": "/logo.png",
                 "iconAlt": "Icon"
               },
               {
                 "id": "o2",
-                "description": "Automated alerts to prevent downtime.",
+                "description": "Maximale Energieeinsparungen",
                 "iconSrc": "/logo.png",
                 "iconAlt": "Icon"
               },
               {
                 "id": "o3",
-                "description": "Actionable recommendations to improve yield.",
+                "description": "Spitzentechnologie",
+                "iconSrc": "/logo.png",
+                "iconAlt": "Icon"
+              },
+              {
+                "id": "o4",
+                "description": "End-to-End-Support",
+                "iconSrc": "/logo.png",
+                "iconAlt": "Icon"
+              },
+              {
+                "id": "o5",
+                "description": "All-in-One-Angebote",
+                "iconSrc": "/logo.png",
+                "iconAlt": "Icon"
+              },
+              {
+                "id": "o6",
+                "description": "Transparent und vertrauenswürdig",
                 "iconSrc": "/logo.png",
                 "iconAlt": "Icon"
               }
@@ -535,50 +670,140 @@
         }
       },
       {
-        "id": "solar-panels",
+        "id": "Solarpaneele",
         "slug": "products/solar-panels",
+        "type": "products",
         "data": {
           "header": {
-            "title": "Solar Panels",
-            "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
+            "title": "Solarpaneele",
+            "description": "Hocheffiziente Photovoltaikmodule, maßgeschneidert für Wohn- und Gewerbeinstallationen.",
             "imageSrc": "/test-image.jpg",
-            "imageAlt": "Solar panels",
-            "primaryCtaLabel": "Termin vereinbaren",
-            "primaryCtaHref": "#appointment",
+            "imageAlt": "Solarpaneele",
+            "primaryCtaLabel": "Kontakt",
+            "primaryCtaHref": "/contact",
             "secondaryCtaLabel": "Warum wir",
-            "secondaryCtaHref": "#why-us"
+            "secondaryCtaHref": "/#why-us"
+          }
+        }
+      },
+
+      {
+        "id": "Batteriespeicher",
+        "slug": "products/battery-storage",
+        "type": "products",
+        "data": {
+          "header": {
+            "title": "Batteriespeicher",
+            "description": "Zuverlässige und effiziente Energiespeichersysteme, konzipiert zur Maximierung des Eigenverbrauchs und zur Sicherstellung der Energieunabhängigkeit.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Batteriespeicher",
+            "primaryCtaLabel": "Kontakt",
+            "primaryCtaHref": "/contact",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "/#why-us"
           }
         }
       },
       {
-        "id": "solar-panels",
-        "slug": "products/solar-panels",
+        "id": "Wärmepumpen",
+        "slug": "products/heat-pumps",
+        "type": "products",
         "data": {
           "header": {
-            "title": "Solar Panels",
-            "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
+            "title": "Wärmepumpen",
+            "description": "Nachhaltige und kostengünstige Heiz- und Kühllösungen, optimiert für Energieeffizienz und Umweltschutz.",
             "imageSrc": "/test-image.jpg",
-            "imageAlt": "Solar panels",
-            "primaryCtaLabel": "Termin vereinbaren",
-            "primaryCtaHref": "#appointment",
+            "imageAlt": "Wärmepumpen",
+            "primaryCtaLabel": "Kontakt",
+            "primaryCtaHref": "/contact",
             "secondaryCtaLabel": "Warum wir",
-            "secondaryCtaHref": "#why-us"
+            "secondaryCtaHref": "/#why-us"
           }
         }
       },
       {
-        "id": "energy-consulting-project-planning",
+        "id": "Ladestationen für Fahrzeuge",
+        "slug": "products/vehicle-charging-stations",
+        "type": "products",
+        "data": {
+          "header": {
+            "title": "Ladestationen für Fahrzeuge",
+            "description": "Intelligente und schnelle Ladelösungen für Elektrofahrzeuge, die Komfort und Zuverlässigkeit für Zuhause und Unternehmen bieten.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Ladestationen für Fahrzeuge",
+            "primaryCtaLabel": "Kontakt",
+            "primaryCtaHref": "/contact",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "/#why-us"
+          }
+        }
+      },
+      {
+        "id": "Wechselrichter",
+        "slug": "products/inverters",
+        "type": "products",
+        "data": {
+          "header": {
+            "title": "Wechselrichter",
+            "description": "Hochleistungs-Wechselrichter, die eine optimale Umwandlung von Solarenergie gewährleisten und die Systemeffizienz und -stabilität verbessern.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Wechselrichter",
+            "primaryCtaLabel": "Kontakt",
+            "primaryCtaHref": "/contact",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "/#why-us"
+          }
+        }
+      },
+      {
+        "id": "Energieberatung & Projektplanung",
         "slug": "solutions/energy-consulting-project-planning",
+        "type": "solutions",
         "data": {
           "header": {
-            "title": "Solar Panels",
-            "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
+            "title": "Energieberatung & Projektplanung",
+            "description": "Umfassende Beratung und gezielte Planung zur Verbesserung Ihrer Energieeffizienz.",
             "imageSrc": "/test-image.jpg",
-            "imageAlt": "Solar panels",
-            "primaryCtaLabel": "Termin vereinbaren",
-            "primaryCtaHref": "#appointment",
+            "imageAlt": "Energieberatung & Projektplanung",
+            "primaryCtaLabel": "Kontakt",
+            "primaryCtaHref": "/contact",
             "secondaryCtaLabel": "Warum wir",
-            "secondaryCtaHref": "#why-us"
+            "secondaryCtaHref": "/#why-us"
+          }
+        }
+      },
+      {
+        "id": "Montage & Komplettservice",
+        "slug": "solutions/assembly-complete-service",
+        "type": "solutions",
+        "data": {
+          "header": {
+            "title": "Montage & Komplettservice",
+            "description": "Professionelle Installation und umfassender Service für alle Ihre Energiesysteme, der einen reibungslosen Betrieb und dauerhafte Leistung gewährleistet.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Montage & Komplettservice",
+            "primaryCtaLabel": "Kontakt",
+            "primaryCtaHref": "/contact",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "/#why-us"
+          }
+        }
+      },
+
+      {
+        "id": "Liefermanagement",
+        "slug": "solutions/delivery-management",
+        "type": "solutions",
+        "data": {
+          "header": {
+            "title": "Liefermanagement",
+            "description": "Optimierte und zuverlässige Logistik für die pünktliche Lieferung Ihrer Energiekomponenten, die Projekteffizienz von Anfang bis Ende gewährleistet.",
+            "imageSrc": "/test-image.jpg",
+            "imageAlt": "Liefermanagement",
+            "primaryCtaLabel": "Kontakt",
+            "primaryCtaHref": "/contact",
+            "secondaryCtaLabel": "Warum wir",
+            "secondaryCtaHref": "/#why-us"
           }
         }
       }

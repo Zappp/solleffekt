@@ -16,15 +16,16 @@ export type PartnerItem = {
 }
 
 export type MainPartnerProps = {
+  id: string
   title: string
   overline: string
   items: PartnerItem[]
 }
 
 export function MainPartner({ data }: { data: MainPartnerProps }) {
-  const { items, overline, title } = data
+  const { items, overline, title, id } = data
   return (
-    <section className="section-layout flex flex-col gap-12">
+    <section className="section-layout flex flex-col gap-12" id={id}>
       <div className="flex flex-col gap-4">
         <div data-aos="fade-up" className="typography-overline">
           {overline}

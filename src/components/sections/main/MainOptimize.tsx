@@ -39,7 +39,7 @@ export function MainOptimize({ data }: { data: MainOptimizePropsProps }) {
           ))}
         </div>
       </div>
-      <div className="overflow-hidden rounded-lg border border-neutral-200" data-aos="fade-up">
+      <div className="flex items-center overflow-hidden rounded-lg" data-aos="fade-up">
         <Image src={imageSrc} alt={imageAlt} className="rounded-image h-auto w-full object-cover" />
       </div>
     </section>
