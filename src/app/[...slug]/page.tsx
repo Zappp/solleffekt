@@ -1,15 +1,8 @@
-import { MainPage } from 'app/components/pages/MainPage'
-import { ProductsPage } from 'app/components/pages/ProductsPage'
-import { SolutionsPage } from 'app/components/pages/SolutionsPage'
+import { ImprintPage, ImprintPageData } from 'app/components/pages/ImprintPage'
+import { MainPage, MainPageData } from 'app/components/pages/MainPage'
+import { ProductsPage, ProductsPageData } from 'app/components/pages/ProductsPage'
 import { AppTemplate } from 'app/components/templates/AppTemplate'
-import {
-  AppData,
-  DocumentData,
-  Locale,
-  MainPageData,
-  ProductsPageData,
-  SolutionsPageData,
-} from 'app/types/app'
+import { AppData, DocumentData, Locale } from 'app/types/app'
 import { notFound } from 'next/navigation'
 import appData from '../../data/appData.json'
 import { defaultLocale } from '../page'
@@ -48,9 +41,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
     content = <ProductsPage data={pageData} />
   }
 
-  if (page.type === 'solutions') {
-    const pageData = page.data as SolutionsPageData
-    content = <SolutionsPage data={pageData} />
+  if (page.type === 'imprint') {
+    const pageData = page.data as ImprintPageData
+    content = <ImprintPage data={pageData} />
   }
 
   return (

@@ -1,8 +1,15 @@
-import { MainPageData } from 'app/types/app'
-import { MainOptimize } from '../sections/main/MainOptimize'
-import { MainPartner } from '../sections/main/MainPartner'
-import { MainProducts } from '../sections/main/MainProducts'
-import { SectionSeparator } from '../sections/shared/SectionSeparator'
+import { MainOptimize, MainOptimizePropsProps } from '../sections/main/MainOptimize'
+import { MainPartner, MainPartnerProps } from '../sections/main/MainPartner'
+import { MainProducts, MainProductsProps } from '../sections/main/MainProducts'
+import { SectionSeparator, SectionSeparatorProps } from '../sections/shared/SectionSeparator'
+
+export interface MainPageData {
+  products: MainProductsProps
+  solutions: MainProductsProps
+  optimize: MainOptimizePropsProps
+  sectionSeparator: SectionSeparatorProps
+  partner: MainPartnerProps
+}
 
 export function MainPage({ data }: { data: MainPageData }) {
   return (

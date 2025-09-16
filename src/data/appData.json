@@ -285,7 +285,7 @@
       {
         "id": "Energy consulting & project planning",
         "slug": "en/solutions/energy-consulting-project-planning",
-        "type": "solutions",
+        "type": "products",
         "data": {
           "header": {
             "title": "Energy consulting & project planning",
@@ -370,7 +370,7 @@
       {
         "id": "assembly-complete-service",
         "slug": "en/solutions/assembly-complete-service",
-        "type": "solutions",
+        "type": "products",
         "data": {
           "header": {
             "title": "Assembly & Complete Service",
@@ -387,7 +387,7 @@
       {
         "id": "delivery-management",
         "slug": "en/solutions/delivery-management",
-        "type": "solutions",
+        "type": "products",
         "data": {
           "header": {
             "title": "Delivery Management",
@@ -399,6 +399,68 @@
             "secondaryCtaLabel": "Why us",
             "secondaryCtaHref": "/en/#why-us"
           }
+        }
+      },
+      {
+        "id": "imprint",
+        "slug": "en/imprint",
+        "type": "imprint",
+        "data": {
+          "title": "Imprint",
+          "sections": [
+            {
+              "title": "Service Provider",
+              "items": [
+                { "label": "", "value": "MK DIENSTLEISTUNGEN SP. Z O.O." },
+                { "label": "Phone PL", "value": "+48 609 811 542" },
+                { "label": "Phone DE", "value": "+49 163 114 18 89" },
+                { "label": "Email Address", "value": "mkomar@solleffekt.de" },
+                { "label": "", "value": "Inzynierska 49, 81-512 Gdynia, Poland" }
+              ]
+            },
+            {
+              "title": "Register and Registration Number",
+              "items": [
+                { "label": "Court of Registration", "value": "Wrocław, Poland" },
+                { "label": "KRS", "value": "0000946361" },
+                { "label": "REGON", "value": "521031900" },
+                { "label": "VAT ID No.", "value": "PL8992915935" },
+                { "label": "German Tax Number", "value": "056/657/40082" }
+              ]
+            },
+            {
+              "title": "Authorized Representatives",
+              "items": [{ "label": "Managing Director", "value": "Maciej Komar" }]
+            },
+            {
+              "title": "Bank Details",
+              "items": [
+                { "label": "", "value": "SANTANDER BANK POLSKA" },
+                { "label": "IBAN", "value": "PL 48 1090 1102 0000 0001 4961 0099" },
+                { "label": "BIC/SWIFT", "value": "WBKPPLPP" }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "contact",
+        "slug": "en/contact",
+        "type": "imprint",
+        "data": {
+          "title": "Contact",
+          "sections": [
+            {
+              "title": "Service Provider",
+              "items": [
+                { "label": "", "value": "MK DIENSTLEISTUNGEN SP. Z O.O." },
+                { "label": "Phone PL", "value": "+48 609 811 542" },
+                { "label": "Phone DE", "value": "+49 163 114 18 89" },
+                { "label": "Email Address", "value": "mkomar@solleffekt.de" },
+                { "label": "", "value": "Inzynierska 49, 81-512 Gdynia, Poland" }
+              ]
+            }
+          ]
         }
       }
     ]
@@ -686,7 +748,6 @@
           }
         }
       },
-
       {
         "id": "Batteriespeicher",
         "slug": "products/battery-storage",
@@ -758,7 +819,7 @@
       {
         "id": "Energieberatung & Projektplanung",
         "slug": "solutions/energy-consulting-project-planning",
-        "type": "solutions",
+        "type": "products",
         "data": {
           "header": {
             "title": "Energieberatung & Projektplanung",
@@ -775,7 +836,7 @@
       {
         "id": "Montage & Komplettservice",
         "slug": "solutions/assembly-complete-service",
-        "type": "solutions",
+        "type": "products",
         "data": {
           "header": {
             "title": "Montage & Komplettservice",
@@ -789,11 +850,10 @@
           }
         }
       },
-
       {
         "id": "Liefermanagement",
         "slug": "solutions/delivery-management",
-        "type": "solutions",
+        "type": "products",
         "data": {
           "header": {
             "title": "Liefermanagement",
@@ -805,6 +865,68 @@
             "secondaryCtaLabel": "Warum wir",
             "secondaryCtaHref": "/#why-us"
           }
+        }
+      },
+      {
+        "id": "imprint",
+        "slug": "imprint",
+        "type": "imprint",
+        "data": {
+          "title": "Impressum",
+          "sections": [
+            {
+              "title": "Dienstanbieter",
+              "items": [
+                { "label": "", "value": "MK DIENSTLEISTUNGEN SP. Z O.O." },
+                { "label": "Telefon PL", "value": "+48 609 811 542" },
+                { "label": "Telefon DE", "value": "+49 163 114 18 89" },
+                { "label": "E-Mail-Adresse:", "value": "mkomar@solleffekt.de" },
+                { "label": "", "value": "Inzynierska-Str. 49, 81-512 Gdynia, Polen" }
+              ]
+            },
+            {
+              "title": "Register und Registernummer",
+              "items": [
+                { "label": "Registergericht / Court of Registration", "value": "Wrocław, Polen" },
+                { "label": "KRS", "value": "0000946361" },
+                { "label": "REGON", "value": "521031900" },
+                { "label": "USt-IdNr. / VAT-ID-No.", "value": "PL8992915935" },
+                { "label": "DE Steuernummer", "value": "056/657/40082" }
+              ]
+            },
+            {
+              "title": "Vertretungsberechtigte Personen",
+              "items": [{ "label": "Geschäftsführer / Managing Director", "value": "Maciej Komar" }]
+            },
+            {
+              "title": "Bank Verbindung",
+              "items": [
+                { "label": "", "value": "SANTANDER BANK POLSKA" },
+                { "label": "IBAN", "value": "PL 48 1090 1102 0000 0001 4961 0099" },
+                { "label": "BIC/SWIFT", "value": "WBKPPLPP" }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "contact",
+        "slug": "contact",
+        "type": "imprint",
+        "data": {
+          "title": "Kontakt",
+          "sections": [
+            {
+              "title": "Dienstanbieter",
+              "items": [
+                { "label": "", "value": "MK DIENSTLEISTUNGEN SP. Z O.O." },
+                { "label": "Telefon PL", "value": "+48 609 811 542" },
+                { "label": "Telefon DE", "value": "+49 163 114 18 89" },
+                { "label": "E-Mail-Adresse:", "value": "mkomar@solleffekt.de" },
+                { "label": "", "value": "Inzynierska-Str. 49, 81-512 Gdynia, Polen" }
+              ]
+            }
+          ]
         }
       }
     ]

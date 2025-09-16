@@ -55,5 +55,4 @@ caption right
 'Made by Solleffekt' -->
 <!--
 meta
-title sollefect
 desc montujemy panale wszysktich swiatowych czolowych producentow ktore pselniaja wymagania niemieckich norm -->

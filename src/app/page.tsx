@@ -1,6 +1,6 @@
-import { MainPage } from 'app/components/pages/MainPage'
+import { MainPage, MainPageData } from 'app/components/pages/MainPage'
 import { AppTemplate } from 'app/components/templates/AppTemplate'
-import { AppData, Locale, MainPageData } from 'app/types/app'
+import { AppData, Locale } from 'app/types/app'
 import { notFound } from 'next/navigation'
 import appData from '../data/appData.json'
 

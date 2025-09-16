@@ -3,7 +3,7 @@ import './globals.css'
 import { defaultLocale } from './page'
 
 export const metadata: Metadata = {
-  title: 'Sollefect',
+  title: 'Solleffekt',
   description: 'Wir montieren Solarmodule führender Weltmarken nach deutschen Normen.',
 }
 

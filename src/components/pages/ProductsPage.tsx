@@ -1,5 +1,8 @@
-import { ProductsPageData } from 'app/types/app'
-import { ProductsHeader } from '../sections/shared/ProductsHeader'
+import { ProductsHeader, ProductsHeaderProps } from '../sections/shared/ProductsHeader'
+
+export interface ProductsPageData {
+  header: ProductsHeaderProps
+}
 
 export function ProductsPage({ data }: { data: ProductsPageData }) {
   return (

@@ -1,8 +1,6 @@
-import { MainOptimizePropsProps } from 'app/components/sections/main/MainOptimize'
-import { MainPartnerProps } from 'app/components/sections/main/MainPartner'
-import { MainProductsProps } from 'app/components/sections/main/MainProducts'
-import { ProductsHeaderProps } from 'app/components/sections/shared/ProductsHeader'
-import { SectionSeparatorProps } from 'app/components/sections/shared/SectionSeparator'
+import { ImprintPageData } from 'app/components/pages/ImprintPage'
+import { MainPageData } from 'app/components/pages/MainPage'
+import { ProductsPageData } from 'app/components/pages/ProductsPage'
 import { FooterProps } from 'app/components/ui/Footer'
 import { NavbarProps } from 'app/components/ui/Navbar'
 
@@ -17,24 +15,10 @@ export type DocumentData = {
     id: string
     slug: string
     data: PageData
-    type: 'main' | 'products' | 'solutions'
+    type: PageType
   }>
 }
 
-export type PageData = MainPageData | ProductsPageData | SolutionsPageData
+type PageType = 'main' | 'products' | 'imprint'
 
-export interface MainPageData {
-  products: MainProductsProps
-  solutions: MainProductsProps
-  optimize: MainOptimizePropsProps
-  sectionSeparator: SectionSeparatorProps
-  partner: MainPartnerProps
-}
-
-export interface ProductsPageData {
-  header: ProductsHeaderProps
-}
-
-export interface SolutionsPageData {
-  header: ProductsHeaderProps
-}
+export type PageData = MainPageData | ProductsPageData | ImprintPageData
