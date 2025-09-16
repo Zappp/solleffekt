@@ -9,6 +9,7 @@ import {
   SolutionsPageData,
   Page as TPage,
 } from 'app/types/app'
+import { notFound } from 'next/navigation'
 import appData from '../../data/appData.json'
 import { defaultLocale } from '../page'
 
@@ -27,27 +28,25 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
 
   const locales = Object.keys(appData)
   const fullSlug = resolvedParams.slug.join('/')
-  const locale = locales.find((l) => fullSlug.includes(l)) ?? defaultLocale
+  const locale = locales.find((l) => new RegExp(`^${l}(?:/|$)`).test(fullSlug)) ?? defaultLocale
 
   const page = (appData as AppData)[locale].pages.find((p) => p.slug === fullSlug)
 
-  if (!page) return
+  if (!page) notFound()
 
   let content = <></>
 
-  if (locales.some((locale) => locale === page.slug)) {
+  if (page.type === 'main') {
     const pageData = page.data as MainPageData
     content = <MainPage data={pageData} />
   }
 
-  const parsedSlug = page.slug.replace(`${locale}/`, '')
-
-  if (/^products\/+/.test(parsedSlug)) {
+  if (page.type === 'products') {
     const pageData = page.data as ProductsPageData
     content = <ProductsPage data={pageData} />
   }
 
-  if (/^solutions\/+/.test(parsedSlug)) {
+  if (page.type === 'solutions') {
     const pageData = page.data as SolutionsPageData
     content = <SolutionsPage data={pageData} />
   }

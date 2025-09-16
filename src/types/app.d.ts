@@ -31,6 +31,7 @@ export type Page = {
     id: string
     slug: string
     data: PageData
+    type: 'main' | 'products' | 'solutions'
   }>
 }
 
