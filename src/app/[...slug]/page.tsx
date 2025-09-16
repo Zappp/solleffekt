@@ -1,5 +1,6 @@
 import { ImprintPage, ImprintPageData } from 'app/components/pages/ImprintPage'
 import { MainPage, MainPageData } from 'app/components/pages/MainPage'
+import { PrivacyPolicyPage, PrivacyPolicyPageData } from 'app/components/pages/PrivacyPolicyPage'
 import { ProductsPage, ProductsPageData } from 'app/components/pages/ProductsPage'
 import { AppTemplate } from 'app/components/templates/AppTemplate'
 import { AppData, DocumentData, Locale } from 'app/types/app'
@@ -44,6 +45,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
   if (page.type === 'imprint') {
     const pageData = page.data as ImprintPageData
     content = <ImprintPage data={pageData} />
+  }
+
+  if (page.type === 'privacy-policy') {
+    const pageData = page.data as PrivacyPolicyPageData
+    content = <PrivacyPolicyPage data={pageData} />
   }
 
   return (

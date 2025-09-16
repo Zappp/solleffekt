@@ -462,6 +462,17 @@
             }
           ]
         }
+      },
+      {
+        "id": "privacy-policy",
+        "slug": "en/privacy-policy",
+        "type": "privacy-policy",
+        "data": {
+          "iconAlt": "DSGVO Icon",
+          "iconSrc": "/logo.png",
+          "title": "Privacy Policy",
+          "href": "#"
+        }
       }
     ]
   },
@@ -927,6 +938,17 @@
               ]
             }
           ]
+        }
+      },
+      {
+        "id": "privacy-policy",
+        "slug": "privacy-policy",
+        "type": "privacy-policy",
+        "data": {
+          "iconAlt": "DSGVO Icon",
+          "iconSrc": "/logo.png",
+          "title": "Datenschutzerklärung",
+          "href": "#"
         }
       }
     ]

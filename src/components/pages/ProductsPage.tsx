@@ -1,4 +1,4 @@
-import { ProductsHeader, ProductsHeaderProps } from '../sections/shared/ProductsHeader'
+import { ProductsHeader, ProductsHeaderProps } from '../sections/products/ProductsHeader'
 
 export interface ProductsPageData {
   header: ProductsHeaderProps

@@ -1,5 +1,6 @@
 import { ImprintPageData } from 'app/components/pages/ImprintPage'
 import { MainPageData } from 'app/components/pages/MainPage'
+import { PrivacyPolicyPageData } from 'app/components/pages/PrivacyPolicyPage'
 import { ProductsPageData } from 'app/components/pages/ProductsPage'
 import { FooterProps } from 'app/components/ui/Footer'
 import { NavbarProps } from 'app/components/ui/Navbar'
@@ -19,6 +20,6 @@ export type DocumentData = {
   }>
 }
 
-type PageType = 'main' | 'products' | 'imprint'
+export type PageData = MainPageData | ProductsPageData | ImprintPageData | PrivacyPolicyPageData
 
-export type PageData = MainPageData | ProductsPageData | ImprintPageData
+export type PageType = 'main' | 'products' | 'imprint' | 'privacy-policy'
