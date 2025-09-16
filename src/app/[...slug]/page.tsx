@@ -4,10 +4,11 @@ import { SolutionsPage } from 'app/components/pages/SolutionsPage'
 import { AppTemplate } from 'app/components/templates/AppTemplate'
 import {
   AppData,
+  DocumentData,
+  Locale,
   MainPageData,
   ProductsPageData,
   SolutionsPageData,
-  Page as TPage,
 } from 'app/types/app'
 import { notFound } from 'next/navigation'
 import appData from '../../data/appData.json'
@@ -17,7 +18,7 @@ export const dynamicParams = false
 
 export async function generateStaticParams() {
   return Object.values(appData as AppData)
-    .flatMap((pages: TPage) =>
+    .flatMap((pages: DocumentData) =>
       pages.pages.map(({ slug }) => ({ slug: slug.split('/').filter(Boolean) })),
     )
     .filter(({ slug }) => slug.length)
@@ -28,7 +29,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
 
   const locales = Object.keys(appData)
   const fullSlug = resolvedParams.slug.join('/')
-  const locale = locales.find((l) => new RegExp(`^${l}(?:/|$)`).test(fullSlug)) ?? defaultLocale
+  const locale =
+    (locales.find((l) => new RegExp(`^${l}(?:/|$)`).test(fullSlug)) as Locale) ?? defaultLocale
 
   const page = (appData as AppData)[locale].pages.find((p) => p.slug === fullSlug)
 
