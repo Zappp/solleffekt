@@ -34,7 +34,7 @@ export function LocaleSwitcher({ locales }: { locales: string[] }) {
   }
 
   return (
-    <div className="fixed right-10 bottom-10 z-50">
+    <div className="fixed right-10 bottom-10 z-20">
       <button
         className="flex h-12 w-12 transform items-center justify-center rounded-full bg-red-500 text-white shadow-lg transition-transform duration-300 ease-in-out hover:scale-130 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}

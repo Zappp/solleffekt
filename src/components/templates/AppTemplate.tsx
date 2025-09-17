@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { CookieConsent, CookieConsentProps } from '../ui/CookieConsent'
 import { Footer, FooterProps } from '../ui/Footer'
 import { LocaleSwitcher } from '../ui/LocaleSwitcher'
 import { Navbar, NavbarProps } from '../ui/Navbar'
@@ -6,7 +7,7 @@ import { AOS } from '../utils/AOS'
 
 export function AppTemplate({
   children,
-  data: { footer, navbar },
+  data: { footer, navbar, cookieConsent },
   locale,
   locales,
 }: {
@@ -14,6 +15,7 @@ export function AppTemplate({
   data: {
     footer: FooterProps
     navbar: NavbarProps
+    cookieConsent: CookieConsentProps
   }
   locale: string
   locales: string[]
@@ -22,6 +24,7 @@ export function AppTemplate({
     <>
       <AOS />
       <LocaleSwitcher locales={locales} />
+      <CookieConsent cookieConsent={cookieConsent} />
       <header
         lang={locale}
         className="sticky top-0 z-50 border-b border-indigo-200/60 bg-white/80 backdrop-blur"

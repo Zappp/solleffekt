@@ -84,6 +84,34 @@
       "leftInfo": "Copyright © Made by Solleffekt",
       "rightInfo": "Solleffekt All Rights Reserved, 2025"
     },
+    "cookieConsent": {
+      "title": "This website uses cookies",
+      "description": "We use cookies and similar tracking technologies to collect and track information to improve and analyze our Service.",
+      "acceptButtonText": "Accept Selected",
+      "cookies": [
+        {
+          "id": "essentialCookies",
+          "name": "Essential Cookies",
+          "description": "Necessary for the website to function correctly. These cannot be disabled.",
+          "checked": true,
+          "disabled": true
+        },
+        {
+          "id": "performanceCookies",
+          "name": "Performance Cookies",
+          "description": "Help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+          "checked": false,
+          "disabled": false
+        },
+        {
+          "id": "functionalCookies",
+          "name": "Functional Cookies",
+          "description": "Allow the website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features.",
+          "checked": false,
+          "disabled": false
+        }
+      ]
+    },
     "pages": [
       {
         "id": "home",
@@ -567,6 +595,34 @@
       ],
       "leftInfo": "Copyright © Made by Solleffekt",
       "rightInfo": "Solleffekt Alle Rechte vorbehalten, 2025"
+    },
+    "cookieConsent": {
+      "title": "Diese Website verwendet Cookies",
+      "description": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Informationen zu sammeln und zu verfolgen, damit wir unseren Service verbessern und analysieren können.",
+      "acceptButtonText": "Auswahl akzeptieren",
+      "cookies": [
+        {
+          "id": "essentialCookies",
+          "name": "Essenzielle Cookies",
+          "description": "Erforderlich, damit die Website korrekt funktioniert. Diese können nicht deaktiviert werden.",
+          "checked": true,
+          "disabled": true
+        },
+        {
+          "id": "performanceCookies",
+          "name": "Leistungs-Cookies",
+          "description": "Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie Informationen anonym sammeln und melden.",
+          "checked": false,
+          "disabled": false
+        },
+        {
+          "id": "functionalCookies",
+          "name": "Funktionale Cookies",
+          "description": "Ermöglichen es der Website, sich an von Ihnen getroffene Entscheidungen zu erinnern (z. B. Benutzername, Sprache oder Region) und erweiterte, persönlichere Funktionen bereitzustellen.",
+          "checked": false,
+          "disabled": false
+        }
+      ]
     },
     "pages": [
       {
