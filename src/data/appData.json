@@ -90,6 +90,12 @@
         "slug": "en",
         "type": "main",
         "data": {
+          "header": {
+            "tagCompany": "Solleffekt",
+            "tag": "Unlock the potential of renewable energy – your all-in-one source for complete energy solutions",
+            "title": "Everything from a single source",
+            "subtitle": "Creating impact through renewable partnerships"
+          },
           "products": {
             "heading": "Products",
             "buttonLabel": "Learn more",
@@ -215,6 +221,7 @@
               }
             ]
           },
+
           "sectionSeparator": {
             "backgroundImageSrc": "/test-image.jpg"
           },
@@ -567,6 +574,12 @@
         "slug": "",
         "type": "main",
         "data": {
+          "header": {
+            "tagCompany": "Solleffekt",
+            "tag": "Entfesseln Sie das Potenzial erneuerbarer Energien – Ihre All-in-One-Quelle für ganzheitliche Energielösungen",
+            "title": "Alles aus einer Hand",
+            "subtitle": "Wirkung schaffen durch erneuerbare Partnerschaften"
+          },
           "products": {
             "heading": "Produkte",
             "buttonLabel": "Mehr erfahren",
@@ -692,6 +705,7 @@
               }
             ]
           },
+
           "sectionSeparator": {
             "backgroundImageSrc": "/test-image.jpg"
           },
