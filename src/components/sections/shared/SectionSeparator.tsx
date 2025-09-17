@@ -8,9 +8,9 @@ export function SectionSeparator({ data }: { data: SectionSeparatorProps }) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
   const url = `${basePath}${backgroundImageSrc}`
   return (
-    <div
+    <section
       aria-hidden
-      className="w-full self-center bg-cover bg-scroll bg-center md:bg-fixed"
+      className="mt-1.5 mb-10 w-full self-center bg-cover bg-scroll bg-center md:bg-fixed"
       style={{ backgroundImage: `url(${url})`, height: `${height}px` }}
     />
   )

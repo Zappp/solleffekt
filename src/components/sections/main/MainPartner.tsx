@@ -56,17 +56,21 @@ export function MainPartner({ data }: { data: MainPartnerProps }) {
 
             <div className="flex flex-col gap-8">
               {block.points.map((pt) => (
-                <div key={pt.id} className="flex items-start gap-4" data-aos="fade-up">
-                  <div className="relative flex w-12 flex-0 items-center justify-center rounded-full bg-indigo-50 ring-1 ring-indigo-100">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100">
-                      <Image src={pt.iconSrc} alt={pt.iconAlt} className="h-5 w-5 object-contain" />
-                    </div>
+                <div
+                  key={pt.id}
+                  className="flex items-start gap-4 rounded-2xl bg-neutral-50 p-5"
+                  data-aos="fade-up"
+                >
+                  <div className="relative flex h-15 w-15 shrink-0 items-center justify-center rounded-3xl border border-neutral-200 bg-white">
+                    <Image
+                      src={pt.iconSrc}
+                      alt={pt.iconAlt}
+                      className="w-full object-contain p-3"
+                    />
                   </div>
-                  <div className="flex flex-col gap-1">
-                    <div className="typography-h5">{pt.title}</div>
-                    <div className="typography-body-small typography-emphasis">
-                      {pt.description}
-                    </div>
+                  <div className="flex flex-col gap-2">
+                    <div className="typography-h6 font-semibold">{pt.title}</div>
+                    <div className="typography-body-small typography-subtle">{pt.description}</div>
                   </div>
                 </div>
               ))}

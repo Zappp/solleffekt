@@ -27,7 +27,7 @@ export function AppTemplate({
       <CookieConsent cookieConsent={cookieConsent} />
       <header
         lang={locale}
-        className="sticky top-0 z-50 border-b border-indigo-200/60 bg-white/80 backdrop-blur"
+        className="sticky top-0 z-30 border-b border-neutral-200 bg-white backdrop-blur"
       >
         <Navbar data={navbar} />
       </header>

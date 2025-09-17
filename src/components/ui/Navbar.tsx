@@ -52,9 +52,9 @@ export function Navbar({ data }: { data: NavbarProps }) {
       <nav className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3 px-3">
-            <Link href={brand.href} className="inline-flex items-center gap-1">
-              <Image src={brand.logoSrc} alt={brand.logoAlt} className="w-10" />
-              <span className="typography-emphasis">{brand.label}</span>
+            <Link href={brand.href} className="inline-flex items-center gap-2">
+              <Image src={brand.logoSrc} alt={brand.logoAlt} className="w-15" />
+              <span className="typography-h3 tracking-wider">{brand.label}</span>
             </Link>
           </div>
 
@@ -74,7 +74,7 @@ function DesktopNav({ items }: { items: NavbarItem[] }) {
   const buttons = items.filter((item) => item.type === 'button')
   return (
     <div className="hidden flex-1 items-center gap-6 text-sm md:flex md:justify-between">
-      <div className="gap-3 md:flex">
+      <div className="items-center gap-3 md:flex">
         {links.map((link) => {
           return link.segments && link.segments.length > 0 ? (
             <DesktopDropdown key={link.label} item={link} />
@@ -123,13 +123,9 @@ function EmailButton({ item }: { item: Extract<NavbarItem, { type: 'button' }> }
 function DesktopDropdown({ item }: { item: Extract<NavbarItem, { type: 'link' }> }) {
   const [open, setOpen] = useState(false)
   return (
-    <div
-      className="relative"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
+    <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
       <button
-        className="inline-flex items-center gap-1 px-1 py-4 font-semibold"
+        className="inline-flex items-center gap-1 px-1 py-8 font-semibold"
         aria-haspopup="menu"
         aria-expanded={open}
       >
@@ -145,9 +141,9 @@ function DesktopDropdown({ item }: { item: Extract<NavbarItem, { type: 'link' }>
         </svg>
       </button>
       {open && item.segments && (
-        <div className="absolute left-[-200px]">
-          <div className="rounded-md border border-indigo-200/50 bg-white shadow-lg">
-            <div className="flex gap-3 py-2">
+        <div className="fixed left-0 z-30 w-full bg-white" data-aos="fade">
+          <div className="max-h-[50vh] overflow-y-auto rounded-md border border-neutral-200/50 shadow-lg">
+            <div className="flex justify-center gap-3 py-2">
               {item.segments.map((segment) => (
                 <div className="flex flex-col gap-2 px-3 py-2" key={segment.title}>
                   <h6 className="typography-overline">{segment.title}</h6>
@@ -182,7 +178,7 @@ function DropdownLink({
   return (
     <Link
       href={href}
-      className="block min-w-[300px] rounded-md px-3 py-1 hover:bg-yellow-100/60 focus:hover:bg-yellow-100/60"
+      className="block max-w-[450px] rounded-md px-3 py-2 hover:bg-yellow-100/60 focus:hover:bg-yellow-100/60 md:py-2"
     >
       <div className="font-semibold">{children}</div>
       {description ? <div className="typography-caption">{description}</div> : null}
@@ -269,7 +265,9 @@ function MobileMenu({ open, items }: { open: boolean; items: NavbarItem[] }) {
                 </div>
               </>
             ) : (
-              <NavLink href={item.href ?? '#'}>{item.label}</NavLink>
+              <div className="py-2">
+                <NavLink href={item.href ?? '#'}>{item.label}</NavLink>
+              </div>
             )}
           </div>
         ))}

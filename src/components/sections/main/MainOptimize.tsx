@@ -31,10 +31,14 @@ export function MainOptimize({ data }: { data: MainOptimizePropsProps }) {
           {subtitle}
         </p>
         <div className="mt-2 flex flex-col gap-3">
-          {items.map((it) => (
-            <div key={it.id} className="flex items-start gap-3" data-aos="fade-up">
-              <Image src={it.iconSrc} alt={it.iconAlt} className="h-4 w-6 object-contain" />
-              <p className="typography-body-small typography-emphasis">{it.description}</p>
+          {items.map((item) => (
+            <div
+              key={item.id}
+              className="flex items-center justify-items-start gap-3"
+              data-aos="fade-up"
+            >
+              <Image src={item.iconSrc} alt={item.iconAlt} className="h-4 w-6 object-contain" />
+              <p className="typography-body-small typography-emphasis">{item.description}</p>
             </div>
           ))}
         </div>

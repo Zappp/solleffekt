@@ -28,7 +28,7 @@ export function ProductsHeader({ data }: { data: ProductsHeaderProps }) {
       <div className="flex flex-col gap-4" data-aos="fade-right">
         <h1 className="typography-h1">{title}</h1>
         <p className="typography-body typography-emphasis">{description}</p>
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="mt-5 flex flex-wrap items-center gap-3">
           {primaryCtaLabel && primaryCtaHref ? (
             <Link
               href={primaryCtaHref}
