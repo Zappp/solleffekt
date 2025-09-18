@@ -1,11 +1,10 @@
-import { ImprintPage } from 'app/components/pages/ImprintPage'
-import { MainPage } from 'app/components/pages/MainPage'
-import { PrivacyPolicyPage } from 'app/components/pages/PrivacyPolicyPage'
+import { ImprintPage, ImprintPageData } from 'app/components/pages/ImprintPage'
+import { MainPage, MainPageData } from 'app/components/pages/MainPage'
+import { PrivacyPolicyPage, PrivacyPolicyPageData } from 'app/components/pages/PrivacyPolicyPage'
 import { ProductsPage } from 'app/components/pages/ProductsPage'
-import { SolutionsPage } from 'app/components/pages/SolutionsPage'
-import { AppData, ContentMap, DocumentData, Locale } from 'app/types/app'
+import { ProductsPageData, SolutionsPage } from 'app/components/pages/SolutionsPage'
+import { AppData, DocumentData, Locale } from 'app/types/app'
 import { notFound } from 'next/navigation'
-import { ComponentType } from 'react'
 import appData from '../../data/appData.json'
 import { defaultLocale } from '../page'
 
@@ -30,16 +29,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
 
   if (!page) notFound()
 
-  const PageComponent = pageComponent[page.type]
-  return <PageComponent data={page.data as ContentMap[keyof typeof page.data]} />
-}
+  if (page.type === 'main') return <MainPage data={page.data as MainPageData} />
+  if (page.type === 'products') return <ProductsPage data={page.data as ProductsPageData} />
+  if (page.type === 'solutions') return <SolutionsPage data={page.data as ProductsPageData} />
+  if (page.type === 'imprint') return <ImprintPage data={page.data as ImprintPageData} />
+  if (page.type === 'privacy-policy')
+    return <PrivacyPolicyPage data={page.data as PrivacyPolicyPageData} />
 
-export const pageComponent: {
-  [K in keyof ContentMap]: ComponentType<{ data: ContentMap[K] }>
-} = {
-  main: MainPage,
-  products: ProductsPage,
-  solutions: SolutionsPage,
-  imprint: ImprintPage,
-  'privacy-policy': PrivacyPolicyPage,
+  return notFound()
 }
