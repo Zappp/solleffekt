@@ -61,7 +61,7 @@ export function CookieConsent({ cookieConsent }: { cookieConsent: CookieConsentP
 
   return (
     <div
-      className={`fixed right-0 bottom-0 left-0 z-40 max-h-[calc(100vh-5rem)] transform overflow-y-auto bg-white/85 p-6 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.2)] backdrop-blur transition-transform duration-300 ease-out ${
+      className={`fixed right-0 bottom-0 left-0 z-40 max-h-[calc(100vh-5rem)] transform overflow-y-auto bg-white/85 p-6 pb-15 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.2)] backdrop-blur transition-transform duration-300 ease-out xl:pb-6 ${
         isOpen ? 'translate-y-0' : 'translate-y-full'
       }`}
     >

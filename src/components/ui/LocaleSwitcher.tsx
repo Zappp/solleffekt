@@ -34,7 +34,7 @@ export function LocaleSwitcher({ locales }: { locales: string[] }) {
   }
 
   return (
-    <div className="fixed right-10 bottom-10 z-20">
+    <div className="fixed bottom-10 left-10 z-50 xl:right-10 xl:left-auto">
       <button
         className="flex h-12 w-12 transform items-center justify-center rounded-full bg-red-500 text-white shadow-lg transition-transform duration-300 ease-in-out hover:scale-130 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
@@ -60,7 +60,7 @@ export function LocaleSwitcher({ locales }: { locales: string[] }) {
       )}
 
       {isOpen && (
-        <div className="absolute right-0 bottom-16 z-50 w-48 rounded-lg bg-white p-4 shadow-[0_0_10px_rgba(0,0,0,0.1)] focus:outline-none">
+        <div className="absolute right-auto bottom-16 left-0 z-50 w-48 rounded-lg bg-white p-4 shadow-[0_0_10px_rgba(0,0,0,0.1)] focus:outline-none xl:right-0 xl:left-auto">
           <p className="text-md mb-2 font-bold text-gray-900">Select your locale</p>
           <div
             className="flex flex-wrap justify-center gap-4"

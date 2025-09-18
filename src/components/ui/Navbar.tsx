@@ -232,7 +232,7 @@ function MobileMenu({ open, items }: { open: boolean; items: NavbarItem[] }) {
   return (
     <div
       className={`overflow-y-scroll border-t border-indigo-200/60 transition-all duration-200 ease-out md:hidden ${
-        open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        open ? 'max-h-[calc(100vh-40px)] opacity-100 shadow-lg' : 'max-h-0 opacity-0'
       }`}
     >
       <div className="space-y-3 px-4 py-3">
