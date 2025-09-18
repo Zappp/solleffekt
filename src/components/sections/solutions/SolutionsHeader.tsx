@@ -12,7 +12,7 @@ export type ProductsHeaderProps = {
   secondaryCtaHref?: string
 }
 
-export function ProductsHeader({ data }: { data: ProductsHeaderProps }) {
+export function SolutionsHeader({ data }: { data: ProductsHeaderProps }) {
   const {
     title,
     description,
@@ -52,7 +52,7 @@ export function ProductsHeader({ data }: { data: ProductsHeaderProps }) {
         <Image
           src={imageSrc}
           alt={imageAlt}
-          className="max-h-[400px] w-full object-contain"
+          className="max-h-[400px] w-full object-cover object-bottom"
           priority
         />
       </div>

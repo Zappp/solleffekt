@@ -9,6 +9,7 @@ export const AOS = () => {
       AOS.init({
         duration: 800,
         once: true,
+        offset: 300,
       }),
     )
   }, [])

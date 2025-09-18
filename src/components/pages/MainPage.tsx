@@ -2,6 +2,7 @@ import { MainHeader, MainHeaderProps } from '../sections/main/MainHeader'
 import { MainOptimize, MainOptimizePropsProps } from '../sections/main/MainOptimize'
 import { MainPartner, MainPartnerProps } from '../sections/main/MainPartner'
 import { MainProducts, MainProductsProps } from '../sections/main/MainProducts'
+import { MainSolutions } from '../sections/main/MainSolutions'
 import { SectionSeparator, SectionSeparatorProps } from '../sections/shared/SectionSeparator'
 
 export interface MainPageData {
@@ -18,7 +19,7 @@ export function MainPage({ data }: { data: MainPageData }) {
     <>
       <MainHeader data={data.header} />
       <MainProducts data={data.products} />
-      <MainProducts data={data.solutions} />
+      <MainSolutions data={data.solutions} />
       <MainPartner data={data.partner} />
       <SectionSeparator data={data.sectionSeparator} />
       <MainOptimize data={data.optimize} />

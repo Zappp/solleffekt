@@ -12,10 +12,12 @@ export function PrivacyPolicyPage({ data }: { data: PrivacyPolicyPageData }) {
   return (
     <section className="section-layout flex justify-center">
       <a
+        target="_blank"
+        rel="noopener noreferrer"
         href={href}
-        className="flex transform flex-col items-center justify-center rounded-3xl border border-neutral-200 bg-white p-8 shadow-md transition-all duration-300 hover:scale-[0.9] hover:shadow-lg"
+        className="flex w-full max-w-[400px] transform flex-col items-center justify-center rounded-3xl border border-neutral-200 bg-white p-8 shadow-md transition-all duration-300 hover:scale-[0.9] hover:shadow-lg"
       >
-        <Image src={iconSrc} alt={iconAlt} className="mb-4 w-full max-w-[700px]" />
+        <Image priority src={iconSrc} alt={iconAlt} className="mb-4 w-full" />
         <h3 className="typography-h3 text-foreground text-center">{title}</h3>
       </a>
     </section>

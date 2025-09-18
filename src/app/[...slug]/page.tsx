@@ -1,9 +1,11 @@
-import { ImprintPage, ImprintPageData } from 'app/components/pages/ImprintPage'
-import { MainPage, MainPageData } from 'app/components/pages/MainPage'
-import { PrivacyPolicyPage, PrivacyPolicyPageData } from 'app/components/pages/PrivacyPolicyPage'
-import { ProductsPage, ProductsPageData } from 'app/components/pages/ProductsPage'
-import { AppData, DocumentData, Locale } from 'app/types/app'
+import { ImprintPage } from 'app/components/pages/ImprintPage'
+import { MainPage } from 'app/components/pages/MainPage'
+import { PrivacyPolicyPage } from 'app/components/pages/PrivacyPolicyPage'
+import { ProductsPage } from 'app/components/pages/ProductsPage'
+import { SolutionsPage } from 'app/components/pages/SolutionsPage'
+import { AppData, ContentMap, DocumentData, Locale } from 'app/types/app'
 import { notFound } from 'next/navigation'
+import { ComponentType } from 'react'
 import appData from '../../data/appData.json'
 import { defaultLocale } from '../page'
 
@@ -20,34 +22,24 @@ export async function generateStaticParams() {
 export default async function Page({ params }: { params: Promise<{ slug: string[] }> }) {
   const resolvedParams = await params
 
-  const locales = Object.keys(appData)
+  const locales = Object.keys(appData) as Locale[]
   const fullSlug = resolvedParams.slug.join('/')
-  const locale =
-    (locales.find((l) => new RegExp(`^${l}(?:/|$)`).test(fullSlug)) as Locale) ?? defaultLocale
+  const locale = locales.find((l) => new RegExp(`^${l}(?:/|$)`).test(fullSlug)) ?? defaultLocale
 
   const page = (appData as AppData)[locale].pages.find((p) => p.slug === fullSlug)
 
   if (!page) notFound()
 
-  if (page.type === 'main') {
-    const pageData = page.data as MainPageData
-    return <MainPage data={pageData} />
-  }
+  const PageComponent = pageComponent[page.type]
+  return <PageComponent data={page.data as ContentMap[keyof typeof page.data]} />
+}
 
-  if (page.type === 'products') {
-    const pageData = page.data as ProductsPageData
-    return <ProductsPage data={pageData} />
-  }
-
-  if (page.type === 'imprint') {
-    const pageData = page.data as ImprintPageData
-    return <ImprintPage data={pageData} />
-  }
-
-  if (page.type === 'privacy-policy') {
-    const pageData = page.data as PrivacyPolicyPageData
-    return <PrivacyPolicyPage data={pageData} />
-  }
-
-  return null
+export const pageComponent: {
+  [K in keyof ContentMap]: ComponentType<{ data: ContentMap[K] }>
+} = {
+  main: MainPage,
+  products: ProductsPage,
+  solutions: SolutionsPage,
+  imprint: ImprintPage,
+  'privacy-policy': PrivacyPolicyPage,
 }

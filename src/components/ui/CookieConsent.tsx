@@ -86,7 +86,7 @@ export function CookieConsent({ cookieConsent }: { cookieConsent: CookieConsentP
                   className="peer h-0 w-0 opacity-0"
                 />
                 <span
-                  className={`absolute inset-0 rounded-full transition-colors duration-300 before:absolute before:bottom-1 before:left-1 before:h-4 before:w-4 before:rounded-full before:border before:border-neutral-400 before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:before:translate-x-5 ${
+                  className={`absolute inset-0 rounded-full transition-colors duration-300 before:absolute before:bottom-1 before:left-1 before:h-4 before:w-4 before:rounded-full before:border before:border-neutral-300 before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:before:translate-x-5 ${
                     cookie.disabled
                       ? 'cursor-not-allowed bg-[var(--yellow-muted)] opacity-50'
                       : 'cursor-pointer bg-neutral-300 peer-checked:bg-[var(--yellow-primary)]'

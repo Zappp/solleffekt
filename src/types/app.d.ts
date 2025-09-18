@@ -5,6 +5,7 @@ import { ProductsPageData } from 'app/components/pages/ProductsPage'
 import { CookieConsentProps } from 'app/components/ui/CookieConsent'
 import { FooterProps } from 'app/components/ui/Footer'
 import { NavbarProps } from 'app/components/ui/Navbar'
+import { ValueOf } from 'next/dist/shared/lib/constants'
 
 export type AppData = Record<Locale, DocumentData>
 
@@ -14,14 +15,20 @@ export type DocumentData = {
   navbar: NavbarProps
   footer: FooterProps
   cookieConsent: CookieConsentProps
-  pages: Array<{
-    id: string
-    slug: string
-    data: PageData
-    type: PageType
-  }>
+  pages: PageData[]
 }
 
-export type PageData = MainPageData | ProductsPageData | ImprintPageData | PrivacyPolicyPageData
+export interface PageData {
+  id: string
+  slug: string
+  type: keyof ContentMap
+  data: ValueOf<ContentMap>
+}
 
-export type PageType = 'main' | 'products' | 'imprint' | 'privacy-policy'
+export type ContentMap = {
+  main: MainPageData
+  products: ProductsPageData
+  solutions: ProductsPageData
+  imprint: ImprintPageData
+  'privacy-policy': PrivacyPolicyPageData
+}

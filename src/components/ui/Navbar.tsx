@@ -141,7 +141,7 @@ function DesktopDropdown({ item }: { item: Extract<NavbarItem, { type: 'link' }>
         </svg>
       </button>
       {open && item.segments && (
-        <div className="fixed left-0 z-30 w-full bg-white" data-aos="fade">
+        <div className="fixed left-0 z-30 w-full bg-white">
           <div className="max-h-[50vh] overflow-y-auto rounded-md border border-neutral-200/50 shadow-lg">
             <div className="flex justify-center gap-3 py-2">
               {item.segments.map((segment) => (
@@ -178,7 +178,7 @@ function DropdownLink({
   return (
     <Link
       href={href}
-      className="block max-w-[450px] rounded-md px-3 py-2 hover:bg-yellow-100/60 focus:hover:bg-yellow-100/60 md:py-2"
+      className="block max-w-[450px] rounded-md px-3 py-2 hover:bg-yellow-200/60 focus:hover:bg-yellow-200/60 md:py-2"
     >
       <div className="font-semibold">{children}</div>
       {description ? <div className="typography-caption">{description}</div> : null}

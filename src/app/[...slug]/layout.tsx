@@ -4,6 +4,8 @@ import { ReactNode } from 'react'
 import appData from '../../data/appData.json'
 import { defaultLocale } from '../page'
 
+// TODO update header content for produsct, overline color, imgs
+
 export async function generateStaticParams() {
   return Object.values(appData as AppData)
     .flatMap((pages: DocumentData) =>
@@ -21,10 +23,9 @@ export default async function Layout({
 }) {
   const resolvedParams = await params
 
-  const locales = Object.keys(appData)
+  const locales = Object.keys(appData) as Locale[]
   const fullSlug = resolvedParams.slug.join('/')
-  const locale =
-    (locales.find((l) => new RegExp(`^${l}(?:/|$)`).test(fullSlug)) as Locale) ?? defaultLocale
+  const locale = locales.find((l) => new RegExp(`^${l}(?:/|$)`).test(fullSlug)) ?? defaultLocale
 
   return (
     <AppTemplate data={(appData as AppData)[locale]} locale={locale} locales={locales}>

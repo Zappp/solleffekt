@@ -7,7 +7,6 @@
 
   --yellow-primary: #fde047;
   --btn-yellow-hover: #facc15; /* yellow-400 */
-  --yellow-muted: #facc1599;
 
   --btn-white-bg: #fff;
   --btn-white-hover: #f3f4f6; /* gray-100 */
@@ -143,7 +142,7 @@ body {
 }
 
 .typography-overline {
-  color: var(--yellow-primary);
+  color: var(--btn-yellow-hover);
   font-size: var(--font-size-xs);
   line-height: var(--line-height-normal);
   font-weight: var(--font-weight-semibold);
@@ -167,10 +166,6 @@ body {
 }
 
 /* Color variants */
-.typography-muted {
-  color: rgb(115 115 115); /* neutral-500 */
-}
-
 .typography-subtle {
   color: rgb(82 82 82); /* neutral-600 */
 }

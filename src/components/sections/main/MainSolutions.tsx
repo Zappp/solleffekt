@@ -16,7 +16,7 @@ export type MainProductsProps = {
   items: ProductCard[]
 }
 
-export function MainProducts({ data }: { data: MainProductsProps }) {
+export function MainSolutions({ data }: { data: MainProductsProps }) {
   const { heading, items, buttonLabel } = data
   return (
     <section className="section-layout flex flex-col gap-6">
@@ -31,7 +31,7 @@ export function MainProducts({ data }: { data: MainProductsProps }) {
                 <Image
                   src={p.imageSrc}
                   alt={p.imageAlt}
-                  className="rounded-image h-48 w-full object-contain"
+                  className="rounded-image h-48 w-full object-cover object-bottom"
                 />
               ) : null}
               <div className="flex flex-1 flex-col items-center gap-3 p-4 text-center">
