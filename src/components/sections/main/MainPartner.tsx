@@ -1,12 +1,11 @@
+import { Icon, IconName } from 'app/components/ui/Icon'
 import { Image } from 'app/components/ui/Image'
-import { Icon } from 'app/components/ui/LazySVG'
 
 export type PartnerPoint = {
   id: string
   title: string
   description: string
-  iconSrc: string
-  iconAlt: string
+  iconName: IconName
 }
 
 export type PartnerItem = {
@@ -63,7 +62,7 @@ export function MainPartner({ data }: { data: MainPartnerProps }) {
                   data-aos="fade-up"
                 >
                   <div className="relative flex shrink-0 items-center justify-center rounded-3xl border border-neutral-200 bg-white">
-                    <Icon name="bar-chart" className="typography-overline h-15 w-15 shrink-0 p-3" />
+                    <Icon name={pt.iconName} className="typography-overline h-15 w-15 p-3" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <div className="typography-h6 font-semibold">{pt.title}</div>

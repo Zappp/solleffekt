@@ -1,9 +1,9 @@
+import { Icon, IconName } from 'app/components/ui/Icon'
 import { Image } from 'app/components/ui/Image'
 
 export type OptimizeItem = {
   id: string
-  iconSrc: string
-  iconAlt: string
+  iconName: IconName
   description: string
 }
 
@@ -37,7 +37,7 @@ export function MainOptimize({ data }: { data: MainOptimizePropsProps }) {
               className="flex items-center justify-items-start gap-3"
               data-aos="fade-up"
             >
-              <Image src={item.iconSrc} alt={item.iconAlt} className="h-4 w-6 object-contain" />
+              <Icon name={item.iconName} className="typography-overline h-4 w-4" />
               <p className="typography-body-small typography-emphasis">{item.description}</p>
             </div>
           ))}

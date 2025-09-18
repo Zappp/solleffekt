@@ -214,15 +214,13 @@
                     "id": "p1",
                     "title": "Customized special solutions",
                     "description": "We deliver tailored energy concepts for unique requirements and challenging environments such as lakes, farmland, and bespoke installations. Our portfolio includes advanced PV technologies as well as large-scale energy storage systems.",
-                    "iconSrc": "/svg/gear.svg",
-                    "iconAlt": "Icon"
+                    "iconName": "gear"
                   },
                   {
                     "id": "p2",
                     "title": "Ongoing product portfolio growth",
                     "description": "Our extensive product offering is continuously expanded with innovative solutions to meet evolving customer needs and support the progress of the energy transition.",
-                    "iconSrc": "/svg/bar-chart.svg",
-                    "iconAlt": "Icon"
+                    "iconName": "bar-chart"
                   }
                 ]
               },
@@ -235,15 +233,13 @@
                     "id": "p3",
                     "title": "Expert planning & consulting",
                     "description": "From the initial concept through to implementation, our skilled team provides personal guidance and hands-on support. We collaborate closely with clients to design solutions that fit their goals and deliver long-term value.",
-                    "iconSrc": "/svg/pencil-1.svg",
-                    "iconAlt": "Icon"
+                    "iconName": "pencil-1"
                   },
                   {
                     "id": "p4",
                     "title": "Professional installation",
                     "description": "Our large and highly qualified installer teams ensure fast and precise execution of both roof-mounted (A/C) and direct current (D/C) systems, carried out with reliability and efficiency.",
-                    "iconSrc": "/svg/home.svg",
-                    "iconAlt": "Icon"
+                    "iconName": "home"
                   }
                 ]
               }
@@ -263,38 +259,32 @@
               {
                 "id": "o1",
                 "description": "Customized energy solutions",
-                "iconSrc": "/svg/gear.svg",
-                "iconAlt": "Icon"
+                "iconName": "gear"
               },
               {
                 "id": "o2",
                 "description": "Maximized energy savings",
-                "iconSrc": "/svg/value.svg",
-                "iconAlt": "Icon"
+                "iconName": "value"
               },
               {
                 "id": "o3",
                 "description": "Cutting-edge technology",
-                "iconSrc": "/svg/lightning-bolt.svg",
-                "iconAlt": "Icon"
+                "iconName": "lightning-bolt"
               },
               {
                 "id": "o4",
                 "description": "End-to-end support",
-                "iconSrc": "/svg/person.svg",
-                "iconAlt": "Icon"
+                "iconName": "person"
               },
               {
                 "id": "o5",
                 "description": "All-in-one offerings",
-                "iconSrc": "/svg/layers.svg",
-                "iconAlt": "Icon"
+                "iconName": "layers"
               },
               {
                 "id": "o6",
                 "description": "Transparent and trustworthy",
-                "iconSrc": "/svg/eye-open.svg",
-                "iconAlt": "Icon"
+                "iconName": "eye-open"
               }
             ]
           }
@@ -503,8 +493,7 @@
         "slug": "en/privacy-policy",
         "type": "privacy-policy",
         "data": {
-          "iconAlt": "DSGVO Icon",
-          "iconSrc": "/svg/download.svg",
+          "iconName": "download",
           "title": "Privacy Policy",
           "href": "#"
         }
@@ -726,15 +715,13 @@
                     "id": "p1",
                     "title": "Maßgeschneiderte Speziallösungen",
                     "description": "Wir liefern maßgeschneiderte Energiekonzepte für einzigartige Anforderungen und herausfordernde Umgebungen wie Seen, Ackerland und maßgeschneiderte Installationen. Unser Portfolio umfasst fortschrittliche PV-Technologien sowie große Energiespeichersysteme.",
-                    "iconSrc": "/svg/gear.svg",
-                    "iconAlt": "Icon"
+                    "iconName": "gear"
                   },
                   {
                     "id": "p2",
                     "title": "Kontinuierliches Wachstum des Produktportfolios",
                     "description": "Unser umfangreiches Produktangebot wird kontinuierlich um innovative Lösungen erweitert, um den sich entwickelnden Kundenbedürfnissen gerecht zu werden und den Fortschritt der Energiewende zu unterstützen.",
-                    "iconSrc": "/svg/bar-chart.svg",
-                    "iconAlt": "Icon"
+                    "iconName": "bar-chart"
                   }
                 ]
               },
@@ -747,15 +734,13 @@
                     "id": "p3",
                     "title": "Expertise in Planung & Beratung",
                     "description": "Vom ersten Konzept bis zur Implementierung bietet unser erfahrenes Team persönliche Beratung und praktische Unterstützung. Wir arbeiten eng mit Kunden zusammen, um Lösungen zu entwickeln, die ihren Zielen entsprechen und langfristigen Wert liefern.",
-                    "iconSrc": "/svg/pencil-1.svg",
-                    "iconAlt": "Icon"
+                    "iconName": "pencil-1"
                   },
                   {
                     "id": "p4",
                     "title": "Professionelle Installation",
                     "description": "Unsere großen und hochqualifizierten Installationsteams gewährleisten eine schnelle und präzise Ausführung von dachmontierten (A/C) und Gleichstrom-Systemen (D/C), zuverlässig und effizient.",
-                    "iconSrc": "/svg/home.svg",
-                    "iconAlt": "Icon"
+                    "iconName": "home"
                   }
                 ]
               }
@@ -775,38 +760,32 @@
               {
                 "id": "o1",
                 "description": "Maßgeschneiderte Energielösungen",
-                "iconSrc": "/svg/gear.svg",
-                "iconAlt": "Icon"
+                "iconName": "gear"
               },
               {
                 "id": "o2",
                 "description": "Maximale Energieeinsparungen",
-                "iconSrc": "/svg/value.svg",
-                "iconAlt": "Icon"
+                "iconName": "value"
               },
               {
                 "id": "o3",
                 "description": "Spitzentechnologie",
-                "iconSrc": "/svg/lightning-bolt.svg",
-                "iconAlt": "Icon"
+                "iconName": "lightning-bolt"
               },
               {
                 "id": "o4",
                 "description": "End-to-End-Support",
-                "iconSrc": "/svg/person.svg",
-                "iconAlt": "Icon"
+                "iconName": "person"
               },
               {
                 "id": "o5",
                 "description": "All-in-One-Angebote",
-                "iconSrc": "/svg/layers.svg",
-                "iconAlt": "Icon"
+                "iconName": "layers"
               },
               {
                 "id": "o6",
                 "description": "Transparent und vertrauenswürdig",
-                "iconSrc": "/svg/eye-open.svg",
-                "iconAlt": "Icon"
+                "iconName": "eye-open"
               }
             ]
           }
@@ -1015,10 +994,9 @@
         "slug": "privacy-policy",
         "type": "privacy-policy",
         "data": {
-          "iconAlt": "DSGVO Icon",
-          "iconSrc": "/svg/download.svg",
           "title": "Datenschutzerklärung",
-          "href": "#"
+          "href": "#",
+          "iconName": "download"
         }
       }
     ]
