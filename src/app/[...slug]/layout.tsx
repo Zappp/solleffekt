@@ -4,8 +4,6 @@ import { ReactNode } from 'react'
 import appData from '../../data/appData.json'
 import { defaultLocale } from '../page'
 
-// TODO update header content for produsct, overline color, imgs
-
 export async function generateStaticParams() {
   return Object.values(appData as AppData)
     .flatMap((pages: DocumentData) =>

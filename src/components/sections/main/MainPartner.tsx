@@ -1,4 +1,5 @@
 import { Image } from 'app/components/ui/Image'
+import { Icon } from 'app/components/ui/LazySVG'
 
 export type PartnerPoint = {
   id: string
@@ -61,12 +62,8 @@ export function MainPartner({ data }: { data: MainPartnerProps }) {
                   className="flex items-start gap-4 rounded-2xl bg-neutral-50 p-5"
                   data-aos="fade-up"
                 >
-                  <div className="relative flex h-15 w-15 shrink-0 items-center justify-center rounded-3xl border border-neutral-200 bg-white">
-                    <Image
-                      src={pt.iconSrc}
-                      alt={pt.iconAlt}
-                      className="w-full object-contain p-3"
-                    />
+                  <div className="relative flex shrink-0 items-center justify-center rounded-3xl border border-neutral-200 bg-white">
+                    <Icon name="bar-chart" className="typography-overline h-15 w-15 shrink-0 p-3" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <div className="typography-h6 font-semibold">{pt.title}</div>
