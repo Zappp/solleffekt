@@ -4,7 +4,7 @@
       "brand": {
         "label": "Solleffekt",
         "href": "/en",
-        "logoSrc": "/logo.png",
+        "logoSrc": "/logo.webp",
         "logoAlt": "Solleffekt"
       },
       "items": [
@@ -75,7 +75,7 @@
       ]
     },
     "footer": {
-      "logo": { "src": "/logo.png", "alt": "Solleffekt Logo" },
+      "logo": { "src": "/logo.webp", "alt": "Solleffekt Logo" },
       "links": [
         { "href": "/en/contact", "label": "Contact" },
         { "href": "/en/imprint", "label": "Imprint" },
@@ -131,7 +131,7 @@
               {
                 "id": "p1",
                 "title": "Solar panels",
-                "imageSrc": "/solar-panel.png",
+                "imageSrc": "/solar-panel.webp",
                 "imageAlt": "Solar panels",
                 "description": "High-quality solar panels from leading global manufacturers, designed to meet strict German standards and ensure long-term energy efficiency.",
                 "buttonHref": "/en/products/solar-panels"
@@ -147,7 +147,7 @@
               {
                 "id": "p3",
                 "title": "Heat pumps",
-                "imageSrc": "/heat-pump.png",
+                "imageSrc": "/heat-pump.webp",
                 "imageAlt": "Heat pumps",
                 "description": "Modern and eco-friendly heat pumps that meet European energy standards, offering efficient heating and cooling for your home or business.",
                 "buttonHref": "/en/products/heat-pumps"
@@ -155,7 +155,7 @@
               {
                 "id": "p4",
                 "title": "Vehicle charging stations",
-                "imageSrc": "/vehicle-charging-station.png",
+                "imageSrc": "/vehicle-charging-station.webp",
                 "imageAlt": "Vehicle charging stations",
                 "description": "Smart, efficient, and future-proof EV charging stations for both private and commercial use, ensuring fast and safe vehicle charging.",
                 "buttonHref": "/en/products/vehicle-charging-stations"
@@ -163,7 +163,7 @@
               {
                 "id": "p5",
                 "title": "Inverters",
-                "imageSrc": "/inverter.png",
+                "imageSrc": "/inverter.webp",
                 "imageAlt": "Inverters",
                 "description": "High-performance inverters that guarantee optimal operation of your solar system, with advanced technology for maximum energy yield.",
                 "buttonHref": "/en/products/inverters"
@@ -177,7 +177,7 @@
               {
                 "id": "p1",
                 "title": "Energy consulting & project planning",
-                "imageSrc": "/energy-consulting.jpeg",
+                "imageSrc": "/energy-consulting.webp",
                 "imageAlt": "Energy consulting & project planning",
                 "description": "Comprehensive advice and targeted planning for improving your energy efficiency, ensuring that every project is tailored to your specific needs and long-term goals.",
                 "buttonHref": "/en/solutions/energy-consulting-project-planning"
@@ -185,7 +185,7 @@
               {
                 "id": "p2",
                 "title": "Assembly & complete service",
-                "imageSrc": "/complete-service.jpeg",
+                "imageSrc": "/complete-service.webp",
                 "imageAlt": "Assembly & complete service",
                 "description": "Expert assembly, commissioning, and complete service solutions, providing reliable support from installation through ongoing maintenance for maximum system performance.",
                 "buttonHref": "/en/solutions/assembly-complete-service"
@@ -193,7 +193,7 @@
               {
                 "id": "p3",
                 "title": "Delivery management",
-                "imageSrc": "/delivery-management.png",
+                "imageSrc": "/delivery-management.webp",
                 "imageAlt": "Delivery management",
                 "description": "Fast, precise, and coordinated logistics for your energy solutions, ensuring timely deliveries and efficient handling of every component from start to finish.",
                 "buttonHref": "/en/solutions/delivery-management"
@@ -207,7 +207,7 @@
             "items": [
               {
                 "id": "b1",
-                "imageSrc": "/one-source.png",
+                "imageSrc": "/one-source.webp",
                 "imageAlt": "Energy solutions illustration",
                 "points": [
                   {
@@ -226,7 +226,7 @@
               },
               {
                 "id": "b2",
-                "imageSrc": "/expert-planning.png",
+                "imageSrc": "/expert-planning.webp",
                 "imageAlt": "Professional services illustration",
                 "points": [
                   {
@@ -247,13 +247,13 @@
           },
 
           "sectionSeparator": {
-            "backgroundImageSrc": "/background.jpg"
+            "backgroundImageSrc": "/background.webp"
           },
           "optimize": {
             "overline": "Driving innovation in energy – benefits at a glance.",
             "title": "Innovation that powers the future",
             "subtitle": "As pioneers in advanced and tailored energy solutions, we go beyond conventional limits to deliver what’s next. Through strong collaborations with leading global innovators, we provide direct access to cutting-edge technologies – without middlemen and under the best conditions.",
-            "imageSrc": "/benefits.png",
+            "imageSrc": "/benefits.webp",
             "imageAlt": "Future of energy",
             "items": [
               {
@@ -298,7 +298,7 @@
           "header": {
             "title": "Solar Panels",
             "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
-            "imageSrc": "/solar-panel.png",
+            "imageSrc": "/solar-panel.webp",
             "imageAlt": "Solar panels",
             "primaryCtaLabel": "Contact",
             "primaryCtaHref": "/en/contact",
@@ -332,7 +332,7 @@
           "header": {
             "title": "Heat Pumps",
             "description": "Sustainable and cost-effective heating and cooling solutions, optimized for energy efficiency and environmental protection.",
-            "imageSrc": "/heat-pump.png",
+            "imageSrc": "/heat-pump.webp",
             "imageAlt": "Heat pumps",
             "primaryCtaLabel": "Contact",
             "primaryCtaHref": "/en/contact",
@@ -349,7 +349,7 @@
           "header": {
             "title": "Vehicle Charging Stations",
             "description": "Smart and fast charging solutions for electric vehicles, offering convenience and reliability for home and business.",
-            "imageSrc": "/vehicle-charging-station.png",
+            "imageSrc": "/vehicle-charging-station.webp",
             "imageAlt": "Vehicle charging stations",
             "primaryCtaLabel": "Contact",
             "primaryCtaHref": "/en/contact",
@@ -366,7 +366,7 @@
           "header": {
             "title": "Inverters",
             "description": "High-performance inverters ensuring optimal conversion of solar energy, enhancing system efficiency and stability.",
-            "imageSrc": "/inverter.png",
+            "imageSrc": "/inverter.webp",
             "imageAlt": "Inverters",
             "primaryCtaLabel": "Contact",
             "primaryCtaHref": "/en/contact",
@@ -383,7 +383,7 @@
           "header": {
             "title": "Energy consulting & project planning",
             "description": "High-efficiency photovoltaic modules tailored for residential and commercial installations.",
-            "imageSrc": "/energy-consulting.jpeg",
+            "imageSrc": "/energy-consulting.webp",
             "imageAlt": "Energy consulting",
             "primaryCtaLabel": "Contact",
             "primaryCtaHref": "/en/contact",
@@ -400,7 +400,7 @@
           "header": {
             "title": "Assembly & Complete Service",
             "description": "Professional installation and comprehensive service for all your energy systems, ensuring seamless operation and lasting performance.",
-            "imageSrc": "/complete-service.jpeg",
+            "imageSrc": "/complete-service.webp",
             "imageAlt": "Assembly & complete service",
             "primaryCtaLabel": "Contact",
             "primaryCtaHref": "/en/contact",
@@ -417,7 +417,7 @@
           "header": {
             "title": "Delivery Management",
             "description": "Streamlined and reliable logistics for timely delivery of your energy components, ensuring project efficiency from start to finish.",
-            "imageSrc": "/delivery-management.png",
+            "imageSrc": "/delivery-management.webp",
             "imageAlt": "Delivery management",
             "primaryCtaLabel": "Contact",
             "primaryCtaHref": "/en/contact",
@@ -505,7 +505,7 @@
       "brand": {
         "label": "Solleffekt",
         "href": "/",
-        "logoSrc": "/logo.png",
+        "logoSrc": "/logo.webp",
         "logoAlt": "Solleffekt"
       },
       "items": [
@@ -576,7 +576,7 @@
       ]
     },
     "footer": {
-      "logo": { "src": "/logo.png", "alt": "Solleffekt Logo" },
+      "logo": { "src": "/logo.webp", "alt": "Solleffekt Logo" },
       "links": [
         { "href": "/contact", "label": "Kontakt" },
         { "href": "/imprint", "label": "Impressum" },
@@ -632,7 +632,7 @@
               {
                 "id": "p1",
                 "title": "Solarpaneele",
-                "imageSrc": "/solar-panel.png",
+                "imageSrc": "/solar-panel.webp",
                 "imageAlt": "Solarpaneele",
                 "description": "Hochwertige Solarpaneele von führenden globalen Herstellern, entwickelt, um strenge deutsche Standards zu erfüllen und langfristige Energieeffizienz zu gewährleisten.",
                 "buttonHref": "/products/solar-panels"
@@ -648,7 +648,7 @@
               {
                 "id": "p3",
                 "title": "Wärmepumpen",
-                "imageSrc": "/heat-pump.png",
+                "imageSrc": "/heat-pump.webp",
                 "imageAlt": "Wärmepumpen",
                 "description": "Moderne und umweltfreundliche Wärmepumpen, die europäische Energiestandards erfüllen und effizientes Heizen und Kühlen für Ihr Zuhause oder Geschäft bieten.",
                 "buttonHref": "/products/heat-pumps"
@@ -656,7 +656,7 @@
               {
                 "id": "p4",
                 "title": "Ladestationen für Fahrzeuge",
-                "imageSrc": "/vehicle-charging-station.png",
+                "imageSrc": "/vehicle-charging-station.webp",
                 "imageAlt": "Ladestationen für Fahrzeuge",
                 "description": "Intelligente, effiziente und zukunftssichere Ladestationen für Elektrofahrzeuge für private und gewerbliche Nutzung, die schnelles und sicheres Laden gewährleisten.",
                 "buttonHref": "/products/vehicle-charging-stations"
@@ -664,7 +664,7 @@
               {
                 "id": "p5",
                 "title": "Wechselrichter",
-                "imageSrc": "/inverter.png",
+                "imageSrc": "/inverter.webp",
                 "imageAlt": "Wechselrichter",
                 "description": "Hochleistungs-Wechselrichter, die den optimalen Betrieb Ihrer Solaranlage garantieren, mit fortschrittlicher Technologie für maximalen Energieertrag.",
                 "buttonHref": "/products/inverters"
@@ -678,7 +678,7 @@
               {
                 "id": "p1",
                 "title": "Energieberatung & Projektplanung",
-                "imageSrc": "/energy-consulting.jpeg",
+                "imageSrc": "/energy-consulting.webp",
                 "imageAlt": "Energieberatung & Projektplanung",
                 "description": "Umfassende Beratung und zielgerichtete Planung zur Verbesserung Ihrer Energieeffizienz, um sicherzustellen, dass jedes Projekt auf Ihre spezifischen Bedürfnisse und langfristigen Ziele zugeschnitten ist.",
                 "buttonHref": "/solutions/energy-consulting-project-planning"
@@ -686,7 +686,7 @@
               {
                 "id": "p2",
                 "title": "Montage & Komplettservice",
-                "imageSrc": "/complete-service.jpeg",
+                "imageSrc": "/complete-service.webp",
                 "imageAlt": "Montage & Komplettservice",
                 "description": "Fachgerechte Montage, Inbetriebnahme und komplette Servicelösungen, die zuverlässige Unterstützung von der Installation bis zur laufenden Wartung für maximale Systemleistung bieten.",
                 "buttonHref": "/solutions/assembly-complete-service"
@@ -694,7 +694,7 @@
               {
                 "id": "p3",
                 "title": "Liefermanagement",
-                "imageSrc": "/delivery-management.png",
+                "imageSrc": "/delivery-management.webp",
                 "imageAlt": "Liefermanagement",
                 "description": "Schnelle, präzise und koordinierte Logistik für Ihre Energielösungen, die eine pünktliche Lieferung und effiziente Handhabung jeder Komponente von Anfang bis Ende gewährleistet.",
                 "buttonHref": "/solutions/delivery-management"
@@ -708,7 +708,7 @@
             "items": [
               {
                 "id": "b1",
-                "imageSrc": "/one-source.png",
+                "imageSrc": "/one-source.webp",
                 "imageAlt": "Illustration von Energielösungen",
                 "points": [
                   {
@@ -727,7 +727,7 @@
               },
               {
                 "id": "b2",
-                "imageSrc": "/expert-planning.png",
+                "imageSrc": "/expert-planning.webp",
                 "imageAlt": "Illustration professioneller Dienstleistungen",
                 "points": [
                   {
@@ -748,13 +748,13 @@
           },
 
           "sectionSeparator": {
-            "backgroundImageSrc": "/background.jpg"
+            "backgroundImageSrc": "/background.webp"
           },
           "optimize": {
             "overline": "Innovationen im Energiebereich vorantreiben – Vorteile auf einen Blick.",
             "title": "Innovation, die die Zukunft antreibt",
             "subtitle": "Als Pioniere für fortschrittliche und maßgeschneiderte Energielösungen gehen wir über konventionelle Grenzen hinaus, um das Nächste zu liefern. Durch starke Zusammenarbeit mit führenden globalen Innovatoren bieten wir direkten Zugang zu Spitzentechnologien – ohne Zwischenhändler und zu besten Konditionen.",
-            "imageSrc": "/benefits.png",
+            "imageSrc": "/benefits.webp",
             "imageAlt": "Zukunft der Energie",
             "items": [
               {
@@ -799,7 +799,7 @@
           "header": {
             "title": "Solarpaneele",
             "description": "Hocheffiziente Photovoltaikmodule, maßgeschneidert für Wohn- und Gewerbeinstallationen.",
-            "imageSrc": "/solar-panel.png",
+            "imageSrc": "/solar-panel.webp",
             "imageAlt": "Solarpaneele",
             "primaryCtaLabel": "Kontakt",
             "primaryCtaHref": "/contact",
@@ -833,7 +833,7 @@
           "header": {
             "title": "Wärmepumpen",
             "description": "Nachhaltige und kostengünstige Heiz- und Kühllösungen, optimiert für Energieeffizienz und Umweltschutz.",
-            "imageSrc": "/heat-pump.png",
+            "imageSrc": "/heat-pump.webp",
             "imageAlt": "Wärmepumpen",
             "primaryCtaLabel": "Kontakt",
             "primaryCtaHref": "/contact",
@@ -850,7 +850,7 @@
           "header": {
             "title": "Ladestationen für Fahrzeuge",
             "description": "Intelligente und schnelle Ladelösungen für Elektrofahrzeuge, die Komfort und Zuverlässigkeit für Zuhause und Unternehmen bieten.",
-            "imageSrc": "/vehicle-charging-station.png",
+            "imageSrc": "/vehicle-charging-station.webp",
             "imageAlt": "Ladestationen für Fahrzeuge",
             "primaryCtaLabel": "Kontakt",
             "primaryCtaHref": "/contact",
@@ -867,7 +867,7 @@
           "header": {
             "title": "Wechselrichter",
             "description": "Hochleistungs-Wechselrichter, die eine optimale Umwandlung von Solarenergie gewährleisten und die Systemeffizienz und -stabilität verbessern.",
-            "imageSrc": "/inverter.png",
+            "imageSrc": "/inverter.webp",
             "imageAlt": "Wechselrichter",
             "primaryCtaLabel": "Kontakt",
             "primaryCtaHref": "/contact",
@@ -884,7 +884,7 @@
           "header": {
             "title": "Energieberatung & Projektplanung",
             "description": "Umfassende Beratung und gezielte Planung zur Verbesserung Ihrer Energieeffizienz.",
-            "imageSrc": "/energy-consulting.jpeg",
+            "imageSrc": "/energy-consulting.webp",
             "imageAlt": "Energieberatung & Projektplanung",
             "primaryCtaLabel": "Kontakt",
             "primaryCtaHref": "/contact",
@@ -901,7 +901,7 @@
           "header": {
             "title": "Montage & Komplettservice",
             "description": "Professionelle Installation und umfassender Service für alle Ihre Energiesysteme, der einen reibungslosen Betrieb und dauerhafte Leistung gewährleistet.",
-            "imageSrc": "/complete-service.jpeg",
+            "imageSrc": "/complete-service.webp",
             "imageAlt": "Montage & Komplettservice",
             "primaryCtaLabel": "Kontakt",
             "primaryCtaHref": "/contact",
@@ -918,7 +918,7 @@
           "header": {
             "title": "Liefermanagement",
             "description": "Optimierte und zuverlässige Logistik für die pünktliche Lieferung Ihrer Energiekomponenten, die Projekteffizienz von Anfang bis Ende gewährleistet.",
-            "imageSrc": "/delivery-management.png",
+            "imageSrc": "/delivery-management.webp",
             "imageAlt": "Liefermanagement",
             "primaryCtaLabel": "Kontakt",
             "primaryCtaHref": "/contact",

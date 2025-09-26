@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { ComponentProps, ComponentType, Suspense, SVGProps } from 'react'
+import { ComponentProps, ComponentType, SVGProps } from 'react'
 
 export type IconName =
   | 'bar-chart'
@@ -38,9 +38,5 @@ export const Icon = ({ name, className, ...rest }: IconProps) => {
   const Svg = icons[name]
   if (!Svg) return null
 
-  return (
-    <Suspense fallback={<svg className={`h-4 w-4 ${className}`} aria-hidden {...rest} />}>
-      <Svg className={`h-4 w-4 ${className}`} {...rest} />
-    </Suspense>
-  )
+  return <Svg className={`h-4 w-4 ${className}`} {...rest} />
 }

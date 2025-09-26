@@ -37,7 +37,7 @@ export function MainOptimize({ data }: { data: MainOptimizePropsProps }) {
               className="flex items-center justify-items-start gap-3"
               data-aos="fade-up"
             >
-              <Icon name={item.iconName} className="typography-overline h-4 w-4" />
+              <Icon name={item.iconName} className="typography-overline" />
               <p className="typography-body-small typography-emphasis">{item.description}</p>
             </div>
           ))}
