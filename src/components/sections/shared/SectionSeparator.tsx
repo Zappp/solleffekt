@@ -5,13 +5,11 @@ export type SectionSeparatorProps = {
 
 export function SectionSeparator({ data }: { data: SectionSeparatorProps }) {
   const { backgroundImageSrc, height = 150 } = data
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
-  const url = `${basePath}${backgroundImageSrc}`
   return (
     <section
       aria-hidden
       className="mt-1.5 mb-10 w-full self-center bg-cover bg-scroll bg-center md:bg-fixed"
-      style={{ backgroundImage: `url(${url})`, height: `${height}px` }}
+      style={{ backgroundImage: `url(${backgroundImageSrc})`, height: `${height}px` }}
     />
   )
 }
